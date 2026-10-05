@@ -1,0 +1,917 @@
+{
+  "source": "paper_export/MagTouch_中文核心论文修订_20260923/柔性磁触觉多节点数据自动采集实验系统设计_修订稿_20260923.docx",
+  "source_sha256": "0a9dc5ed60a2bb0ef9ed814a29cf928f5a8383093e646868cc2c8418de0e7f06",
+  "images": [
+    {
+      "block": 19,
+      "name": "image1.png",
+      "sha256": "d63fd90ecf65006032444fc1fce0e86ac46e1541d01aba5c89a7d188b97b9639"
+    },
+    {
+      "block": 28,
+      "name": "image2.png",
+      "sha256": "d4343f48b1d113413a7051d65b31d9e2b41f274e6c7deb053847a87def0e4c78"
+    },
+    {
+      "block": 40,
+      "name": "image3.png",
+      "sha256": "23633b80e8d74bbb955aacfa4ed84f6dc1a80fb01e5b1a3f12d4de63b2858d3e"
+    },
+    {
+      "block": 53,
+      "name": "image4.png",
+      "sha256": "30744cf51b6a844f01472ccb4ecb330da395acd6ea122e9cc008b1b313a43df8"
+    },
+    {
+      "block": 68,
+      "name": "image5.png",
+      "sha256": "6cbce1da858f8da209e21ff0b06837f3b263aeadec0b4e9604bee782a90922e1"
+    },
+    {
+      "block": 101,
+      "name": "image6.png",
+      "sha256": "a1bf840689dfcbd34913c2d8835c21f2e6ec16d662122f10c195cb08a6efd208"
+    },
+    {
+      "block": 138,
+      "name": "image7.png",
+      "sha256": "84c5ab605b45584d7b392c13f63e5b8f532ed72be88b553a91ed22f1e6bd78a4"
+    }
+  ],
+  "blocks": [
+    {
+      "block": 0,
+      "text": "柔性磁触觉多节点数据自动采集实验系统设计",
+      "images": []
+    },
+    {
+      "block": 1,
+      "text": "Liming Qian1，Jiaqi Li2，Feng Guo1",
+      "images": []
+    },
+    {
+      "block": 2,
+      "text": "（1. 南通理工学院机械工程学院，南通　226002；2. 南通大学机械工程学院，南通　226001）",
+      "images": []
+    },
+    {
+      "block": 3,
+      "text": "摘　要：针对柔性磁触觉原型研制中多节点磁场采集时序不透明、加载动作与磁场记录难以对齐、数据质量难以追溯的问题，设计了一种柔性磁触觉多节点数据自动采集实验系统。硬件上，以5颗三轴磁传感芯片构成“2×2+1”阵列传感板，经CH341实现USB转I²C通信，并以三维打印机作为可编程三轴加载平台；软件上，采用分组触发与统一主机时间基准采集15通道磁场，以参数化动作计划、逐试验基线、配置快照和事件记录组织实验，并建立通信有效性与量程诊断规则。依据芯片转换时序建立串行与分组流程的解析模型，五节点分组触发理论上可减少5.91 ms转换等待。对2批746个正式试验、1 916 198行记录的复核表明：分组触发下的实测帧周期为25.95～26.72 ms，试验采样率中位数为37.43～38.53 Hz，试验内触发跨度P95的中位数为1.64～1.75 ms；全部记录的五节点通信有效比例均为100%，未出现错误行或近量程试验。46项端到端连续计划同步记录95 049行磁场数据和79 446行预测数据，无无效节点行、错误行或输入丢弃。基于5×5正式批次构建的相对位移数据集，引入128帧磁场历史后归一化平均绝对误差降低43.48%，验证了时间戳和事件对齐记录对时序数据构建的作用。该系统实现了从参数化动作生成、自动加载、同步采集到质量复核和回放的实验闭环，可为柔性磁触觉研究提供时序可诊断、过程可追溯的实验数据。",
+      "images": []
+    },
+    {
+      "block": 4,
+      "text": "关键词：柔性磁触觉传感；多节点数据采集；分组触发；数据质量诊断；实验系统",
+      "images": []
+    },
+    {
+      "block": 5,
+      "text": "中图分类号：TP212　　　　文献标识码：A",
+      "images": []
+    },
+    {
+      "block": 6,
+      "text": "Design of a Multi-Node Automatic Data Acquisition Experimental System for Flexible Magnetic Tactile Sensing",
+      "images": []
+    },
+    {
+      "block": 7,
+      "text": "QIAN Liming1, LI Jiaqi2, GUO Feng1",
+      "images": []
+    },
+    {
+      "block": 8,
+      "text": "(1. Department of Mechanical Engineering, Nantong Institute of Technology, Nantong 226002, China; 2. School of Mechanical Engineering, Nantong University, Nantong 226001, China)",
+      "images": []
+    },
+    {
+      "block": 9,
+      "text": "Abstract: A multi-node automatic data acquisition experimental system is designed to address opaque acquisition timing, difficult alignment between loading motions and magnetic records, and poor traceability during flexible magnetic tactile prototyping. Five triaxial magnetic sensors form a 2×2+1 array, a CH341 bridge provides USB-to-I²C communication, and a three-dimensional printer serves as a programmable loading platform. Fifteen magnetic channels are acquired by grouped triggering under a shared host time base, while parameterized motion plans, per-trial baselines, configuration snapshots, event records, and separate communication and range diagnostics organize the experiments. An analytical timing model indicates that grouped triggering of five nodes reduces conversion waiting by 5.91 ms compared with the sequential procedure. Across 746 formal trials and 1 916 198 magnetic rows in two batches, the measured grouped-trigger frame periods are 25.95–26.72 ms, the median trial sampling rates are 37.43–38.53 Hz, and the median within-trial P95 trigger spans are 1.64–1.75 ms. Communication validity is 100% for all five nodes, with no error rows or near-range trials. A continuous 46-trial plan records 95 049 magnetic rows and 79 446 prediction rows without invalid-node rows, error rows, or dropped inputs. On a relative-displacement dataset constructed from the formal 5×5 batch, using 128 frames of magnetic history reduces normalized mean absolute error by 43.48%, supporting the usefulness of timestamped and event-aligned acquisition for temporal dataset construction. The system closes the experimental loop from parameterized motion generation and automatic loading to synchronized acquisition, quality review, and replay, providing timing-diagnosable and traceable data for flexible magnetic tactile research.",
+      "images": []
+    },
+    {
+      "block": 10,
+      "text": "Key words: flexible magnetic tactile sensing; multi-node data acquisition; grouped triggering; data quality diagnosis; experimental system",
+      "images": []
+    },
+    {
+      "block": 11,
+      "text": "引　　言",
+      "images": []
+    },
+    {
+      "block": 12,
+      "text": "柔性触觉传感器通过可变形接触界面感知外部作用，在机器人抓取、人机交互和接触状态监测中具有重要应用价值[1]，但触觉传感技术的应用化进程长期滞后于视觉，大量成果停留在实验室阶段[2]。视触觉传感器可获得高密度的接触图像[3-4]，磁触觉方案则利用柔性结构中磁体与磁传感芯片之间的相对位置变化产生磁场响应，可将电子器件及其布线与接触界面分离[5]，便于更换柔性样件并快速迭代。",
+      "images": []
+    },
+    {
+      "block": 13,
+      "text": "已有研究从磁体结构、信号解耦和数据驱动建模等方面提升了磁触觉性能。Wang等[6]给出了磁场式三轴柔性触觉传感器的设计、制造与标定方法；Tomo等[7]研究了分布式三轴感知单元uSkin及其在人形机器人上的集成；Hellebrekers等[8]利用5个三轴磁传感节点和神经网络估计连续柔性表面的接触位置与力；Yan等[9]通过周期磁化薄膜实现了力分量自解耦与超分辨感知；ReSkin和AnySkin研究了感知界面更换、样件差异与数据复用问题[10-11]；Hu等[12]将磁性皮肤拓展至大面积多点感知；Sun等[13]从单元响应等值线角度讨论了超分辨触觉皮肤的设计。这些工作主要关注敏感结构与解码方法，而对采集装置本身的时序特性、数据质量诊断和记录组织方式报道相对较少，这些因素却直接决定实验数据能否被复核和复用。",
+      "images": []
+    },
+    {
+      "block": 14,
+      "text": "在原型研制阶段，同一套采集装置往往需要测试不同磁层、芯片配置和动作参数，并面临3个具体问题：其一，多个磁传感节点共享总线、逐一读写，各节点采样时刻不同，而采集周期的设定值与实际值也可能存在差异；其二，运动平台的指令应答与机械运动完成并非同一时刻，加载过程与磁场记录需要在统一时间基准下对齐；其三，若仅保存磁场曲线而缺少配置、基线和时序信息，后续难以判断结果差异来自样件、采集异常还是标注偏差。此外，传统磁场分析需要保留绝对读数，而数据驱动建模需要以局部静止状态为基准构造磁场变化量，两类需求应共享同一套可追溯的原始记录。在基于可穿戴运动传感器的行为识别研究中，自采数据的预处理与特征构建同样直接决定后续识别性能[14-15]，这也说明采集环节的质量需要单独评价。",
+      "images": []
+    },
+    {
+      "block": 15,
+      "text": "为此，本文设计了一种柔性磁触觉多节点数据自动采集实验系统，主要工作如下：（1）设计五节点“2×2+1”磁传感板，并以三维打印机构成程序化加载平台，利用通用USB转I²C接口构成无需专用微控制器的采集链路；（2）提出分组触发采集方法，建立串行与分组流程的转换等待解析模型，并以主机侧触发跨度评价组内节点时差；（3）建立“动作计划—配置快照—逐试验基线—事件对齐—质量复核”的自动实验数据链，并通过746个正式试验和46项端到端连续计划验证采集质量与自动运行能力。本文聚焦实验装置、自动采集和数据质量，不比较磁层结构优劣，也不把时序验证模型作为新的解码算法；磁层性能、静态定位和轨迹重建另文讨论。",
+      "images": []
+    },
+    {
+      "block": 16,
+      "text": "1　实验系统硬件设计",
+      "images": []
+    },
+    {
+      "block": 17,
+      "text": "1.1　系统组成",
+      "images": []
+    },
+    {
+      "block": 18,
+      "text": "系统由柔性磁层样件与夹具、五节点磁传感板、CH341接口、A5S三维打印机加载平台和上位机组成，总体结构和运行现场如图1所示，主要组成与参数见表1。按数据流向，系统分为感知与加载、传输、采集与存储、处理与验证4个环节：传感板将柔性磁层的磁场变化转换为15通道数字读数，经I²C（Inter-integrated circuit）总线和CH341接入上位机；打印机经独立串口接收运动指令，执行按压、滑移及组合轨迹；上位机统一完成设备配置、分组触发采集、动作计划执行、在线推理和文件记录；离线程序基于原始记录开展质量诊断和数据构建。该结构利用通用运动平台完成参数化加载，磁场采集路径无需额外的微控制器，硬件成本低且易于复制。",
+      "images": []
+    },
+    {
+      "block": 19,
+      "text": "",
+      "images": [
+        "image1.png"
+      ]
+    },
+    {
+      "block": 20,
+      "text": "图1　柔性磁触觉多节点数据自动采集实验系统",
+      "images": []
+    },
+    {
+      "block": 21,
+      "text": "Fig.1　Multi-node automatic data acquisition experimental system for flexible magnetic tactile sensing",
+      "images": []
+    },
+    {
+      "block": 22,
+      "text": "表1　实验系统主要组成与参数",
+      "images": []
+    },
+    {
+      "block": 23,
+      "text": "Table 1　Main components and parameters of the experimental system",
+      "images": []
+    },
+    {
+      "block": 24,
+      "text": "组成型号或参数说明磁传感芯片MLX90393×5，“2×2+1”阵列共15个磁场通道芯片配置GAIN_SEL=5（H2-5×5）或7（H2-flot1650）；HALLCONF=0xC，RES_X/Y/Z=0，DIG_FILT=0，OSR=OSR2=0由批次元数据中的寄存器快照复核；有符号16位输出，采集周期内不读取温度通信接口CH341 USB转I²C，时钟400 kHz节点地址0x0C～0x10加载平台A5S三维打印机，串口115 200 bit/s三轴程序化加载，保存全部下发指令触头编号flat_d6mm，名义直径6 mm平头触头编号随试验元数据保存采集周期目标值20 ms实际周期由时间戳测量时间基准主机性能计数器（整数纳秒）磁场、指令、事件、预测和视频共用",
+      "images": []
+    },
+    {
+      "block": 26,
+      "text": "1.2　五节点磁传感板",
+      "images": []
+    },
+    {
+      "block": 27,
+      "text": "磁传感板采用5颗MLX90393三轴磁传感芯片，组成四角加偏置中心节点的“2×2+1”阵列。该芯片支持I²C通信及可配置的增益、分辨率和数字滤波[16]。传感板原理图和PCB版图如图2（a）、（b）所示：芯片的VDD与VDD_IO端分别配置100 nF去耦电容，I²C信号线经10 kΩ电阻上拉至3.3 V，A0、A1引脚用于设置节点地址；PCB两侧设有SDA、SCL、3.3V和GND级联焊盘，多块传感板可沿同一I²C总线级联。5个节点的地址由芯片地址组与A0、A1引脚电平共同确定，S1～S5依次为0x0C～0x10，现场以初始化扫描结果为准。传感板嵌入三维打印支架的定位槽中，以透明材料封装，引线由支架一侧引出。",
+      "images": []
+    },
+    {
+      "block": 28,
+      "text": "",
+      "images": [
+        "image2.png"
+      ]
+    },
+    {
+      "block": 29,
+      "text": "图2　五节点磁传感板设计",
+      "images": []
+    },
+    {
+      "block": 30,
+      "text": "Fig.2　Design of five-node magnetic sensor board",
+      "images": []
+    },
+    {
+      "block": 31,
+      "text": "以四角节点的几何中心为坐标原点，四角节点中心距为15.188 mm，第五节点位于（0，1.406）mm，保留了实际设计偏置而未理想化为几何中心（图2（c））。配置文件保存节点顺序与平面坐标，后续处理均使用同一顺序。芯片配置见表1，由各节点寄存器快照解码得到并写入每个试验的元数据。系统同时保存原始ADC读数和换算后的磁感应强度（μT），软件归零仅作用于派生数据，避免覆盖原始工作点信息。",
+      "images": []
+    },
+    {
+      "block": 32,
+      "text": "1.3　加载平台与样件",
+      "images": []
+    },
+    {
+      "block": 33,
+      "text": "A5S打印机通过串口接收绝对坐标运动指令，程序将动作计划中的速度统一换算为指令单位，并保存实际下发的指令内容。动作计划参数包括平面位置、接触参考高度、下压深度、切向位移、运动速度、保持时间和重复次数。传感板支架固定于打印平台上，历史平面中心坐标（149，147）mm仅对应特定安装状态，接触参考高度随样件和装配状态记录，更换装配后需重新确定。",
+      "images": []
+    },
+    {
+      "block": 34,
+      "text": "正式实验使用5×5和flot1650两种柔性磁层样件，结构参数见表2，分别对应棋盘式排布的圆柱磁体和具有交替磁条的柔性磁片。样件外廓为46 mm×56 mm，磁层与传感板之间以硅胶隔离层相隔；隔离层厚度为名义值，并非实测的磁体—芯片间距。两种样件用于检验系统在不同磁场工作点和增益配置下的记录与诊断能力，本文不开展磁层结构之间的性能比较。",
+      "images": []
+    },
+    {
+      "block": 35,
+      "text": "表2　柔性磁层样件结构参数",
+      "images": []
+    },
+    {
+      "block": 36,
+      "text": "Table 2　Structural parameters of flexible magnetic layer specimens",
+      "images": []
+    },
+    {
+      "block": 37,
+      "text": "样件标识磁体形式与尺寸排布与极性名义磁体体积/mm³隔离层厚度/mm5×525片轴向磁化圆柱磁体，Ø5 mm×1 mm5×5棋盘阵列，名义间距5 mm；相邻磁体极性交替490.94.5flot1650厚1 mm柔性磁片10条平行交替磁条（极距未测定）—4.5",
+      "images": []
+    },
+    {
+      "block": 39,
+      "text": "注：隔离层与封装材料为双组分铂金硫化硅胶C0005，供应商数据为邵氏硬度C5、拉伸强度1.20 MPa、撕裂强度6.30 N/mm、断裂伸长率900%；5×5样件磁体的供应商标称表面磁场为0.18 T，未注明牌号。以上均为供应商数据而非样件实测值。",
+      "images": []
+    },
+    {
+      "block": 40,
+      "text": "",
+      "images": [
+        "image3.png"
+      ]
+    },
+    {
+      "block": 41,
+      "text": "图3　柔性磁层样件",
+      "images": []
+    },
+    {
+      "block": 42,
+      "text": "Fig.3　Flexible magnetic layer specimens",
+      "images": []
+    },
+    {
+      "block": 44,
+      "text": "2　采集软件与数据组织",
+      "images": []
+    },
+    {
+      "block": 45,
+      "text": "2.1　分组触发采集与时序模型",
+      "images": []
+    },
+    {
+      "block": 46,
+      "text": "采集线程依次向5个节点发送单次测量命令，并记录每条命令发出前的主机时间戳；等待所配置节点中最长的预计转换时间后，再依次读取测量结果（图4（b））。与逐节点“触发—等待—读取”的串行流程（图4（a））相比，分组触发使各节点的转换在同一采集组内重叠。该方式并非硬件同时采样，节点间的触发时间差需要保留并加以评价。根据数据手册[16]，单轴磁场转换时间为",
+      "images": []
+    },
+    {
+      "block": 47,
+      "text": "（1）",
+      "images": []
+    },
+    {
+      "block": 48,
+      "text": "单节点XYZ单次测量所需时间为",
+      "images": []
+    },
+    {
+      "block": 49,
+      "text": "（2）",
+      "images": []
+    },
+    {
+      "block": 50,
+      "text": "式中：TSTBY、TACTIVE和TEND为数据手册给出的状态切换时间，合计约0.7 ms；由于采集周期内不测量温度，故不计温度转换时间。按表1的配置（OSR=0，DIG_FILT=0），TCONVM=259 μs，Tnode≈1.48 ms。设总线读写和主机调度开销在两种流程中相同，则N个节点采用分组触发时，每帧节省的转换等待为：",
+      "images": []
+    },
+    {
+      "block": 51,
+      "text": "（3）",
+      "images": []
+    },
+    {
+      "block": 52,
+      "text": "对N=5，ΔT≈5.91 ms。同时，串行流程中首末节点的触发间隔至少为(N−1)Tnode≈5.91 ms，而分组流程仅为4次触发命令的事务时长，因此分组触发还可减小组内节点时差。本文没有把未完成的串行模式试验写成实测对照：3.1节以两批正式分组触发记录报告实测时序，并在总线读写和主机调度开销近似不变的条件下，依据式（3）估算串行流程的帧周期和采样率。",
+      "images": []
+    },
+    {
+      "block": 53,
+      "text": "",
+      "images": [
+        "image4.png"
+      ]
+    },
+    {
+      "block": 54,
+      "text": "图4　串行触发与分组触发的每帧时序（示意）",
+      "images": []
+    },
+    {
+      "block": 55,
+      "text": "Fig.4　Per-frame timing of sequential and grouped triggering (schematic)",
+      "images": []
+    },
+    {
+      "block": 56,
+      "text": "注：触发命令与读取事务的时长为示意值，转换时间按式（2）估算。",
+      "images": []
+    },
+    {
+      "block": 57,
+      "text": "2.2　统一时间基准与时序诊断",
+      "images": []
+    },
+    {
+      "block": 58,
+      "text": "磁场、动作指令、事件、预测和视频记录统一采用进程内性能计数器time.perf_counter_ns()作为时间基准，该接口以整数纳秒返回单调计数值，适用于计算相对时间间隔[17]；但纳秒级的表示精度并不等同于纳秒级的物理同步精度。令第k个采集组中节点i的主机触发时刻为ti,k，定义该组的主机侧触发跨度为",
+      "images": []
+    },
+    {
+      "block": 59,
+      "text": "（4）",
+      "images": []
+    },
+    {
+      "block": 60,
+      "text": "sk描述同一采集组内首末节点的触发时差（图4（b））。以各组首个触发时刻作为组时间，记相邻组的时间差为Δtk，则试验采样率定义为",
+      "images": []
+    },
+    {
+      "block": 61,
+      "text": "（5）",
+      "images": []
+    },
+    {
+      "block": 62,
+      "text": "式（5）反映正常递增时间间隔下的典型采样频率，但不能单独排除时间戳重复、逆序或长间断，也不等同于记录总行数与文件时长之比。因此，质量摘要中同时保留记录行数、触发跨度、有效节点数和错误字段。",
+      "images": []
+    },
+    {
+      "block": 63,
+      "text": "2.3　试验自动执行流程",
+      "images": []
+    },
+    {
+      "block": 64,
+      "text": "动作执行采用参数化计划，支持静止、Z向分级下压、单次按压、X向滑移、Y向滑移、多方向扫描、加载保持释放和复合动作8类动作。一个试验（Trial）为独立的记录单元，可包含多次重复动作；一个事件片段表示其中一次可对齐的动作过程，两种统计单位不混用。",
+      "images": []
+    },
+    {
+      "block": 65,
+      "text": "G1指令将线性运动加入固件规划队列，指令应答时刻与机械运动完成时刻并不一致[18]。M400指令虽可等待规划运动完成[19]，但会长时间阻塞串口通信。因此，程序在自动动作中采用可中断的主机侧等待，使上位机在等待期间仍能响应停止请求，实际停止时延需另行测量。",
+      "images": []
+    },
+    {
+      "block": 66,
+      "text": "每个试验按图5的流程自动执行：程序先将触头抬升至安全的非接触高度，移动至该试验的XY位置并静置2 s，再以不短于2 s且覆盖完整模型历史长度的窗口采集无负载基线B0；基线达到目标帧数（128帧）后才建立试验记录，并将B0及其位置、时长、帧数和配置快照写入元数据；随后执行动作计划并同步写盘，结束后抬升复位进入下一试验。按压、保持和滑移期间不更新B0，以免将缓慢的触觉响应或迟滞吸收进基线。",
+      "images": []
+    },
+    {
+      "block": 67,
+      "text": "当前V1.3.4-R48还对自动运动设置了分层约束：绝对坐标必须位于A5S机械行程范围内，压深、平面偏移、速度、保持时间、重复次数和网格点数均设上限，只有白名单动作阶段可以显式下发Z坐标；可选归位联锁用于阻止未确认坐标系时启动自动计划。软件停止用于终止后续序列并尝试减速，真正紧急情况仍以切断打印机物理电源为准。上述措施属于实验装置的实现保护，不等同于通过标准认证的功能安全系统。",
+      "images": []
+    },
+    {
+      "block": 68,
+      "text": "",
+      "images": [
+        "image5.png"
+      ]
+    },
+    {
+      "block": 69,
+      "text": "图5　单个试验的自动执行流程",
+      "images": []
+    },
+    {
+      "block": 70,
+      "text": "Fig.5　Automatic execution workflow of a single trial",
+      "images": []
+    },
+    {
+      "block": 71,
+      "text": "2.4　数据记录组织",
+      "images": []
+    },
+    {
+      "block": 72,
+      "text": "每个试验的记录文件组成见表3。启用实时推理时，同一记录入口自动附加预测文件，而不另建重复试验；启用摄像头时，录像与逐帧时间戳作为可选记录加入。完整计划运行保存在独立Plan_*目录中，同时保存计划定义、运行进度、运行元数据及全部Trial_*子目录。原始记录仅用于重新分析，处理结果写入独立导出目录，避免重复处理时覆盖原始数据；汇总统计按源计划和试验标识去重。本文对软件功能的核对以V1.3.4-R48源码为准，各批结果则以试验目录中的应用版本、寄存器快照和配置元数据为准。",
+      "images": []
+    },
+    {
+      "block": 73,
+      "text": "表3　每个试验的记录文件组成",
+      "images": []
+    },
+    {
+      "block": 74,
+      "text": "Table 3　Composition of record files for each trial",
+      "images": []
+    },
+    {
+      "block": 75,
+      "text": "文件主要内容用途magnetic_raw.csv各采集组的节点触发时间、原始ADC读数、磁场值及状态字段质量诊断、物理分析、学习数据构建stage_commands.csv下发的运动指令及其时间戳参考轨迹重建events.csv动作阶段与事件标记事件对齐与回放meta.json节点地址、芯片配置、样件标识、动作参数、基线信息、模型与输出映射配置追溯live_predictions.csv在线推理输出及其时间戳（启用推理时生成）同步回放与完整性检查视频及时间戳文件侧视视频帧及对应主机时间（可选）装置运行记录",
+      "images": []
+    },
+    {
+      "block": 77,
+      "text": "上位机界面按采集、动作计划、数据回放、研究分析、训练导出和在线推理组织功能（见3.5节图7）。在线推理输出采用固定字段集合{x, y, z, dx, dy, mode5, Q, X, Y, Z, dX, dY, dZ}，当前模型未提供的字段留空，额外输出写入JSON字段；不同模型的原始字段在记录层保持原有语义，由显示层通过适配器选择三维坐标源。回放程序依据统一时间基准重建磁场曲线、事件位置、视频帧和三维预测轨迹，但主机时间基准一致并不意味着传感器、打印机固件和相机在硬件层面同时采样。",
+      "images": []
+    },
+    {
+      "block": 78,
+      "text": "2.5　数据质量诊断规则",
+      "images": []
+    },
+    {
+      "block": 79,
+      "text": "通信有效性由节点返回状态、有效节点计数和错误日志评价；量程诊断则检查原始ADC读数是否接近边界以及是否存在跨边界突变。对于有符号16位读数，定义近量程条件为|r|≥32 000，其中r为单轴原始读数；试验近量程比例为满足该条件的轴读数数量与可统计轴读数总数之比。物理分析程序还按对应配置将磁场换算为等效原始读数，以|r|/32 768表示量程利用率，并以相邻等效读数之差超过60 000作为翻转诊断条件。上述规则属于数据质量判据，不作为接触或动作类别标签，也不能替代完整的磁场校准。在线界面中的质量量Q表示输入轴的可靠性权重，不解释为网络输出的置信概率。",
+      "images": []
+    },
+    {
+      "block": 80,
+      "text": "2.6　事件对齐与相对位移数据构建",
+      "images": []
+    },
+    {
+      "block": 81,
+      "text": "传统分析直接使用绝对磁场、动作参数和原始ADC记录；学习数据则以事件前的局部静止区间估计磁场基准B0，并构造磁场变化量",
+      "images": []
+    },
+    {
+      "block": 82,
+      "text": "（6）",
+      "images": []
+    },
+    {
+      "block": 83,
+      "text": "式中B(t)为t时刻五节点15通道磁场向量。",
+      "images": []
+    },
+    {
+      "block": 84,
+      "text": "离线构建程序先确认持续的显著磁场变化，再向前回溯至局部静止段末端，以此确定事件对齐零位。确认条件为标准化响应阈值6.0、幅值下限60 μT且持续4帧；回溯条件为标准化阈值2.5、幅值下限15 μT且连续5帧静止。未能确认的活动事件保留原始索引，但标记为目标无效并排除出监督训练。由指令文件重建参考轨迹，并以40 Hz统一时间网格与磁场对齐。以事件零位t0对应的参考位置为基准，定义相对位移为",
+      "images": []
+    },
+    {
+      "block": 85,
+      "text": "（7）",
+      "images": []
+    },
+    {
+      "block": 86,
+      "text": "式中第3个分量以下压为正。与已有磁触觉研究以机器人或运动平台指令坐标作为位置参考的做法一致[10,12,20]，本文标签由运动指令及其时间插值定义，未采用独立的外部位置测量；指令、时间戳和配置均完整保存，参考来源可追溯、可复核。",
+      "images": []
+    },
+    {
+      "block": 87,
+      "text": "2.7　数据时序可用性验证方法",
+      "images": []
+    },
+    {
+      "block": 88,
+      "text": "为检验所采磁场时序是否包含可用信息，采用基于时空注意力的相对位移模型，比较不同历史长度下的估计误差。模型输入为磁场变化量ΔB及其相对于五节点中位数的空间分量，并附加逐轴质量量Q；网络将各节点特征映射为128维表示，叠加传感器坐标编码和时间编码，经3层交替的时间与空间注意力模块（4个注意力头[21]）输出3个归一化位移分量，且仅使用当前时刻及之前的输入。训练采用AdamW优化器[22]，学习率为6×10−4，权重衰减为10−4，批量大小为24，训练20轮，随机种子为20260910；损失函数采用Smooth L1损失[23]。输入归一化参数仅由训练集拟合；目标分量尺度aj取训练集中有效标签绝对值的95%分位数，3个分量的下限分别为0.5、0.5和0.1 mm。评价指标为分轴平均绝对误差（Mean absolute error，MAE）和归一化平均绝对误差（Normalized MAE，NMAE），即",
+      "images": []
+    },
+    {
+      "block": 89,
+      "text": "（8）",
+      "images": []
+    },
+    {
+      "block": 90,
+      "text": "（9）",
+      "images": []
+    },
+    {
+      "block": 91,
+      "text": "式中：N为测试终点数；d̂n,j和dn,j分别为第n个终点第j个分量的预测值和标签值。",
+      "images": []
+    },
+    {
+      "block": 92,
+      "text": "同一试验内的全部事件只进入训练集、验证集或测试集之一，以减少相关样本跨集合造成的评价偏差[24]。比较历史帧数H=0、16、32和128时，候选终点统一限制为至少具有128帧历史的位置，保证各设置在相同终点集合上比较；H=0表示仅使用当前一帧，其余设置分别对应0.4、0.8和3.2 s的历史时长。",
+      "images": []
+    },
+    {
+      "block": 93,
+      "text": "3　实验结果与分析",
+      "images": []
+    },
+    {
+      "block": 94,
+      "text": "3.1　采集时序与采样率",
+      "images": []
+    },
+    {
+      "block": 95,
+      "text": "质量分析仅统计用于本文正式评价且具有逐试验质量摘要的两批实物采集记录，即5×5核心试验（H2-5×5）和flot1650核心试验（H2-flot1650），合计746个试验、1 916 198行磁场记录，每行对应一个采集组。开发阶段的材料筛选与参数尝试不作为正式评价样本。各批次统计结果见表4，其中触发跨度为各试验内部95%分位数（P95）的跨试验中位数。",
+      "images": []
+    },
+    {
+      "block": 96,
+      "text": "表4　两批正式采集记录的质量统计",
+      "images": []
+    },
+    {
+      "block": 97,
+      "text": "Table 4　Quality statistics of two formal acquisition batches",
+      "images": []
+    },
+    {
+      "block": 98,
+      "text": "试验批次试验数记录行数采样率中位数/Hz触发跨度P95中位数/ms近量程试验数H2-5×5373956 89238.5301.6430H2-flot1650373959 30637.4251.7480合计7461 916 198——0",
+      "images": []
+    },
+    {
+      "block": 100,
+      "text": "两批正式试验的采样率中位数分别为38.530和37.425 Hz，对应帧周期为25.95和26.72 ms，均低于20 ms目标周期对应的名义值50 Hz；逐试验采样率与触发跨度的分布见图6。可见，以目标周期代替实测采样率会高估采集速度。批次间差异包含主机执行状态、增益设置和采集条件的综合影响，由于未开展控制变量试验，本文不将其归因于磁层结构。",
+      "images": []
+    },
+    {
+      "block": 101,
+      "text": "",
+      "images": [
+        "image6.png"
+      ]
+    },
+    {
+      "block": 102,
+      "text": "图6　逐试验采样率与主机侧触发跨度分布",
+      "images": []
+    },
+    {
+      "block": 103,
+      "text": "Fig.6　Distributions of per-trial sampling rate and host-side trigger span",
+      "images": []
+    },
+    {
+      "block": 104,
+      "text": "注：散点为各试验统计值；箱体表示25%～75%分位区间，箱内横线为中位数，须线按1.5倍四分位距绘制。",
+      "images": []
+    },
+    {
+      "block": 105,
+      "text": "两批正式分组触发记录的实测帧周期为25.95～26.72 ms。若总线读写、数据换算、写盘和主机调度开销在两种流程中近似不变，按式（3）叠加5.91 ms转换等待，可估算串行触发的帧周期为31.86～32.63 ms、采样率为30.65～31.39 Hz，首末节点触发间隔下限为5.91 ms，见表5。该结果是基于数据手册与实测分组帧周期的解析估算，不是串行模式的直接测量，因而仅用于说明流程时序差异；串行与分组模式的同条件实测仍需另行开展。",
+      "images": []
+    },
+    {
+      "block": 106,
+      "text": "表5　分组触发实测时序与串行流程估算",
+      "images": []
+    },
+    {
+      "block": 107,
+      "text": "Table 5　Measured grouped-trigger timing and estimated sequential timing",
+      "images": []
+    },
+    {
+      "block": 108,
+      "text": "流程与依据样本范围帧周期/ms采样率/Hz首末节点触发跨度/ms分组触发（实测）2批746个正式试验25.95～26.7237.43～38.531.64～1.75a串行触发（估算）式（3），同开销假设31.86～32.6330.65～31.39≥5.91b理论差值5个节点5.91——",
+      "images": []
+    },
+    {
+      "block": 110,
+      "text": "注：a为各试验内部触发跨度P95的跨试验中位数；b为串行流程首末节点触发间隔的理论下限(N−1)Tnode。",
+      "images": []
+    },
+    {
+      "block": 111,
+      "text": "两批正式记录的触发跨度P95中位数为1.64～1.75 ms，与单节点转换时间处于同一量级，且绝大多数试验的P95不超过约2 ms（图6（b））。按本文不超过2 mm/s的接触运动速度估算，2 ms节点时差对应的指令行程不超过4 μm。该换算只描述命令参考下的准静态工况，不代表已经通过独立位移测量验证了节点间的实际空间误差。",
+      "images": []
+    },
+    {
+      "block": 112,
+      "text": "采样率是否足够取决于研究对象的时间尺度。以端到端计划中的Z向分级下压试验为例（图7（a）），速度为1.0 mm/s、下压深度为0.10～1.00 mm、保持时间为0.3 s；在最低实测采样率37.43 Hz下，最短0.1 s过渡段约含4帧，每个保持段约含11帧，每帧对应的指令行程约27 μm。因此，当前采样率能够区分本文准静态动作的过渡与保持阶段，并支持阶段统计和数据对齐，但不足以据此宣称可无失真重建0.1 s过渡波形，更不适用于敲击、振动或快速滑移等高频动态触觉。",
+      "images": []
+    },
+    {
+      "block": 113,
+      "text": "3.2　通信有效性与量程诊断",
+      "images": []
+    },
+    {
+      "block": 114,
+      "text": "两批正式质量摘要中的五节点有效比例均为1，1 916 198行记录中无错误字段，表明统计范围内的通信状态完整。对15个原始轴通道逐行检查后，H2-5×5与H2-flot1650均未出现|r|≥32 000的近量程读数；其中H2-5×5使用GAIN_SEL=5，H2-flot1650使用GAIN_SEL=7。由此可见，在本文正式动作范围和对应配置下，记录同时满足通信完整性与量程诊断要求。两项指标仍应分开报告：前者只反映节点返回状态，后者依赖原始ADC读数与寄存器快照，不能由通信成功替代。",
+      "images": []
+    },
+    {
+      "block": 115,
+      "text": "对5×5核心试验的全物理分析进一步表明，956 892行记录中按既定突变规则检出的翻转事件数为0，各动作的最高等效量程利用率不超过36.22%，说明当前配置在该样件上留有较充足的量程裕量。该结论仅适用于所分析的配置和范围，不外推为器件全量程线性度或任意外部磁干扰条件下的性能。",
+      "images": []
+    },
+    {
+      "block": 116,
+      "text": "最新拆装记录进一步检验了追溯信息的作用。S20260922_A中，传感组件与同一触头拆下后重新安装，并重新确定中心、接触面和五点注册；拆装前后在0.8、1.8和2.8 mm压深各取得一组11×11网格记录，共363个同位置配对点。以每次接触前局部基线构造ΔB后，配对点磁场向量余弦的总体中位数为0.982，幅值比中位数为0.791，说明响应方向大体保持而幅值工作点发生了明显变化。该结果用于说明逐试验基线、安装配置和注册信息必须随记录保存，不作为多次重装重复性或绝对定位精度结论。",
+      "images": []
+    },
+    {
+      "block": 117,
+      "text": "3.3　多动作采集覆盖",
+      "images": []
+    },
+    {
+      "block": 118,
+      "text": "5×5核心试验包含373个试验、8类动作，各类动作的数量与磁场响应摘要见表6。按压、切向滑移和复合运动均通过同一计划接口自动执行，数据覆盖了局部法向加载和不同平面方向的组合过程。",
+      "images": []
+    },
+    {
+      "block": 119,
+      "text": "表6　5×5核心试验的动作覆盖及磁场响应摘要",
+      "images": []
+    },
+    {
+      "block": 120,
+      "text": "Table 6　Action coverage and magnetic response summary of 5×5 core trials",
+      "images": []
+    },
+    {
+      "block": 121,
+      "text": "动作类型试验数记录行数采样率中位数/Hz稳健响应/μT静止3494638.11543.20Z向分级下压965 10838.5072415.72单次按压8144 43638.6311342.50X向滑移80223 06238.6361308.26Y向滑移80225 18537.8571340.51多方向扫描2057 90837.8431497.55加载保持释放2040 89037.7381308.09复合动作80295 35737.8371179.88合计373956 892——",
+      "images": []
+    },
+    {
+      "block": 123,
+      "text": "表6中的稳健响应定义为：以试验起始短时区间的逐轴中位数为基准，计算每帧15通道磁场变化向量的2范数，取其中最大5%数值的中位数，再对同类试验取中位数。静止动作的稳健响应为43.20 μT，可视为该统计量在无加载时的背景水平。若将其视为15通道独立同分布高斯噪声的2范数，该统计量近似对应自由度为15的χ分布的97.5%分位数（约5.24倍单通道标准差），由此反推单通道等效噪声标准差约为8.2 μT；由于还包含基线估计误差和缓慢漂移，该值可视为本底噪声的上界估计。Z向分级下压为2415.72 μT，其余主动动作为1179.88～1497.55 μT，约为背景水平的27～56倍，说明采集链路能够清晰记录不同动作条件下的磁场变化。由于各动作的深度、速度和持续时间不尽相同，本文不据此比较动作的可识别性或灵敏度。各类动作的采样率中位数为37.738～38.636 Hz，表明采集速度基本不受动作类型影响。",
+      "images": []
+    },
+    {
+      "block": 124,
+      "text": "3.4　数据构建覆盖率与时序可用性验证",
+      "images": []
+    },
+    {
+      "block": 125,
+      "text": "5×5核心批包含373个正式试验，按完整试验划分为训练、验证和测试集（261/56/56），同一试验的全部事件仅进入其中一个集合。按2.6节的对齐规则，数据构建程序生成2291个监督候选，其中1840个完成对齐或具有已知零状态，覆盖率为80.31%。监督候选可包含具有明确零状态的样本，不等同于动作计划中的指令条目、表6中的试验数或接触事件真值；该覆盖率仅表示可形成有效标签的候选比例。",
+      "images": []
+    },
+    {
+      "block": 126,
+      "text": "在相同特征、训练预算和匹配终点条件下，不同历史长度的测试结果见表7，共评价55 483个来自留出试验的终点。相对于仅输入当前帧，H=16、32和128时的NMAE分别降低26.51%、38.93%和43.48%。该对照仅改变同一验证模型的历史窗口，用于确认采集记录中的时间顺序、时间戳和事件对齐能够形成可利用的时序信息；结果基于单一随机种子和同一样件内的留出测试，不构成模型优越性、跨样件泛化或绝对位移精度结论。",
+      "images": []
+    },
+    {
+      "block": 127,
+      "text": "表7　匹配终点条件下的相对位移测试NMAE",
+      "images": []
+    },
+    {
+      "block": 128,
+      "text": "Table 7　Test NMAE of relative displacement under matched endpoints",
+      "images": []
+    },
+    {
+      "block": 129,
+      "text": "历史帧数H历史时长/s5×5 NMAE较H=0降幅/%0当前帧0.085596—160.40.06290726.51320.80.05227138.931283.20.04837843.48",
+      "images": []
+    },
+    {
+      "block": 131,
+      "text": "3.5　端到端连续运行验证",
+      "images": []
+    },
+    {
+      "block": 132,
+      "text": "为检验连续动作、逐试验基线、实时推理和多源同步记录同时启用时的系统运行能力，在flot1650样件上执行了独立的端到端计划。计划包含静止、Z向分级下压、3×3位置按压、正负X/Y向滑移、复合动作、加载保持释放和多角度扫描，共46个独立试验。计划于2026年9月15日16:27开始、17:15结束，46项全部完成，无中止项；该批数据标记为回测数据，不参与模型训练。记录完整性统计见表8。",
+      "images": []
+    },
+    {
+      "block": 133,
+      "text": "表8　端到端计划的记录完整性",
+      "images": []
+    },
+    {
+      "block": 134,
+      "text": "Table 8　Record integrity of the end-to-end plan",
+      "images": []
+    },
+    {
+      "block": 135,
+      "text": "指标结果说明计划完成情况46/46个试验8类动作，运行48.1 min磁场记录95 049行逐试验采样率中位数37.315 Hz同步预测记录79 446行40 Hz推理时间网格五节点有效性无效节点行0，错误行0每行要求5个节点均有效近量程诊断0个试验原始轴读数绝对值不小于32 000逐试验基线46/46达到128帧基线采集时长中位数3.242 s同步文件46/46完整磁场、预测、动作事件、元数据及侧视视频实时队列丢弃输入组0取自各试验记录元数据",
+      "images": []
+    },
+    {
+      "block": 137,
+      "text": "46个试验共形成945条事件记录，每个试验均保存预测列，并可在回放页中与磁场、动作事件和侧视视频同步读取（图7）。启用实时推理和视频记录后，逐试验采样率中位数为37.315 Hz，与3.1节两批正式记录的37.425～38.530 Hz相近，说明在本次计划的软硬件环境下，附加推理与写盘后系统仍保持相近采样水平。46个试验的基线均达到128帧，采集时长中位数为3.242 s，满足不短于2 s的设置。结果表明，自动计划、逐试验基线、五节点采集、模型推理和多源写盘能够在同一运行过程中连续工作。由于未将输入窗口末帧与独立测量的真实位移逐点配准，预测记录仅用于检查数据链完整性，不用于计算在线精度或显示延迟。",
+      "images": []
+    },
+    {
+      "block": 138,
+      "text": "",
+      "images": [
+        "image7.png"
+      ]
+    },
+    {
+      "block": 139,
+      "text": "图7　上位机实时监视与同步回放界面",
+      "images": []
+    },
+    {
+      "block": 140,
+      "text": "Fig.7　Host software interfaces for real-time monitoring and synchronized replay",
+      "images": []
+    },
+    {
+      "block": 141,
+      "text": "4　讨　　论",
+      "images": []
+    },
+    {
+      "block": 142,
+      "text": "本系统以通用器件构成柔性磁触觉的多节点自动采集链路，其作用在于使每一帧磁场数据的采集时刻、芯片配置和加载状态均可复核。解析模型表明，五节点分组触发可比串行流程减少5.91 ms转换等待；两批746个正式试验进一步给出了分组流程在真实运行中的帧周期、采样率和主机侧触发跨度。统一时间基准和逐试验基线使加载过程与磁场记录能够在离线阶段对齐和复核，通信有效性与量程诊断的分离则避免把“节点成功返回”误当成“磁场数值一定可用”。",
+      "images": []
+    },
+    {
+      "block": 143,
+      "text": "从时序构成看，实测帧周期约26 ms，而组内触发跨度与单节点转换等待合计约3 ms，其余时间主要用于读取事务、数据换算、写盘和主机调度。当前采样率因而主要受主机侧处理和USB—I²C事务开销限制，而非芯片转换时间。若需提高采样率或同步精度，可将读取、换算与写盘分配到不同线程，采用芯片连续测量模式并以数据就绪信号驱动读取，或利用外部触发引脚[16]在传感板上引出公共触发线，实现各节点硬件同步触发。这些改进也是将系统扩展到敲击、振动等动态触觉采集的前提。",
+      "images": []
+    },
+    {
+      "block": 144,
+      "text": "系统验证仍存在以下局限：（1）本文没有完成串行与分组流程的同条件实测对照，串行结果来自解析估算，不能替代后续基准试验；（2）节点触发、动作指令、视频和预测共用主机单调时钟，但主机侧时间戳不等同于硬件同时采样，触发跨度也包含软件与总线事务开销；（3）动作参考来自运动指令及时间插值，尚未用独立位置测量量化平台重复定位、回程间隙和动态跟踪误差，故本文只报告命令参考下的数据对齐与轨迹记录能力；（4）不同批次采用了不同增益配置，磁场响应与近量程结果只用于相应配置的数据质量诊断，不作磁层性能横向比较；（5）现有拆装数据仅来自一次拆装后的3个压深，不能估计多次独立重装的方差，静止漂移、温度影响和蠕变也尚未长期量化；（6）3.4节的时序验证仅基于单一随机种子和同一样件内留出测试。",
+      "images": []
+    },
+    {
+      "block": 145,
+      "text": "结　　论",
+      "images": []
+    },
+    {
+      "block": 146,
+      "text": "本文设计了由五节点MLX90393磁传感板、CH341接口、三维打印机加载平台和上位机构成的柔性磁触觉多节点数据自动采集实验系统，实现了分组触发采集、统一时间基准、参数化动作计划、逐试验基线、配置快照和原始数据保留。主要结论如下：",
+      "images": []
+    },
+    {
+      "block": 147,
+      "text": "（1）依据芯片转换时序，五节点分组触发相对串行流程可减少5.91 ms转换等待；两批746个正式试验的实测帧周期为25.95～26.72 ms，采样率中位数为37.43～38.53 Hz，触发跨度P95的中位数为1.64～1.75 ms。该采样水平能够区分本文准静态动作的过渡与保持阶段，串行流程仍需同条件实测验证。",
+      "images": []
+    },
+    {
+      "block": 148,
+      "text": "（2）两批正式记录共1 916 198行，五节点通信有效比例均为100%，无错误行或近量程试验；5×5样件未检出读数翻转，最高等效量程利用率为36.22%。通信检查与量程诊断相互独立，不同增益批次的诊断结果不用于磁层性能比较。",
+      "images": []
+    },
+    {
+      "block": 149,
+      "text": "（3）46项端到端计划连续完成，同步保存95 049行磁场记录与79 446行预测记录，无无效节点行、错误行或输入丢弃；在5×5正式批次的同一验证模型和匹配终点条件下，128帧历史输入使NMAE降低43.48%，说明逐帧时间戳和事件对齐记录能够支持时序数据构建。",
+      "images": []
+    },
+    {
+      "block": 150,
+      "text": "该系统可为柔性磁触觉研究提供时序可诊断、过程可追溯的实验数据。后续将引入硬件同步触发和独立的位置测量，进一步提高采集同步精度并量化长期稳定性。",
+      "images": []
+    },
+    {
+      "block": 151,
+      "text": "参考文献：",
+      "images": []
+    },
+    {
+      "block": 152,
+      "text": "[1]DAHIYA R S, METTA G, VALLE M, et al. Tactile sensing—From humans to humanoids[J]. IEEE Transactions on Robotics, 2010, 26(1): 1-20.",
+      "images": []
+    },
+    {
+      "block": 153,
+      "text": "[2]刘少强, 黄惟一, 王爱民, 等. 机器人触觉传感技术研发的历史现状与趋势[J]. 机器人, 2002, 24(4): 362-366, 374.",
+      "images": []
+    },
+    {
+      "block": 154,
+      "text": "LIU Shaoqiang, HUANG Weiyi, WANG Aimin, et al. Overview and prospect of research and development on robot tactile sensory technology[J]. Robot, 2002, 24(4): 362-366, 374.",
+      "images": []
+    },
+    {
+      "block": 155,
+      "text": "[3]YUAN W, DONG S, ADELSON E H. GelSight: High-resolution robot tactile sensors for estimating geometry and force[J]. Sensors, 2017, 17(12): 2762.",
+      "images": []
+    },
+    {
+      "block": 156,
+      "text": "[4]LAMBETA M, CHOU P W, TIAN S, et al. DIGIT: A novel design for a low-cost compact high-resolution tactile sensor with application to in-hand manipulation[J]. IEEE Robotics and Automation Letters, 2020, 5(3): 3838-3845.",
+      "images": []
+    },
+    {
+      "block": 157,
+      "text": "[5]HELLEBREKERS T, KROEMER O, MAJIDI C. Soft magnetic skin for continuous deformation sensing[J]. Advanced Intelligent Systems, 2019, 1: 1900025.",
+      "images": []
+    },
+    {
+      "block": 158,
+      "text": "[6]WANG H, DE BOER G, KOW J, et al. Design methodology for magnetic field-based soft tri-axis tactile sensors[J]. Sensors, 2016, 16(9): 1356.",
+      "images": []
+    },
+    {
+      "block": 159,
+      "text": "[7]TOMO T P, REGOLI M, SCHMITZ A, et al. A new silicone structure for uSkin—A soft, distributed, digital 3-axis skin sensor and its integration on the humanoid robot iCub[J]. IEEE Robotics and Automation Letters, 2018, 3(3): 2584-2591.",
+      "images": []
+    },
+    {
+      "block": 160,
+      "text": "[8]HELLEBREKERS T, CHANG N, CHIN K, et al. Soft magnetic tactile skin for continuous force and location estimation using neural networks[J]. IEEE Robotics and Automation Letters, 2020, 5(3): 3892-3898.",
+      "images": []
+    },
+    {
+      "block": 161,
+      "text": "[9]YAN Y, HU Z, YANG Z, et al. Soft magnetic skin for super-resolution tactile sensing with force self-decoupling[J]. Science Robotics, 2021, 6(51): eabc8801.",
+      "images": []
+    },
+    {
+      "block": 162,
+      "text": "[10]BHIRANGI R, HELLEBREKERS T, MAJIDI C, et al. ReSkin: Versatile, replaceable, lasting tactile skins[C]//Proceedings of the 5th Conference on Robot Learning. [S.l.]: PMLR, 2022: 587-597.",
+      "images": []
+    },
+    {
+      "block": 163,
+      "text": "[11]BHIRANGI R, PATTABIRAMAN V, ERCIYES E, et al. AnySkin: Plug-and-play skin sensing for robotic touch[C]//Proceedings of 2025 IEEE International Conference on Robotics and Automation. Piscataway: IEEE, 2025: 16563-16570.",
+      "images": []
+    },
+    {
+      "block": 164,
+      "text": "[12]HU H, ZHANG C, LAI X, et al. Large-area magnetic skin for multi-point and multi-scale tactile sensing with super-resolution[J]. npj Flexible Electronics, 2024, 8(1): 42.",
+      "images": []
+    },
+    {
+      "block": 165,
+      "text": "[13]SUN H, MARTIUS G. Guiding the design of superresolution tactile skins with taxel value isolines theory[J]. Science Robotics, 2022, 7: eabm0608.",
+      "images": []
+    },
+    {
+      "block": 166,
+      "text": "[14]马仑, 王瑞平, 赵斌, 等. 基于可穿戴设备的障碍人群问题行为识别[J]. 数据采集与处理, 2022, 37(2): 279-287.",
+      "images": []
+    },
+    {
+      "block": 167,
+      "text": "MA Lun, WANG Ruiping, ZHAO Bin, et al. Impaired behavior classification for people with special needs based on wearable devices[J]. Journal of Data Acquisition and Processing, 2022, 37(2): 279-287.",
+      "images": []
+    },
+    {
+      "block": 168,
+      "text": "[15]戴健威, 李瑞祥, 陈金瑶, 等. 基于启发式集成特征选择的人体活动识别[J]. 数据采集与处理, 2022, 37(4): 860-871.",
+      "images": []
+    },
+    {
+      "block": 169,
+      "text": "DAI Jianwei, LI Ruixiang, CHEN Jinyao, et al. Human activity recognition based on heuristic integrated feature selection[J]. Journal of Data Acquisition and Processing, 2022, 37(4): 860-871.",
+      "images": []
+    },
+    {
+      "block": 170,
+      "text": "[16]MELEXIS. MLX90393 triaxis magnetic node datasheet: Revision 012[EB/OL]. (2025-11-18)[2026-09-15]. https://www.melexis.com/en/documents/documentation/datasheets/datasheet-mlx90393.",
+      "images": []
+    },
+    {
+      "block": 171,
+      "text": "[17]PYTHON SOFTWARE FOUNDATION. time—Time access and conversions[EB/OL]. [2026-09-15]. https://docs.python.org/3/library/time.html.",
+      "images": []
+    },
+    {
+      "block": 172,
+      "text": "[18]MARLIN FIRMWARE. G0-G1: Linear move[EB/OL]. [2026-09-15]. https://marlinfw.org/docs/gcode/G000-G001.html.",
+      "images": []
+    },
+    {
+      "block": 173,
+      "text": "[19]MARLIN FIRMWARE. M400: Finish moves[EB/OL]. [2026-09-15]. https://marlinfw.org/docs/gcode/M400.html.",
+      "images": []
+    },
+    {
+      "block": 174,
+      "text": "[20]YANG X, LI B, YANG L, et al. Robust estimation of contact force and location for magnetic-field-based soft tactile sensor considering magnetic source inconsistency[J]. Sensors, 2021, 21(16): 5388.",
+      "images": []
+    },
+    {
+      "block": 175,
+      "text": "[21]VASWANI A, SHAZEER N, PARMAR N, et al. Attention is all you need[C]//Proceedings of Advances in Neural Information Processing Systems 30. Red Hook: Curran Associates, 2017: 5998-6008.",
+      "images": []
+    },
+    {
+      "block": 176,
+      "text": "[22]LOSHCHILOV I, HUTTER F. Decoupled weight decay regularization[C]//Proceedings of International Conference on Learning Representations. New Orleans: ICLR, 2019.",
+      "images": []
+    },
+    {
+      "block": 177,
+      "text": "[23]HUBER P J. Robust estimation of a location parameter[J]. The Annals of Mathematical Statistics, 1964, 35(1): 73-101.",
+      "images": []
+    },
+    {
+      "block": 178,
+      "text": "[24]ROBERTS D R, BAHN V, CIUTI S, et al. Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure[J]. Ecography, 2017, 40(8): 913-929.",
+      "images": []
+    },
+    {
+      "block": 179,
+      "text": "[25]张笑宇, 陈凯, 杨颖. 基于Kinect系统的步态参数提取方法[J]. 数据采集与处理, 2022, 37(4): 872-882.",
+      "images": []
+    },
+    {
+      "block": 180,
+      "text": "ZHANG Xiaoyu, CHEN Kai, YANG Ying. Extraction method of gait parameters based on Kinect system[J]. Journal of Data Acquisition and Processing, 2022, 37(4): 872-882.",
+      "images": []
+    }
+  ]
+}

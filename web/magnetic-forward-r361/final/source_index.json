@@ -1,0 +1,153 @@
+{
+  "schema": "R460-source-focused-revision-1",
+  "previous_manuscripts": {
+    "paper_export\\R460_仿真启发真实优化核心结果_20261004\\manuscript_zh.md": "ffd9016fdbfa1dbae3cadff28c0fefff9abfd2537f2c9b43035652b18512b846",
+    "paper_export\\R460_仿真启发真实优化核心结果_20261004\\english_full\\manuscript_en.md": "d1eb64ce2ab528e403dec648fca9d0a1aef4721b8dc91c559880a92d1bffe60c"
+  },
+  "frozen_inputs": {
+    "analysis\\r460_source_real_history_refinement_20261004\\final_evidence_summary.json": "d7e33858b29a0915860b102abdf61df2144be0bf7133cd3ed32b4cfc53d6af41",
+    "analysis\\r460_source_real_history_refinement_20261004\\readback_closed_native\\analysis\\r460_source_real_history_refinement_20261004\\frozen_real_replay_spec.json": "83237ec431c2ed27896d2d689cca259706af849ef08d696c789eb81b89ca9922",
+    "analysis\\r460_source_real_history_refinement_20261004\\readback_closed_native\\analysis\\r460_source_real_history_refinement_20261004\\new_trajectory_native_replay\\report.json": "dee333f5190977174f7b70234da84a448fe930bd0f60d7900a0d134ed1c3fad3",
+    "analysis\\r460_source_real_history_refinement_20261004\\readback_closed_native\\analysis\\r460_source_real_history_refinement_20261004\\new_trajectory_native_replay\\audit_v2\\report.json": "4e2ed744c3c7cdb76496bb662f2e3e8d473b6b05503adea3252284277bd1ff8d"
+  },
+  "figures": {
+    "schema": "R460-source-figure-selection-1",
+    "posthoc_illustrations_not_primary_inference": true,
+    "rule": "Two distinct geometry families (multiscale curve and depth-reversing spiral), same 1.3 mm/s speed, corresponding Trial in each source batch; each shown pair improves raw XY and jumps. Selected after inspecting outcomes. All 24 source and 12 target paths retain full metrics.",
+    "selected": [
+      {
+        "batch": "SOURCE",
+        "id": "SOURCE_000104",
+        "group": "R385_04_multiscale_curve_V1.3",
+        "mode": "waypoint_xyz",
+        "geometry_en": "Multiscale curve",
+        "geometry_zh": "多尺度曲线",
+        "speed_mm_s": 1.3,
+        "raw_xy_baseline_mm": 0.504897407273949,
+        "raw_xy_candidate_mm": 0.4713051355409304,
+        "jump_baseline_percent": 19.744058500914075,
+        "jump_candidate_percent": 2.83363802559415,
+        "dwell_baseline_mm": 0.1031035326187301,
+        "dwell_candidate_mm": 0.059837135681914254,
+        "input_path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000104_M-magnetic__T-original__01e298cf_waypoint_xyz",
+        "input_hashes": {
+          "meta.json": "c211ddc33ebcf08c4b3c4cc0eebf4dbaf17d6ca5bf8853e852fd6842ff77575b",
+          "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+          "batch_plan_item.json": "fa16cbd27c674293a4908b78e7434c67b2bc55daef63ce70e7dede486c1fe62c",
+          "magnetic_raw.csv": "886bb0ab1552a91551a7adb48f81171dd88ff419830156a0e2d87151fcda4504",
+          "stage_commands.csv": "366b3b461d56f45597581934435d3ecf09efac412f9d3a354846807a21b8c338",
+          "events.csv": "b6667478b1190332bc016f6f859af352da98a882315481c3b0569dca22577e66",
+          "live_predictions.csv": "d056165eb03465eae2cd78044df8ed8c74b9316074b694098c4383ff18e3f938"
+        },
+        "plot_png": "figures/source_example_source_multiscale_curve.png",
+        "plot_sha256": "30f3ffe64b42ff42cd02cbde66cbe030f9dabe20234c6da02c14b44558e9284b",
+        "common_frames": 1172
+      },
+      {
+        "batch": "SOURCE",
+        "id": "SOURCE_000106",
+        "group": "R385_05_spiral_depth_reverse_V1.3",
+        "mode": "waypoint_xyz",
+        "geometry_en": "Depth-reversing spiral",
+        "geometry_zh": "变深反向螺旋",
+        "speed_mm_s": 1.3,
+        "raw_xy_baseline_mm": 0.45909875117285304,
+        "raw_xy_candidate_mm": 0.40638621734485564,
+        "jump_baseline_percent": 18.806509945750452,
+        "jump_candidate_percent": 2.8933092224231465,
+        "dwell_baseline_mm": 0.09451380974455273,
+        "dwell_candidate_mm": 0.06871129092448394,
+        "input_path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000106_M-magnetic__T-original__01e298cf_waypoint_xyz",
+        "input_hashes": {
+          "meta.json": "1f48b90dcdcc3ee130cd3d4305689b21a13348f3623b74027d06965496c7cf52",
+          "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+          "batch_plan_item.json": "c207020d368ef632b3b3ac0cd7cb5a7a2cb5775fed4a48aefc0f639deab03e5f",
+          "magnetic_raw.csv": "9472c7d545e79013c358b03f54a8e98fe0f2327a4cd77797a70236359caebc8b",
+          "stage_commands.csv": "ee306201ec6f04df91057863de342975755c00cd234cfc955b5310984d54ff75",
+          "events.csv": "d9a88fb729ec423f9ca1e887df9f98e35298f46ab1852d98931f10aaf511de27",
+          "live_predictions.csv": "0e3d0bf47eb9e82150d49459e30f727bf0f7cf29c13e639865512b904f40739f"
+        },
+        "plot_png": "figures/source_example_source_depth_reversing_spiral.png",
+        "plot_sha256": "7413d13e4a40f2416d777a61828b09847027583d1585c793b37712a03b148a43",
+        "common_frames": 1220
+      },
+      {
+        "batch": "SOURCE_REPEAT",
+        "id": "SOURCE_REPEAT_000009",
+        "group": "R385_04_multiscale_curve_V1.3",
+        "mode": "waypoint_xyz",
+        "geometry_en": "Multiscale curve",
+        "geometry_zh": "多尺度曲线",
+        "speed_mm_s": 1.3,
+        "raw_xy_baseline_mm": 0.49006511350707527,
+        "raw_xy_candidate_mm": 0.46088268483048095,
+        "jump_baseline_percent": 19.79742173112339,
+        "jump_candidate_percent": 1.9337016574585635,
+        "dwell_baseline_mm": 0.09967406348695766,
+        "dwell_candidate_mm": 0.05992054467973352,
+        "input_path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000009_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+        "input_hashes": {
+          "meta.json": "4ada3266a6018d5a268b1a0a9508b03bc4ddcbe422747d259bde99f47ef7b066",
+          "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+          "batch_plan_item.json": "a2e1cf37cb6a1153667e90ff1eadd7f954f6e7acbdd1270d228edd2b2c7f11ca",
+          "magnetic_raw.csv": "189c46fe854721842325d34e23e52d1ed6adcb97ac5b74e99d6ec6458dd0195d",
+          "stage_commands.csv": "d55c14e789de7222d16c121806642374a6cf58aed0907235c8833076ea82ed62",
+          "events.csv": "ee79d167931f1500c8adaa3165f6d89c426137692dd65780b9e2163321bec18c",
+          "live_predictions.csv": "0d38dba44c57a86abc7399019c4803edd37aa8c421cb264eb42c961cde5393b3"
+        },
+        "plot_png": "figures/source_example_source_repeat_multiscale_curve.png",
+        "plot_sha256": "99384f692a1eed243bba2a9ce8e3dc2c8f195fd5d5a1fc7d4c052998aba16760",
+        "common_frames": 1164
+      },
+      {
+        "batch": "SOURCE_REPEAT",
+        "id": "SOURCE_REPEAT_000011",
+        "group": "R385_05_spiral_depth_reverse_V1.3",
+        "mode": "waypoint_xyz",
+        "geometry_en": "Depth-reversing spiral",
+        "geometry_zh": "变深反向螺旋",
+        "speed_mm_s": 1.3,
+        "raw_xy_baseline_mm": 0.5167494132843724,
+        "raw_xy_candidate_mm": 0.45204330206069243,
+        "jump_baseline_percent": 20.092165898617512,
+        "jump_candidate_percent": 2.5806451612903225,
+        "dwell_baseline_mm": 0.09308449657083545,
+        "dwell_candidate_mm": 0.06503950369185661,
+        "input_path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000011_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+        "input_hashes": {
+          "meta.json": "4704bc44b72f8e92d036b80b3a0ad5838d8f0ea49b89a92306f00307963addcb",
+          "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+          "batch_plan_item.json": "2e95d6a4899bab9069c71de7d595ffeaff1dbf51b6062c4d8d2aa7cee9429b79",
+          "magnetic_raw.csv": "24484fb7bbf04d092e4c8bbed820c3d9c6c34ca16b87cc2e2ffe4a6e45b4a243",
+          "stage_commands.csv": "70eee3be83ba94798c9ca4f578d887e617b4e137a98c534fbe3c6702bb63c00d",
+          "events.csv": "da73ab200739c3541f6280f6945b85f2aa92b9d5f91500f7d317de33cef1070b",
+          "live_predictions.csv": "45070627c81132920eb0ada801a1aaec047b3b569ef0df0d923ed77d25ce183a"
+        },
+        "plot_png": "figures/source_example_source_repeat_depth_reversing_spiral.png",
+        "plot_sha256": "082f38d650e38eb1beeced7733354d0b3f26d909aa36f0faed19869b795d8e1f",
+        "common_frames": 1199
+      }
+    ],
+    "full_metrics": "supplement/all_36_trials_three_models.json",
+    "source_evidence_sha256": "d7e33858b29a0915860b102abdf61df2144be0bf7133cd3ed32b4cfc53d6af41",
+    "native_report_sha256": "dee333f5190977174f7b70234da84a448fe930bd0f60d7900a0d134ed1c3fad3"
+  },
+  "outputs": {
+    "manuscript_zh.md": "24847890ef0e409948833170a315bbcc1d567c46d69aeac308fc1e687318f20d",
+    "english_full\\manuscript_en.md": "1e3d3a13eb9aac75fd17e00969ed7791c89f915784f08bb23a0edd8d6cf657dc",
+    "MagTouch_仿真平台与虚拟轨迹增强论文_中文.pdf": "b92791cb435053297d5f3a81c4346cae2d04974d20fc1ce44143a65c57b70bca",
+    "english_full\\MagTouch_Dynamic_Simulation_and_Virtual_Augmentation_English.pdf": "0b3938859d8e0db3efde066f5f0b2782adf88a67d7fc6657ea3cf7ff96a37f89"
+  },
+  "model_mapping": {
+    "H0": "fully trained R373/R372",
+    "H1": "history_position",
+    "H2": "history_motion_hold_anchor"
+  },
+  "batch_mapping": {
+    "source_batch_1": "SOURCE",
+    "source_batch_2": "SOURCE_REPEAT",
+    "target": "Yellow"
+  },
+  "review_status": "PASSED_ALL_24_PAGES_VISUAL_QA",
+  "authoring_script_sha256": "6ed96eb1ef43d1647fa851a267f73df1cee7fb6b1bf126ca42cdb7347d5a7c9e"
+}

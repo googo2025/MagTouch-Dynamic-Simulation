@@ -1,0 +1,25 @@
+{
+  "prototype": "MagTouch 2x2+1 hardware prototype V1",
+  "units": "mm",
+  "coordinate_system": {
+    "origin": "geometric center of the four corner sensor centers",
+    "x_positive": "right",
+    "y_positive": "up in top view",
+    "z_positive": "from PCB toward tactile surface"
+  },
+  "corner_pitch_mm": 15.188,
+  "sensors": {
+    "S1": {"x_mm": -7.594, "y_mm": 7.594, "z_mm": 0.0, "default_address7": "0x0C", "role": "upper-left", "rotation_deg_z": 0.0},
+    "S2": {"x_mm": -7.594, "y_mm": -7.594, "z_mm": 0.0, "default_address7": "0x0D", "role": "lower-left", "rotation_deg_z": 0.0},
+    "S3": {"x_mm": 7.594, "y_mm": 7.594, "z_mm": 0.0, "default_address7": "0x0E", "role": "upper-right", "rotation_deg_z": 0.0},
+    "S4": {"x_mm": 7.594, "y_mm": -7.594, "z_mm": 0.0, "default_address7": "0x0F", "role": "lower-right", "rotation_deg_z": 0.0},
+    "S5": {"x_mm": 0.0, "y_mm": 1.406, "z_mm": 0.0, "default_address7": "0x10", "role": "offset-center", "rotation_deg_z": 0.0}
+  },
+  "required_before_formal_collection": [
+    "measure actual chip-center coordinates after final mechanical fixation",
+    "confirm every module axis orientation and update rotation_deg_z",
+    "confirm I2C address-to-physical-node mapping",
+    "record magnetic-layer-to-chip distance after assembly"
+  ],
+  "note": "The physical +1.406 mm y offset of S5 is intentionally retained and must not be idealized to zero."
+}

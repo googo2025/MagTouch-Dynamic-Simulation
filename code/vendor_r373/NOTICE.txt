@@ -1,0 +1,9 @@
+R373 isolated runtime dependency
+
+pySerial 3.5, by Chris Liechti, is copied unchanged from the existing local
+Python 3.13 installation. Package headers identify BSD-3-Clause licensing.
+Source: https://github.com/pyserial/pyserial
+
+Only Python sources and distribution metadata are copied; caches are excluded.
+The R373 entry prepends this folder to its process-local import path. No global
+Python installation, previous UI entry, or hardware configuration is modified.

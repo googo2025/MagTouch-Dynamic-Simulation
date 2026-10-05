@@ -1,0 +1,916 @@
+{
+  "status": "COMPLETED_SOURCE_BASED_MODEL_SPECIFIC_REPORT",
+  "scope": "Current expansion candidates only; no pool of unrelated studies or all-candidate success criterion",
+  "baseline": {
+    "id": "R373",
+    "weights_sha256": "65f3015e8c053b1c806fe6c56cb53e862a8b97c4f1f882cb8f8fbf7b694305ff"
+  },
+  "cards": [
+    {
+      "id": "VirtualXY100_R373Z",
+      "study": "R379",
+      "paths": 100,
+      "weights_sha256": "ce9326a5f94fb76e236da7b2b725258ab443c0323e3ad983dd37eee48641ed09",
+      "training": {
+        "status": "COMPLETED_PLATEAU",
+        "component": "XY only",
+        "epochs_run": 911,
+        "best_epoch": 100,
+        "baseline_validation_objective": 0.340461095344945,
+        "best_validation_objective": 0.3167360330626341,
+        "optimizer_updates": 186755,
+        "final_learning_rate": 0.000001,
+        "lr_reductions": 8,
+        "stop_reason": "early_stop_min_lr_plateau",
+        "training_samples": 52324,
+        "virtual_samples": 44542,
+        "model_sha256": "ce9326a5f94fb76e236da7b2b725258ab443c0323e3ad983dd37eee48641ed09",
+        "feature_manifest_sha256": "bbf86279e27d7976f671880487d0ab43dea8a48f2954abe5056f5c7810821f5c",
+        "target_fit_or_selection": false,
+        "test_opened": false,
+        "production_replaced": false,
+        "full_xyz_retrained": false
+      },
+      "findings": [
+        {
+          "domain": "source",
+          "baseline_xy_mm": 0.2582330187394432,
+          "candidate_xy_mm": 0.3031298423257236,
+          "xy_gain_percent": -17.386166883477138,
+          "baseline_centered_mm": 0.24134256501970144,
+          "candidate_centered_mm": 0.2370577947032888,
+          "coverage_baseline": 0.9956268221574344,
+          "coverage_candidate": 0.9956268221574344
+        },
+        {
+          "domain": "target",
+          "baseline_xy_mm": 0.7382428596580285,
+          "candidate_xy_mm": 0.6780519478797332,
+          "xy_gain_percent": 8.15326704360908,
+          "baseline_centered_mm": 0.5888287564038727,
+          "candidate_centered_mm": 0.5455745476709642,
+          "coverage_baseline": 0.9799048253545255,
+          "coverage_candidate": 0.9799048253545255
+        },
+        {
+          "domain": "virtual",
+          "baseline_xy_mm": 0.4231859747654019,
+          "candidate_xy_mm": 0.24446965523082942,
+          "xy_gain_percent": 42.23115372234298,
+          "baseline_centered_mm": 0.3935222077296651,
+          "candidate_centered_mm": 0.23592063074112735,
+          "coverage_baseline": 0.9957686054430257,
+          "coverage_candidate": 0.9957686054430257
+        }
+      ],
+      "native_online": [],
+      "position": "早期Yellow真实回放获益的规模对照",
+      "evidence_scope": "R379既有真实留出记录冻结后回放，不是新轨迹总体改善；新在线结果只属于1000条模型"
+    },
+    {
+      "id": "VirtualXY500_R373Z",
+      "study": "R379",
+      "paths": 500,
+      "weights_sha256": "92f750d7925cf5926319271f7653478be3d34aa8f509a0e328483cd785668046",
+      "training": {
+        "status": "COMPLETED_PLATEAU",
+        "component": "XY only",
+        "epochs_run": 659,
+        "best_epoch": 86,
+        "baseline_validation_objective": 0.340461095344945,
+        "best_validation_objective": 0.30187840751930883,
+        "optimizer_updates": 592441,
+        "final_learning_rate": 0.000001,
+        "lr_reductions": 8,
+        "stop_reason": "early_stop_min_lr_plateau",
+        "training_samples": 230013,
+        "virtual_samples": 222231,
+        "model_sha256": "92f750d7925cf5926319271f7653478be3d34aa8f509a0e328483cd785668046",
+        "feature_manifest_sha256": "911edf58d9d1c22273853d00abdb7daacf02002b26465cbfa85adf71b74cf14b",
+        "target_fit_or_selection": false,
+        "test_opened": false,
+        "production_replaced": false,
+        "full_xyz_retrained": false
+      },
+      "findings": [
+        {
+          "domain": "source",
+          "baseline_xy_mm": 0.2582330187394432,
+          "candidate_xy_mm": 0.2986441786495911,
+          "xy_gain_percent": -15.649106418464132,
+          "baseline_centered_mm": 0.24134256501970144,
+          "candidate_centered_mm": 0.2328053999498879,
+          "coverage_baseline": 0.9956268221574344,
+          "coverage_candidate": 0.9956268221574344
+        },
+        {
+          "domain": "target",
+          "baseline_xy_mm": 0.7382428596580285,
+          "candidate_xy_mm": 0.6520142492059904,
+          "xy_gain_percent": 11.680249842440904,
+          "baseline_centered_mm": 0.5888287564038727,
+          "candidate_centered_mm": 0.5239481334018041,
+          "coverage_baseline": 0.9799048253545255,
+          "coverage_candidate": 0.9799048253545255
+        },
+        {
+          "domain": "virtual",
+          "baseline_xy_mm": 0.42317818096581483,
+          "candidate_xy_mm": 0.23276489757879176,
+          "xy_gain_percent": 44.99600687172599,
+          "baseline_centered_mm": 0.3935197343749773,
+          "candidate_centered_mm": 0.22240272228005026,
+          "coverage_baseline": 0.9958337098922638,
+          "coverage_candidate": 0.9958337098922638
+        }
+      ],
+      "native_online": [],
+      "position": "早期Yellow真实回放获益的规模对照",
+      "evidence_scope": "R379既有真实留出记录冻结后回放，不是新轨迹总体改善；新在线结果只属于1000条模型"
+    },
+    {
+      "id": "VirtualXY1000_R373Z",
+      "study": "R379",
+      "paths": 1000,
+      "weights_sha256": "2eadbba142db96654e7a4c215c536f414b05cee14b505f13d16705cfda97533e",
+      "training": {
+        "status": "COMPLETED_PLATEAU",
+        "component": "XY only",
+        "epochs_run": 933,
+        "best_epoch": 143,
+        "baseline_validation_objective": 0.34046109534494495,
+        "best_validation_objective": 0.2878379899141628,
+        "optimizer_updates": 1657008,
+        "final_learning_rate": 0.000001,
+        "lr_reductions": 8,
+        "stop_reason": "early_stop_min_lr_plateau",
+        "training_samples": 454639,
+        "virtual_samples": 446857,
+        "model_sha256": "2eadbba142db96654e7a4c215c536f414b05cee14b505f13d16705cfda97533e",
+        "feature_manifest_sha256": "3bd1bdb860af86d50d0ff3e2d8dcd38530a10daeadab6a0d6d9c01f8ee382e93",
+        "target_fit_or_selection": false,
+        "test_opened": false,
+        "production_replaced": false,
+        "full_xyz_retrained": false
+      },
+      "findings": [
+        {
+          "domain": "source",
+          "baseline_xy_mm": 0.2582330187394432,
+          "candidate_xy_mm": 0.34043525568404387,
+          "xy_gain_percent": -31.832581807651252,
+          "baseline_centered_mm": 0.24134256501970144,
+          "candidate_centered_mm": 0.23112679139079756,
+          "coverage_baseline": 0.9956268221574344,
+          "coverage_candidate": 0.9956268221574344
+        },
+        {
+          "domain": "target",
+          "baseline_xy_mm": 0.7396757579945186,
+          "candidate_xy_mm": 0.6299040776643496,
+          "xy_gain_percent": 14.84051344710724,
+          "baseline_centered_mm": 0.5880632901636899,
+          "candidate_centered_mm": 0.5154355858631433,
+          "coverage_baseline": 0.9770476824973827,
+          "coverage_candidate": 0.9770476824973827
+        },
+        {
+          "domain": "virtual",
+          "baseline_xy_mm": 0.4232021770706702,
+          "candidate_xy_mm": 0.22582769718086687,
+          "xy_gain_percent": 46.63834228263999,
+          "baseline_centered_mm": 0.39353676205318744,
+          "candidate_centered_mm": 0.2114958994563724,
+          "coverage_baseline": 0.9958335068629582,
+          "coverage_candidate": 0.9958335068629582
+        }
+      ],
+      "native_online": [
+        {
+          "group": "D_HISTORY_ACTIVE381_001_END456",
+          "baseline": {
+            "reference_frames": 3946,
+            "output_frames": 3946,
+            "coverage_percent": 100,
+            "xy_raw_mean_mm": 0.5209680493082826,
+            "xyz_raw_mean_mm": 0.5807976046564078,
+            "z_raw_mae_mm": 0.19038635559619968,
+            "bias_xyz_mm": [
+              0.21089618331858376,
+              0.43131280913642167,
+              0.18754703384963115
+            ],
+            "xy_centered_diagnostic_mm": 0.2673418007236055,
+            "z_centered_diagnostic_mae_mm": 0.1266724569008146,
+            "adjacent_pairs": 3757,
+            "xy_error_step_p95_mm": 0.18525843061406094,
+            "z_error_step_p95_mm": 0.040469824980542676,
+            "xy_error_jumps_over_0p2": 147,
+            "z_error_jumps_over_0p2": 0
+          },
+          "candidate": {
+            "reference_frames": 4079,
+            "output_frames": 4079,
+            "coverage_percent": 100,
+            "xy_raw_mean_mm": 0.6508323815706493,
+            "xyz_raw_mean_mm": 0.700087923129415,
+            "z_raw_mae_mm": 0.19596982412978156,
+            "bias_xyz_mm": [
+              0.3972410697846575,
+              0.48844643688562933,
+              0.1908174991451917
+            ],
+            "xy_centered_diagnostic_mm": 0.18880866678897873,
+            "z_centered_diagnostic_mae_mm": 0.13075736969696242,
+            "adjacent_pairs": 3890,
+            "xy_error_step_p95_mm": 0.16301402771211185,
+            "z_error_step_p95_mm": 0.04312430989329008,
+            "xy_error_jumps_over_0p2": 74,
+            "z_error_jumps_over_0p2": 0
+          },
+          "shape_gain_pct": 29.37555358797751,
+          "jump_baseline_pct": 3.9126963002395527,
+          "jump_candidate_pct": 1.9023136246786632,
+          "jump_gain_pct": 51.38100484409702
+        },
+        {
+          "group": "D_HISTORY_ACTIVE381_008_END438",
+          "baseline": {
+            "reference_frames": 3160,
+            "output_frames": 3160,
+            "coverage_percent": 100,
+            "xy_raw_mean_mm": 0.38864768912978265,
+            "xyz_raw_mean_mm": 0.41279998221515596,
+            "z_raw_mae_mm": 0.11283895786875382,
+            "bias_xyz_mm": [
+              0.09028850349282648,
+              0.35507253912076586,
+              0.06154346286161664
+            ],
+            "xy_centered_diagnostic_mm": 0.15867565006673853,
+            "z_centered_diagnostic_mae_mm": 0.11384954765210724,
+            "adjacent_pairs": 2959,
+            "xy_error_step_p95_mm": 0.2076139073089625,
+            "z_error_step_p95_mm": 0.03840069417751785,
+            "xy_error_jumps_over_0p2": 170,
+            "z_error_jumps_over_0p2": 0
+          },
+          "candidate": {
+            "reference_frames": 3684,
+            "output_frames": 3684,
+            "coverage_percent": 100,
+            "xy_raw_mean_mm": 0.5679191285630395,
+            "xyz_raw_mean_mm": 0.5867027947374381,
+            "z_raw_mae_mm": 0.11567829551454269,
+            "bias_xyz_mm": [
+              0.19291321278750925,
+              0.5114364839925072,
+              0.0794900113232364
+            ],
+            "xy_centered_diagnostic_mm": 0.1748513752624452,
+            "z_centered_diagnostic_mae_mm": 0.10895713047932601,
+            "adjacent_pairs": 3483,
+            "xy_error_step_p95_mm": 0.18497989508342472,
+            "z_error_step_p95_mm": 0.037176248158176176,
+            "xy_error_jumps_over_0p2": 134,
+            "z_error_jumps_over_0p2": 0
+          },
+          "shape_gain_pct": -10.19420761087364,
+          "jump_baseline_pct": 5.745184183845894,
+          "jump_candidate_pct": 3.8472581108240025,
+          "jump_gain_pct": 33.035077941598686
+        }
+      ],
+      "position": "真实新轨迹形状与连续性改善的重点候选；早期Yellow回放有整体收益",
+      "evidence_scope": "R379既有真实留出记录冻结后回放，不是新轨迹总体改善；新在线结果只属于1000条模型"
+    },
+    {
+      "id": "common64",
+      "study": "R397/R405",
+      "weights_sha256": "bf0ef88da13747122a3c0322329dd0d05ef89ba04e43fbb570bad75c4203f74e",
+      "training": {
+        "status": "COMPLETED_PLATEAU",
+        "arm": "common64",
+        "epochs": 958,
+        "best_epoch": 245,
+        "updates": 136036,
+        "training_samples_per_epoch": 36139,
+        "virtual_paths": 64,
+        "model_sha256": "bf0ef88da13747122a3c0322329dd0d05ef89ba04e43fbb570bad75c4203f74e",
+        "protocol_sha256": "0d2e1f9ec62b21cb059c21e2402fb7585bc6884858ecbab1d0c6502922af813f",
+        "baseline_source_xy_mm": 0.3404610953449449,
+        "baseline_virtual_xy_mm": 0.4576352498866323,
+        "best_qualified_objective": 0.7655567931611322,
+        "min_lr": 0.000001,
+        "final_bad_epochs": 50,
+        "lr_reductions": 8,
+        "effective_max_epochs": 2000,
+        "selected_training_candidate": true,
+        "test_opened": false,
+        "production_changed": false
+      },
+      "virtual": {
+        "all64": {
+          "trials": 64,
+          "mean_own_coverage": 0.9942493202736578,
+          "safe_output_frames": 484,
+          "common": {
+            "raw_xy_mm": 0.2530037002188638,
+            "raw_xyz_mm": 0.3054309770025655,
+            "centered_xy_mm": 0.24074940857168278,
+            "centered_xyz_mm": 0.2676763542119577,
+            "z_mae_mm": 0.13887407920989792,
+            "xy_residual_step_p95_mm": 0.2233218486162604,
+            "z_residual_step_p95_mm": 0.06319882373322339
+          },
+          "common_xy_jump_count": 2160,
+          "common_z_jump_count": 17
+        },
+        "predeclared_baseline_weakest16": {
+          "trials": 16,
+          "mean_own_coverage": 0.9946071839335606,
+          "safe_output_frames": 98,
+          "common": {
+            "raw_xy_mm": 0.29258725109270906,
+            "raw_xyz_mm": 0.345899508999966,
+            "centered_xy_mm": 0.2765576209368885,
+            "centered_xyz_mm": 0.30257223509353803,
+            "z_mae_mm": 0.14921583749434153,
+            "xy_residual_step_p95_mm": 0.2279438384802422,
+            "z_residual_step_p95_mm": 0.06361127510955983
+          },
+          "common_xy_jump_count": 520,
+          "common_z_jump_count": 10
+        }
+      },
+      "virtual_xy_gain_percent": 42.57440042739691,
+      "real": [
+        {
+          "trials": 12,
+          "coverage": 1,
+          "raw_xy_mean_mm": 0.5883136764409601,
+          "centered_xy_diagnostic_mm": 0.2502342129720936,
+          "raw_z_mae_mm": 0.16916225439589516,
+          "xy_residual_step_p95_mm": 0.30042979430530575,
+          "xy_residual_step_rms_mm": 0.1657469947185852,
+          "xy_residual_jump_rate_percent": 21.24450477235165,
+          "xy_output_step_p95_mm": 0.3040877786780155,
+          "z_residual_step_p95_mm": 0.0562686127296086,
+          "adjacent_pairs": 20158,
+          "xy_residual_jump_count": 4197,
+          "pooled_pair_jump_rate_percent": 20.82051790852267,
+          "z_residual_jump_count": 1,
+          "batch": "SOURCE",
+          "arm": "common64",
+          "raw_xyz_mean_mm": 0.619400044316247,
+          "own_coverage": 0.9989536337691165,
+          "baseline_raw_xy_mm": 0.43614748528163877,
+          "baseline_centered_xy_mm": 0.21475404667881723,
+          "baseline_jump_rate_percent": 23.229563528911388,
+          "jump_gain_percent": 8.54539842769385
+        },
+        {
+          "trials": 12,
+          "coverage": 1,
+          "raw_xy_mean_mm": 0.5984424636375792,
+          "centered_xy_diagnostic_mm": 0.2634041073280891,
+          "raw_z_mae_mm": 0.15914438933629682,
+          "xy_residual_step_p95_mm": 0.3045145182020686,
+          "xy_residual_step_rms_mm": 0.16900646984635767,
+          "xy_residual_jump_rate_percent": 22.21557695724712,
+          "xy_output_step_p95_mm": 0.3098461933526196,
+          "z_residual_step_p95_mm": 0.058888169315786866,
+          "adjacent_pairs": 19779,
+          "xy_residual_jump_count": 4250,
+          "pooled_pair_jump_rate_percent": 21.487436169674908,
+          "z_residual_jump_count": 0,
+          "batch": "SOURCE_REPEAT",
+          "arm": "common64",
+          "raw_xyz_mean_mm": 0.6255478993425225,
+          "own_coverage": 0.9991342760521823,
+          "baseline_raw_xy_mm": 0.4522689695936127,
+          "baseline_centered_xy_mm": 0.2244333107316542,
+          "baseline_jump_rate_percent": 24.562185166911462,
+          "jump_gain_percent": 9.553743666200909
+        },
+        {
+          "trials": 12,
+          "coverage": 1,
+          "raw_xy_mean_mm": 0.7071652199042092,
+          "centered_xy_diagnostic_mm": 0.5091038945157301,
+          "raw_z_mae_mm": 0.16684132940821064,
+          "xy_residual_step_p95_mm": 0.46536037383402756,
+          "xy_residual_step_rms_mm": 0.24740263601702203,
+          "xy_residual_jump_rate_percent": 44.78134023423991,
+          "xy_output_step_p95_mm": 0.4629770915479802,
+          "z_residual_step_p95_mm": 0.08339180245848525,
+          "adjacent_pairs": 11874,
+          "xy_residual_jump_count": 5283,
+          "pooled_pair_jump_rate_percent": 44.49216776149571,
+          "z_residual_jump_count": 1,
+          "batch": "Yellow",
+          "arm": "common64",
+          "raw_xyz_mean_mm": 0.7347074302377773,
+          "own_coverage": 0.9848601042522928,
+          "baseline_raw_xy_mm": 0.5207615751523492,
+          "baseline_centered_xy_mm": 0.4779317808366306,
+          "baseline_jump_rate_percent": 46.33677049768276,
+          "jump_gain_percent": 3.3567947155933697
+        }
+      ],
+      "position": "较小训练集的算法内对照",
+      "evidence_scope": "同流回放保留实际B0、dt与事件；已看过的真实记录不冒充新盲测"
+    },
+    {
+      "id": "uniform128",
+      "study": "R397/R405",
+      "weights_sha256": "2a4af071e9ab2f4ff4ac2b331e9fdde83ab0443fdd939fed083acc75d07e358b",
+      "training": {
+        "status": "COMPLETED_PLATEAU",
+        "arm": "uniform128",
+        "epochs": 1108,
+        "best_epoch": 169,
+        "updates": 281432,
+        "training_samples_per_epoch": 65015,
+        "virtual_paths": 128,
+        "model_sha256": "2a4af071e9ab2f4ff4ac2b331e9fdde83ab0443fdd939fed083acc75d07e358b",
+        "protocol_sha256": "0d2e1f9ec62b21cb059c21e2402fb7585bc6884858ecbab1d0c6502922af813f",
+        "baseline_source_xy_mm": 0.3404610953449449,
+        "baseline_virtual_xy_mm": 0.4576352498866323,
+        "best_qualified_objective": 0.7309394365407214,
+        "min_lr": 0.000001,
+        "final_bad_epochs": 50,
+        "lr_reductions": 8,
+        "effective_max_epochs": 2000,
+        "selected_training_candidate": true,
+        "test_opened": false,
+        "production_changed": false
+      },
+      "virtual": {
+        "all64": {
+          "trials": 64,
+          "mean_own_coverage": 0.9942521090374747,
+          "safe_output_frames": 484,
+          "common": {
+            "raw_xy_mm": 0.25029083310613975,
+            "raw_xyz_mm": 0.3029275523157425,
+            "centered_xy_mm": 0.2386909584011837,
+            "centered_xyz_mm": 0.2657176985120736,
+            "z_mae_mm": 0.13868121701874664,
+            "xy_residual_step_p95_mm": 0.21813676125677164,
+            "z_residual_step_p95_mm": 0.06344409902829845
+          },
+          "common_xy_jump_count": 2017,
+          "common_z_jump_count": 15
+        },
+        "predeclared_baseline_weakest16": {
+          "trials": 16,
+          "mean_own_coverage": 0.9944867600414604,
+          "safe_output_frames": 98,
+          "common": {
+            "raw_xy_mm": 0.2865713750992261,
+            "raw_xyz_mm": 0.34021577058680796,
+            "centered_xy_mm": 0.275275715630051,
+            "centered_xyz_mm": 0.30110893890218265,
+            "z_mae_mm": 0.1485061593181946,
+            "xy_residual_step_p95_mm": 0.2173998744406978,
+            "z_residual_step_p95_mm": 0.06431868361596817
+          },
+          "common_xy_jump_count": 479,
+          "common_z_jump_count": 8
+        }
+      },
+      "virtual_xy_gain_percent": 43.19015434868031,
+      "real": [
+        {
+          "trials": 12,
+          "coverage": 1,
+          "raw_xy_mean_mm": 0.5750474099707775,
+          "centered_xy_diagnostic_mm": 0.2534839654085247,
+          "raw_z_mae_mm": 0.16743612101572716,
+          "xy_residual_step_p95_mm": 0.2959028629023852,
+          "xy_residual_step_rms_mm": 0.1623758296934548,
+          "xy_residual_jump_rate_percent": 19.868799826377927,
+          "xy_output_step_p95_mm": 0.2975124919728448,
+          "z_residual_step_p95_mm": 0.05638960726027422,
+          "adjacent_pairs": 20158,
+          "xy_residual_jump_count": 3949,
+          "pooled_pair_jump_rate_percent": 19.590237126699076,
+          "z_residual_jump_count": 1,
+          "batch": "SOURCE",
+          "arm": "uniform128",
+          "raw_xyz_mean_mm": 0.6065215500964508,
+          "own_coverage": 0.9990519042093681,
+          "baseline_raw_xy_mm": 0.43614748528163877,
+          "baseline_centered_xy_mm": 0.21475404667881723,
+          "baseline_jump_rate_percent": 23.229563528911388,
+          "jump_gain_percent": 14.467614504898785
+        },
+        {
+          "trials": 12,
+          "coverage": 1,
+          "raw_xy_mean_mm": 0.582632370462329,
+          "centered_xy_diagnostic_mm": 0.26416783559777096,
+          "raw_z_mae_mm": 0.15734923380104937,
+          "xy_residual_step_p95_mm": 0.29917700375959116,
+          "xy_residual_step_rms_mm": 0.16577210834993727,
+          "xy_residual_jump_rate_percent": 21.08720148379196,
+          "xy_output_step_p95_mm": 0.30171412012722554,
+          "z_residual_step_p95_mm": 0.05934233806855858,
+          "adjacent_pairs": 19779,
+          "xy_residual_jump_count": 4046,
+          "pooled_pair_jump_rate_percent": 20.45603923353051,
+          "z_residual_jump_count": 0,
+          "batch": "SOURCE_REPEAT",
+          "arm": "uniform128",
+          "raw_xyz_mean_mm": 0.6105133503214496,
+          "own_coverage": 0.9991342760521823,
+          "baseline_raw_xy_mm": 0.4522689695936127,
+          "baseline_centered_xy_mm": 0.2244333107316542,
+          "baseline_jump_rate_percent": 24.562185166911462,
+          "jump_gain_percent": 14.147697607136223
+        },
+        {
+          "trials": 12,
+          "coverage": 1,
+          "raw_xy_mean_mm": 0.679136090850287,
+          "centered_xy_diagnostic_mm": 0.5037635805837625,
+          "raw_z_mae_mm": 0.16843860066543878,
+          "xy_residual_step_p95_mm": 0.45290622420870313,
+          "xy_residual_step_rms_mm": 0.24214555220329861,
+          "xy_residual_jump_rate_percent": 43.48267894287374,
+          "xy_output_step_p95_mm": 0.457271091161836,
+          "z_residual_step_p95_mm": 0.08197518986934373,
+          "adjacent_pairs": 11874,
+          "xy_residual_jump_count": 5142,
+          "pooled_pair_jump_rate_percent": 43.30469934310258,
+          "z_residual_jump_count": 1,
+          "batch": "Yellow",
+          "arm": "uniform128",
+          "raw_xyz_mean_mm": 0.7083984854028729,
+          "own_coverage": 0.9847532666454551,
+          "baseline_raw_xy_mm": 0.5207615751523492,
+          "baseline_centered_xy_mm": 0.4779317808366306,
+          "baseline_jump_rate_percent": 46.33677049768276,
+          "jump_gain_percent": 6.159452901344831
+        }
+      ],
+      "position": "真实连续性改善方向的重点候选",
+      "evidence_scope": "同流回放保留实际B0、dt与事件；已看过的真实记录不冒充新盲测"
+    },
+    {
+      "id": "hard128",
+      "study": "R397/R405",
+      "weights_sha256": "fbb825b1cf0ec5df31bbde39adc5979e918e4ef5de158b1e8c23f03f6dfe105a",
+      "training": {
+        "status": "COMPLETED_PLATEAU",
+        "arm": "hard128",
+        "epochs": 884,
+        "best_epoch": 242,
+        "updates": 220116,
+        "training_samples_per_epoch": 63725,
+        "virtual_paths": 128,
+        "model_sha256": "fbb825b1cf0ec5df31bbde39adc5979e918e4ef5de158b1e8c23f03f6dfe105a",
+        "protocol_sha256": "0d2e1f9ec62b21cb059c21e2402fb7585bc6884858ecbab1d0c6502922af813f",
+        "baseline_source_xy_mm": 0.3404610953449449,
+        "baseline_virtual_xy_mm": 0.4576352498866323,
+        "best_qualified_objective": 0.7403618189947574,
+        "min_lr": 0.000001,
+        "final_bad_epochs": 50,
+        "lr_reductions": 8,
+        "effective_max_epochs": 2000,
+        "selected_training_candidate": true,
+        "test_opened": false,
+        "production_changed": false
+      },
+      "virtual": {
+        "all64": {
+          "trials": 64,
+          "mean_own_coverage": 0.9941891083276075,
+          "safe_output_frames": 484,
+          "common": {
+            "raw_xy_mm": 0.23287145151921512,
+            "raw_xyz_mm": 0.2879209337179963,
+            "centered_xy_mm": 0.21872005376854148,
+            "centered_xyz_mm": 0.24756089503943374,
+            "z_mae_mm": 0.1381350714819413,
+            "xy_residual_step_p95_mm": 0.2215945051280626,
+            "z_residual_step_p95_mm": 0.0630065938226754
+          },
+          "common_xy_jump_count": 2174,
+          "common_z_jump_count": 21
+        },
+        "predeclared_baseline_weakest16": {
+          "trials": 16,
+          "mean_own_coverage": 0.9943663361493602,
+          "safe_output_frames": 98,
+          "common": {
+            "raw_xy_mm": 0.25738016367586247,
+            "raw_xyz_mm": 0.3145875345196679,
+            "centered_xy_mm": 0.23927091395572775,
+            "centered_xyz_mm": 0.26835854888468436,
+            "z_mae_mm": 0.1479738323643807,
+            "xy_residual_step_p95_mm": 0.2216823771168437,
+            "z_residual_step_p95_mm": 0.06332220439932101
+          },
+          "common_xy_jump_count": 516,
+          "common_z_jump_count": 6
+        }
+      },
+      "virtual_xy_gain_percent": 47.143924317055365,
+      "real": [
+        {
+          "trials": 12,
+          "coverage": 1,
+          "raw_xy_mean_mm": 0.6365592942756528,
+          "centered_xy_diagnostic_mm": 0.25205108920284175,
+          "raw_z_mae_mm": 0.16972023879755324,
+          "xy_residual_step_p95_mm": 0.30220041215834575,
+          "xy_residual_step_rms_mm": 0.16742391216305286,
+          "xy_residual_jump_rate_percent": 21.60131660195133,
+          "xy_output_step_p95_mm": 0.30576450090440266,
+          "z_residual_step_p95_mm": 0.05617095958769577,
+          "adjacent_pairs": 20158,
+          "xy_residual_jump_count": 4258,
+          "pooled_pair_jump_rate_percent": 21.12312729437444,
+          "z_residual_jump_count": 1,
+          "batch": "SOURCE",
+          "arm": "hard128",
+          "raw_xyz_mean_mm": 0.6653383354426404,
+          "own_coverage": 0.9990175824081601,
+          "baseline_raw_xy_mm": 0.43614748528163877,
+          "baseline_centered_xy_mm": 0.21475404667881723,
+          "baseline_jump_rate_percent": 23.229563528911388,
+          "jump_gain_percent": 7.009373744511183
+        },
+        {
+          "trials": 12,
+          "coverage": 1,
+          "raw_xy_mean_mm": 0.644806384531468,
+          "centered_xy_diagnostic_mm": 0.26410255946430783,
+          "raw_z_mae_mm": 0.15978790581534585,
+          "xy_residual_step_p95_mm": 0.3056456223990374,
+          "xy_residual_step_rms_mm": 0.17074376311546247,
+          "xy_residual_jump_rate_percent": 23.143182952041514,
+          "xy_output_step_p95_mm": 0.31009019115202907,
+          "z_residual_step_p95_mm": 0.059412931557349245,
+          "adjacent_pairs": 19779,
+          "xy_residual_jump_count": 4426,
+          "pooled_pair_jump_rate_percent": 22.377268820466153,
+          "z_residual_jump_count": 0,
+          "batch": "SOURCE_REPEAT",
+          "arm": "hard128",
+          "raw_xyz_mean_mm": 0.6704343872675574,
+          "own_coverage": 0.9991342760521823,
+          "baseline_raw_xy_mm": 0.4522689695936127,
+          "baseline_centered_xy_mm": 0.2244333107316542,
+          "baseline_jump_rate_percent": 24.562185166911462,
+          "jump_gain_percent": 5.777182303720818
+        },
+        {
+          "trials": 12,
+          "coverage": 1,
+          "raw_xy_mean_mm": 0.7603206271538528,
+          "centered_xy_diagnostic_mm": 0.5305559890299523,
+          "raw_z_mae_mm": 0.165708878935404,
+          "xy_residual_step_p95_mm": 0.4733459317401339,
+          "xy_residual_step_rms_mm": 0.2521180592116086,
+          "xy_residual_jump_rate_percent": 46.48844489741521,
+          "xy_output_step_p95_mm": 0.4740732813271373,
+          "z_residual_step_p95_mm": 0.08331083206704466,
+          "adjacent_pairs": 11874,
+          "xy_residual_jump_count": 5499,
+          "pooled_pair_jump_rate_percent": 46.31126831733199,
+          "z_residual_jump_count": 6,
+          "batch": "Yellow",
+          "arm": "hard128",
+          "raw_xyz_mean_mm": 0.7858499998018796,
+          "own_coverage": 0.98459940105043,
+          "baseline_raw_xy_mm": 0.5207615751523492,
+          "baseline_centered_xy_mm": 0.4779317808366306,
+          "baseline_jump_rate_percent": 46.33677049768276,
+          "jump_gain_percent": -0.3273305370732116
+        }
+      ],
+      "position": "虚拟薄弱动作定位改善方向；当前真实定位迁移未优于普通扩集",
+      "evidence_scope": "同流回放保留实际B0、dt与事件；已看过的真实记录不冒充新盲测"
+    },
+    {
+      "id": "raw128",
+      "study": "R399/R408",
+      "weights_sha256": "888923546bf44a7ff6b2a2de7ca0a454e3b5c929c6f4a345d7a910dc3ccefb64",
+      "training": {
+        "epochs": 993,
+        "updates": 252222,
+        "samples_per_full_epoch": 65015,
+        "best_epoch": 169,
+        "final_lr": 0.000001,
+        "final_bad_epochs": 50,
+        "lr_reductions": 8,
+        "model_sha256": "888923546bf44a7ff6b2a2de7ca0a454e3b5c929c6f4a345d7a910dc3ccefb64",
+        "freeze_sha256": "de6fcdcb764e1ade37cb13ec63fd9c23b87fbff0f66f0ede79702c7e61cbffc8",
+        "history_sha256": "27d5e6e8f2735e6ce79681045c988adc2d29198cf0f5baa0d8d86eabf1265518",
+        "freeze_and_history_received_hashverified": true,
+        "model_received_hashverified": true
+      },
+      "virtual_raw_input_xy_mm": 0.23004432225505098,
+      "virtual_gain_vs_raw128_pct": 0,
+      "virtual_gain_vs_R373_pct": 46.13385944517283,
+      "position": "同轨迹原始带噪训练对照",
+      "evidence_scope": "64独立虚拟几何、统一八条件共同帧；不能与R397掩码跨实验直接排名"
+    },
+    {
+      "id": "clean128",
+      "study": "R399/R408",
+      "weights_sha256": "7fd5a696f90a55cf0fef171a87b76fc1be0f0e7c03aead53aef0ef2eaebcd266",
+      "training": {
+        "epochs": 983,
+        "updates": 250665,
+        "samples_per_full_epoch": 65044,
+        "best_epoch": 240,
+        "final_lr": 0.000001,
+        "final_bad_epochs": 50,
+        "lr_reductions": 8,
+        "model_sha256": "7fd5a696f90a55cf0fef171a87b76fc1be0f0e7c03aead53aef0ef2eaebcd266",
+        "freeze_sha256": "b55fe66ec5018825fe9f01d0e242183ab3731aaaaaaa92181ed3543bfd72ce4b",
+        "history_sha256": "c557442b18d4d54eef4b5ca4307c7010246ccfdd55c55c3dd991fd4128438d96",
+        "freeze_and_history_received_hashverified": true,
+        "model_received_hashverified": true
+      },
+      "virtual_raw_input_xy_mm": 0.2233935909954204,
+      "virtual_gain_vs_raw128_pct": 2.89106516276324,
+      "virtual_gain_vs_R373_pct": 47.69116466927852,
+      "position": "去掉额外随机噪声的虚拟正结果，保留动态历史",
+      "evidence_scope": "64独立虚拟几何、统一八条件共同帧；不能与R397掩码跨实验直接排名"
+    },
+    {
+      "id": "causal128",
+      "study": "R399/R408",
+      "weights_sha256": "233f337678199c85bf9f9b590749e64b8a94d732d0c52d940a109c79691e087f",
+      "training": {
+        "epochs": 1019,
+        "updates": 259845,
+        "samples_per_full_epoch": 65061,
+        "best_epoch": 431,
+        "final_lr": 0.000001,
+        "final_bad_epochs": 50,
+        "lr_reductions": 8,
+        "model_sha256": "233f337678199c85bf9f9b590749e64b8a94d732d0c52d940a109c79691e087f",
+        "freeze_sha256": "f02684d0ece6b9b2661097428f9d2f611ca1ea025870896822b71b7672d3524f",
+        "history_sha256": "0dd13f13facb5cc3fbcb81af5b59d37627ac6b21fa95978e87b0ab2d42b8715b",
+        "freeze_and_history_received_hashverified": true,
+        "model_received_hashverified": true
+      },
+      "virtual_raw_input_xy_mm": 0.21888007522580968,
+      "virtual_gain_vs_raw128_pct": 4.853085231490062,
+      "virtual_gain_vs_R373_pct": 48.74802915721283,
+      "position": "虚拟训练前因果去噪的重点候选，真实对照尚未完整关闭",
+      "evidence_scope": "64独立虚拟几何、统一八条件共同帧；不能与R397掩码跨实验直接排名"
+    }
+  ],
+  "online_comparison_scope": "Two separately acquired native online runs; NOT same-stream replay; actual raw predictions unchanged",
+  "primary_candidates": [
+    "VirtualXY1000_R373Z",
+    "uniform128"
+  ],
+  "exploration_candidates": [
+    "hard128",
+    "clean128",
+    "causal128"
+  ],
+  "primary_contrast_original": {
+    "candidate": "hard128",
+    "control": "uniform128",
+    "trials": 16,
+    "candidate_raw_xy_mm": 0.25738016367586247,
+    "control_raw_xy_mm": 0.2865713750992261,
+    "difference_mm": -0.029191211423363568,
+    "absolute_reduction_mm": 0.029191211423363568,
+    "relative_reduction": 0.10186366804170888,
+    "paired_trial_bootstrap_95pct_difference_mm": [
+      -0.03909777254504315,
+      -0.018449569586481668
+    ],
+    "bootstrap_seed": 39791,
+    "bootstrap_replicates": 10000,
+    "improved_trials": 14,
+    "worsened_trials": 2,
+    "individual": [
+      {
+        "id": "V397_test_0008",
+        "difference_mm": -0.05143781010925996
+      },
+      {
+        "id": "V397_test_0013",
+        "difference_mm": 0.019958649777978343
+      },
+      {
+        "id": "V397_test_0018",
+        "difference_mm": -0.0465923066060937
+      },
+      {
+        "id": "V397_test_0020",
+        "difference_mm": 0.0021225235677923837
+      },
+      {
+        "id": "V397_test_0022",
+        "difference_mm": -0.02768697664936645
+      },
+      {
+        "id": "V397_test_0030",
+        "difference_mm": -0.04099686190261409
+      },
+      {
+        "id": "V397_test_0031",
+        "difference_mm": -0.03842631320282533
+      },
+      {
+        "id": "V397_test_0035",
+        "difference_mm": -0.04723656253762748
+      },
+      {
+        "id": "V397_test_0037",
+        "difference_mm": -0.06399298038473206
+      },
+      {
+        "id": "V397_test_0040",
+        "difference_mm": -0.02123222066493935
+      },
+      {
+        "id": "V397_test_0048",
+        "difference_mm": -0.03466395156991381
+      },
+      {
+        "id": "V397_test_0051",
+        "difference_mm": -0.04035855712410949
+      },
+      {
+        "id": "V397_test_0053",
+        "difference_mm": -0.0339464068326758
+      },
+      {
+        "id": "V397_test_0054",
+        "difference_mm": -0.02256523989571163
+      },
+      {
+        "id": "V397_test_0055",
+        "difference_mm": -0.009145349895498811
+      },
+      {
+        "id": "V397_test_0057",
+        "difference_mm": -0.01085901874421985
+      }
+    ]
+  },
+  "source_hashes": [
+    {
+      "path": "analysis/r401_d_native_model_comparison_20261003/report.json",
+      "sha256": "d32d4115849927d1f32eb521644328109342a0da28e57f78bfc07f3878993477"
+    },
+    {
+      "path": "analysis/r401_d_native_model_comparison_20261003/work_state.json",
+      "sha256": "75c5b345837d3127d60f1648e7323eb33821b868db9de6a2ca2fc42e5a9e9f0f"
+    },
+    {
+      "path": "analysis/r397_virtual_breakthrough_20261003/full_chain_report.json",
+      "sha256": "79d7ce546608cdab3ceb09be2fa61d23b4367dabe45653e611202c59dae3b474"
+    },
+    {
+      "path": "analysis/r397_virtual_breakthrough_20261003/protocol.json",
+      "sha256": "0d2e1f9ec62b21cb059c21e2402fb7585bc6884858ecbab1d0c6502922af813f"
+    },
+    {
+      "path": "analysis/r397_virtual_breakthrough_20261003/independent_audit.json",
+      "sha256": "00b4b2e17e20cd824e837e04a24bcce8f6f8b4258dee17f8b4db4249680565e4"
+    },
+    {
+      "path": "analysis/r405_frozen_virtual_real_replay_20261003/recovery_v2/report.json",
+      "sha256": "a6efa99698dca7b90fcb5d7c8cd693971734b9c064f275ec3383470f71232ff0"
+    },
+    {
+      "path": "analysis/r405_frozen_virtual_real_replay_20261003/recovery_v2/independent_audit.json",
+      "sha256": "cb7f8b942945cb83a8755c219dd3b7fa124164bf1f0654810369c89ac105e2d8"
+    },
+    {
+      "path": "analysis/r408_denoising_independent_audit_20261003/audit.json",
+      "sha256": "e7372b3c6cf9918c302a80846517585839f66878634009fd31a794dc0d61ecdc"
+    }
+  ],
+  "reporting_contract": {
+    "model_by_model": true,
+    "successful_direction_required_not_all_models": true,
+    "main_text_focus": "有效候选、理论及对应条件",
+    "complete_comparisons": "supplementary",
+    "no_test_selected_generalization_claim": true,
+    "no_changed_original_success_thresholds": true
+  },
+  "conclusion_zh": "本文将柔性磁触觉仿真定位为发现并验证模型改进方向的研究数据环境，而不是要求所有候选模型及所有动作都同步改善。由源侧记录拟合的对称分轴动态代理支持连续交互、丰富运动生成与因果算法闭环；既有同路径实测与虚拟实验复现了慢历史补偿和因果平面学习的主要改进方向。充分训练的1000条虚拟扩集模型在独立虚拟几何上显著改善平面重建，并在未用于训练或检查点选择的Yellow既有真实记录上，将共同有效帧XY误差由0.740 mm降至0.630 mm，降低14.8%。在另两批分别采集的同协议新轨迹在线比较中，第一条复杂路径去固定平移后的XY误差由0.267 mm降至0.189 mm，降低29.4%，相邻残差跳变率由3.91%降至1.90%，降低51.4%；第二条的跳变率也降低33.0%，但形状误差上升。另一普通128条扩集候选在三批36条复杂真实记录中均减少跳变，三批平均降低14.5%、14.1%和6.2%，并降低停驻波动。上述结果分别支持目标器件迁移、动作相关的形状与连续性共同改善，以及时间稳定性改善三类有效方向。原始坐标偏移和部分精度代价同时保留，去平移指标不冒充在线原点校准，也不把模型内的未验证假设写成实物定律。仿真因此能够帮助扩展运动经验、定位薄弱条件、提出训练干预并筛出值得继续的候选；其贡献是可复算的方向发现与条件性收益，不是已实现完整物理数字孪生或普遍最优重建。",
+  "conclusion_en": "We position flexible magnetic-tactile simulation as a research data environment for discovering and evaluating useful model-improvement directions, not as a requirement that every candidate improves every motion. The source-fitted, symmetrically axis-separated dynamic surrogate supports continuous interaction, diverse motion generation and causal reconstruction loops. The sufficiently trained 1,000-trajectory augmentation candidate reduces paired XY error on previously recorded, held-out Yellow trials from 0.740 to 0.630 mm (14.8%). In two separately acquired online batches following the same new-motion protocol, the first complex path improves translation-removed XY error from 0.267 to 0.189 mm (29.4%) and reduces adjacent residual-jump rate from 3.91% to 1.90% (51.4%). The second path also reduces jumps by 33.0%, while its translation-removed error increases. A distinct ordinary 128-trajectory candidate reduces jumps on all 36 complex real trial records across three batches, with batch-average reductions of 14.5%, 14.1% and 6.2%, and lower dwell fluctuation. These are separate, model-specific contributions: target-device transfer on existing recordings, motion-dependent joint improvement in trajectory shape and continuity, and improved temporal stability. Absolute-coordinate bias and accuracy costs remain reported; retrospective translation removal is not an online origin calibration. Simulation therefore provides reproducible direction discovery and conditional gains rather than universal optimality or a validated full-physics digital twin.",
+  "production_changed": false,
+  "hardware_operated": false,
+  "new_training": false,
+  "pdf_qa_complete": true,
+  "paper_revision": "paper_export/R430_逐模型仿真收益_20261003/manuscript_zh.md",
+  "paper_QA": "paper_export/R430_逐模型仿真收益_20261003/validation.json",
+  "english_scope": "replacement conclusion only, not full English manuscript"
+}

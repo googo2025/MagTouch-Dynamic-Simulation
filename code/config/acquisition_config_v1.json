@@ -1,0 +1,16 @@
+{
+  "magnetic": {
+    "device_index": 0,
+    "i2c_clock_hz": 400000,
+    "addresses7": [12, 13, 14, 15, 16],
+    "target_period_ms_pilot": 20,
+    "include_temperature_each_cycle": false,
+    "formal_policy": "save raw ADC counts and converted uT; never overwrite with software-zeroed values"
+  },
+  "camera_top": {"enabled": true, "index": 0, "width": 1280, "height": 720, "fps": 60},
+  "camera_side": {"enabled": false, "index": 1, "width": 1280, "height": 720, "fps": 60},
+  "timebase": "time.perf_counter_ns",
+  "trial_preroll_s": 0.5,
+  "trial_postroll_s": 0.5,
+  "data_split_policy": "split by session/day/physical specimen, never random frames from one trajectory"
+}

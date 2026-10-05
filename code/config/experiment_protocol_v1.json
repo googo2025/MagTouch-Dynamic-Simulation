@@ -1,0 +1,60 @@
+{
+  "protocol_version": "HARDWARE-P0/P1-v1",
+  "core_outputs": ["x_c_mm", "y_c_mm", "z_n_mm", "d_x_mm", "d_y_mm", "dynamic_contact_mode"],
+  "core_modes": ["none", "press", "slide_x", "slide_y", "compound"],
+  "pilot": {
+    "P0_baseline": {
+      "ambient_no_magnetic_layer": "3 x 2 min",
+      "assembled_no_contact": "3 x 10 min",
+      "power_cycle_repeats": 5
+    },
+    "P1_sampling_benchmark": {
+      "i2c_clocks_hz": [100000, 400000],
+      "filter_osr": "start from the already validated low-latency configuration; record exact registers",
+      "targets": ["actual_Hz", "trigger_span_ms", "valid_5_sensor_fraction"]
+    },
+    "P2_coarse_spatial_map": {
+      "xy_range_mm": [-12, 12],
+      "xy_step_mm": 2.0,
+      "z_indent_mm": [0.3, 0.6, 1.0],
+      "repeats": 2,
+      "purpose": "estimate effective area, overlap and blind/weak regions before formal collection"
+    },
+    "P3_small_dynamic_set": {
+      "modes": ["none", "press", "slide_x", "slide_y", "compound"],
+      "positions": "center + four inter-node/edge locations",
+      "speeds_mm_s": [0.5, 1.0, 2.0],
+      "repeats_per_condition": 5
+    }
+  },
+  "formal_after_pilot": {
+    "F1_normal_deformation": {
+      "positions": "5x5 or 7x7 grid inside the empirically valid area",
+      "z_indent_mm": [0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4],
+      "speeds_mm_s": [0.5, 1.0, 2.0],
+      "repeats": 5
+    },
+    "F2_tangential_deformation": {
+      "preload_z_mm": [0.4, 0.8, 1.2],
+      "dx_mm": [-3, -2, -1, 1, 2, 3],
+      "dy_mm": [-3, -2, -1, 1, 2, 3],
+      "speeds_mm_s": [0.5, 1.0, 2.0],
+      "repeats": 5
+    },
+    "F3_dynamic_modes": {
+      "modes": ["none", "press", "slide_x", "slide_y", "compound"],
+      "trajectory_profiles": ["linear", "half-cosine", "piecewise-hold"],
+      "repeats": 5
+    },
+    "F4_robustness_ood": {
+      "sensor_fault": ["software mask one node", "bias one axis", "gain scaling", "dropout"],
+      "physical": ["external magnetic disturbance", "assembly shift", "material batch/change", "speed outside train range"],
+      "principle": "isolate one factor first; combined stress only after isolated effects are characterized"
+    }
+  },
+  "ablation_sensor_sets": {
+    "1x1": ["S5"],
+    "2x2": ["S1", "S2", "S3", "S4"],
+    "2x2+1": ["S1", "S2", "S3", "S4", "S5"]
+  }
+}

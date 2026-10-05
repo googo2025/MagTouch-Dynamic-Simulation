@@ -1,0 +1,137 @@
+{
+  "status": "FROZEN_SOURCE_VAL_CONDITIONAL_HEAD_JACOBIAN_FD_CHECKED",
+  "rows": [
+    {
+      "trial": 27,
+      "arm": "R373",
+      "frames": 393,
+      "mean_frobenius_mm": 1.7804423739872284,
+      "p95_frobenius_mm": 2.266563091287028,
+      "mean_spectral_mm": 1.553179178389085,
+      "finite_difference_max_absolute_error": 7.138079016755228e-11
+    },
+    {
+      "trial": 27,
+      "arm": "history_position",
+      "frames": 393,
+      "mean_frobenius_mm": 1.8133798441841433,
+      "p95_frobenius_mm": 2.2802038872488866,
+      "mean_spectral_mm": 1.574255410325558,
+      "finite_difference_max_absolute_error": 7.466033347114376e-11
+    },
+    {
+      "trial": 27,
+      "arm": "history_motion_hold_anchor",
+      "frames": 393,
+      "mean_frobenius_mm": 1.809820075539643,
+      "p95_frobenius_mm": 2.2615764049905294,
+      "mean_spectral_mm": 1.5533804662701827,
+      "finite_difference_max_absolute_error": 8.271944240689777e-11
+    },
+    {
+      "trial": 28,
+      "arm": "R373",
+      "frames": 2007,
+      "mean_frobenius_mm": 1.8813282922077321,
+      "p95_frobenius_mm": 2.3411826556747677,
+      "mean_spectral_mm": 1.6502193015876563,
+      "finite_difference_max_absolute_error": 7.883732555669098e-11
+    },
+    {
+      "trial": 28,
+      "arm": "history_position",
+      "frames": 2007,
+      "mean_frobenius_mm": 1.9703312879066606,
+      "p95_frobenius_mm": 2.3794851743441296,
+      "mean_spectral_mm": 1.7281629857819796,
+      "finite_difference_max_absolute_error": 7.657380285408522e-11
+    },
+    {
+      "trial": 28,
+      "arm": "history_motion_hold_anchor",
+      "frames": 2007,
+      "mean_frobenius_mm": 2.0281199506448684,
+      "p95_frobenius_mm": 2.405913253831421,
+      "mean_spectral_mm": 1.7534912629488952,
+      "finite_difference_max_absolute_error": 8.822054198276419e-11
+    },
+    {
+      "trial": 29,
+      "arm": "R373",
+      "frames": 738,
+      "mean_frobenius_mm": 1.820082519924943,
+      "p95_frobenius_mm": 2.4403571092806198,
+      "mean_spectral_mm": 1.564232591100567,
+      "finite_difference_max_absolute_error": 9.223717969963907e-11
+    },
+    {
+      "trial": 29,
+      "arm": "history_position",
+      "frames": 738,
+      "mean_frobenius_mm": 1.8614586193214886,
+      "p95_frobenius_mm": 2.471005324314534,
+      "mean_spectral_mm": 1.60799042171567,
+      "finite_difference_max_absolute_error": 1.0769629632534361e-10
+    },
+    {
+      "trial": 29,
+      "arm": "history_motion_hold_anchor",
+      "frames": 738,
+      "mean_frobenius_mm": 1.887100588537552,
+      "p95_frobenius_mm": 2.5274249739900383,
+      "mean_spectral_mm": 1.6331465958433173,
+      "finite_difference_max_absolute_error": 9.118784893846765e-11
+    }
+  ],
+  "summaries": [
+    {
+      "arm": "R373",
+      "trials": 3,
+      "mean_frobenius_mm": 1.8272843953733011,
+      "mean_spectral_mm": 1.5892103570257694
+    },
+    {
+      "arm": "history_position",
+      "trials": 3,
+      "mean_frobenius_mm": 1.8817232504707642,
+      "mean_spectral_mm": 1.6368029392744023
+    },
+    {
+      "arm": "history_motion_hold_anchor",
+      "trials": 3,
+      "mean_frobenius_mm": 1.908346871574021,
+      "mean_spectral_mm": 1.6466727750207983
+    }
+  ],
+  "inputs": {
+    "analysis/r460_source_real_history_refinement_20261004/readback_arm3/inputs/validation_27.npz": "be9aa7cd83ee69751f62087feba1738b76fb7374f60b1c94fe51ab3844958ea2",
+    "analysis/r460_source_real_history_refinement_20261004/readback_arm3/inputs/validation_28.npz": "c3989fb83c3616332c92f2d9c5690b898dccd1dc9a12bba88999b2ae5b315bde",
+    "analysis/r460_source_real_history_refinement_20261004/readback_arm3/inputs/validation_29.npz": "b4d44e45f06a7c5cc6d69c638f283f29f1d31c54c83a0cf848cd3c5b8a01e31a"
+  },
+  "models": {
+    "R373": {
+      "path": "analysis/r372_direct_source_plateau_20261001/xy/best_model.npz",
+      "sha256": "65f3015e8c053b1c806fe6c56cb53e862a8b97c4f1f882cb8f8fbf7b694305ff"
+    },
+    "history_position": {
+      "path": "analysis/r460_source_real_history_refinement_20261004/readback_arm3/history_position/best_model.npz",
+      "sha256": "4dd2076be725b3e2316941f4bd8d07a3842a61fd59d966dba00fa57bb24745d7"
+    },
+    "history_motion_hold_anchor": {
+      "path": "analysis/r460_source_real_history_refinement_20261004/readback_arm4/history_motion_hold_anchor/best_model.npz",
+      "sha256": "24d5d72f6b496782acfffbf23228f4047a8426aec6fc2f71517ce7a56809ffa0"
+    }
+  },
+  "script_sha256": "7609e28e99dbb48dbb6f8e2023cebf10b91e2de7e9c6d3e0cefb3415e2706c48",
+  "varied_inputs": "current corrected-feature block3:19 in the common original TRAIN-standardized coordinate units",
+  "held_fixed": "guard coordinates, old difference features, slow memory and appended EMA residual features",
+  "output": "XY neural residual correction only, millimetres",
+  "physical_magnetic_noise_or_full_causal_pipeline_sensitivity": false,
+  "causal_history_update_derivative_not_included": true,
+  "head_norm_not_unique_cause_of_real_stability": true,
+  "not_independent_feature_distribution_model": true,
+  "new_real_or_Yellow_inputs_opened": false,
+  "fitting_or_checkpoint_selection": false,
+  "output_smoothing_or_model_or_protocol_change": false,
+  "numerical_finite_difference_fixture_passed": true
+}

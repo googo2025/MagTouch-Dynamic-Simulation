@@ -1,0 +1,210 @@
+{
+  "schema": "R460-Bilingual-Visual-QA-1",
+  "status": "PASSED_ALL25_PAGES_VISUAL_QA",
+  "completed_utc": "2026-10-03T21:09:02.593946+00:00",
+  "review": "Pages1-9 in both languages inspected before minor reference repairs and verified pixel-identical afterwards; Chinese10-12 and English10-13 inspected in the final render.",
+  "checks": [
+    "formula readability",
+    "legible tables and figure labels",
+    "no clipped body text or overlap",
+    "section/caption and reference consistency"
+  ],
+  "render_exit_codes": {
+    "zh": 0,
+    "en": 0
+  },
+  "render_warning": "English Poppler configuration reports unused display-font names; final rendered embedded body fonts and equation assets inspected.",
+  "reviewed": {
+    "zh": {
+      "pdf": "MagTouch_仿真平台与虚拟轨迹增强论文_中文.pdf",
+      "pdf_sha256": "97f33fe021727273ef9cb82d34061150ad15c7e9a082b7b6858f7cf8b9a06587",
+      "pages": [
+        {
+          "page": 1,
+          "png": "_qa/final_zh/page-01.png",
+          "sha256": "5a1036e0aa658eefc9b69b3b6862b1b467efb8d9fb49ffbdb5e8253ad4e4e71c",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 2,
+          "png": "_qa/final_zh/page-02.png",
+          "sha256": "a7bce39c554a738e6b8d961d866af22946a1267ca29dd98c4426d3646f257083",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 3,
+          "png": "_qa/final_zh/page-03.png",
+          "sha256": "3f4a574f66f0d98033d255cf32192c6c90c74e26c72be6ec801fb5ccc4a76dea",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 4,
+          "png": "_qa/final_zh/page-04.png",
+          "sha256": "03509593b67ae0c197d05462364700f6d2320b05cef5721e7a684cbf205c4983",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 5,
+          "png": "_qa/final_zh/page-05.png",
+          "sha256": "73a37dc805f7a28a82e387cef667b1e829816bbb4b6df6c64f90e940d177cd5b",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 6,
+          "png": "_qa/final_zh/page-06.png",
+          "sha256": "84c2cea4dd26910e51735f77be876024bb830b9b374418a6fc4956f83613c0a4",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 7,
+          "png": "_qa/final_zh/page-07.png",
+          "sha256": "996e2ec8da45334a1e1a13a99d7d4824d87b0befe7f333313b179a6b1bd84b12",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 8,
+          "png": "_qa/final_zh/page-08.png",
+          "sha256": "819c8c42678be03e367b0ab8964b6e6777c9ef0ecb83c2326e24ac062c79290b",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 9,
+          "png": "_qa/final_zh/page-09.png",
+          "sha256": "f60b73bf7376a1db912c08f1268aea287f39592d86cc82361c83d06a6fcd5234",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 10,
+          "png": "_qa/final_zh/page-10.png",
+          "sha256": "3366ac943402d744ae722f39f81e1c5e3b9e7959aeed021f71251205b7baf809",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": false
+        },
+        {
+          "page": 11,
+          "png": "_qa/final_zh/page-11.png",
+          "sha256": "da41b44e6e30b04635d57c23ab55788c3079c0be5de94127595ea0d831ba338c",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": false
+        },
+        {
+          "page": 12,
+          "png": "_qa/final_zh/page-12.png",
+          "sha256": "80af0b12a4a6d90a0b788b0d5d4437dd5ca61ce7b093849f5cc2c1b14d4ea31f",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        }
+      ]
+    },
+    "en": {
+      "pdf": "english_full/MagTouch_Dynamic_Simulation_and_Virtual_Augmentation_English.pdf",
+      "pdf_sha256": "ae104f30d01b5e62074bb019e9877a8c763f0c29f3dcccb816030268d67d95e9",
+      "pages": [
+        {
+          "page": 1,
+          "png": "_qa/final_en/page-01.png",
+          "sha256": "d60272c1b601ef8ded10be923b7a0dae368bb14f8a7a18585f51d4bf0b4db23b",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 2,
+          "png": "_qa/final_en/page-02.png",
+          "sha256": "6e5293d0e13e3e35042fc02c1bdac495719bafb683a4e9d90b399c0ebc2cf4ce",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 3,
+          "png": "_qa/final_en/page-03.png",
+          "sha256": "83417da5877855bc930d7b94817a178070cd9f90c2bdda5997131066f2c0c0a4",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 4,
+          "png": "_qa/final_en/page-04.png",
+          "sha256": "6972b73eada64764668b2b2f903bd4845b346583fd91e136d3f8cb6991bad37a",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 5,
+          "png": "_qa/final_en/page-05.png",
+          "sha256": "d586bdc439e32c738b6d34833206d9e86e81a8f8d8945f625e9d3cb6ca247346",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 6,
+          "png": "_qa/final_en/page-06.png",
+          "sha256": "dfec7b671e7cf9760f994eef4fe0236d67c80d8d3f6f3ef179f107595127823c",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 7,
+          "png": "_qa/final_en/page-07.png",
+          "sha256": "ba5b5777d01387189de68267716e196aa654f4e59d888f0913483dfbedaeccb2",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 8,
+          "png": "_qa/final_en/page-08.png",
+          "sha256": "7f360e6ae6f56e97696cc1f5c7b6c7c91ce0a8da5f3baa2419477767729f3baa",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 9,
+          "png": "_qa/final_en/page-09.png",
+          "sha256": "8e900cdf7536b78dde251c4315589b2ac31e433199a4fbce803a63feb0280656",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 10,
+          "png": "_qa/final_en/page-10.png",
+          "sha256": "d02f6b405041471bc8d2a73f08611277a15ef4daca57037281088e727bc61b74",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 11,
+          "png": "_qa/final_en/page-11.png",
+          "sha256": "42a060de2fc4b6bad66b815d4b3089c681d1697083044909fafe0dd779fa1aa0",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": false
+        },
+        {
+          "page": 12,
+          "png": "_qa/final_en/page-12.png",
+          "sha256": "3b04951624e00be2a2713318b28bec00172718a3495ee1f1fb0320868cda6ad8",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": true
+        },
+        {
+          "page": 13,
+          "png": "_qa/final_en/page-13.png",
+          "sha256": "468ab1e4ba1a2ddd228377d2a91ff3151c3af5896cbe4c1b8ab3227c0f2888b6",
+          "visual_review": "PASSED",
+          "matches_earlier_reviewed_render": false
+        }
+      ]
+    }
+  },
+  "old_artifacts_unchanged": true,
+  "numeric_tables_identical_bilingual": true,
+  "final_evidence_sha256": "d7e33858b29a0915860b102abdf61df2144be0bf7133cd3ed32b4cfc53d6af41",
+  "no_new_scientific_training_or_replay": true
+}

@@ -1,0 +1,96 @@
+{
+  "status": "PASS_SOURCE_PDF_RENDER_ALL_16_PAGES_VISUALLY_INSPECTED",
+  "validation": "validation.json",
+  "previous_manuscript": "paper_export/R386_仿真平台与机制发现_20261002/manuscript_zh.md",
+  "source_hashes": [
+    {
+      "path": "analysis/r401_d_native_model_comparison_20261003/report.json",
+      "sha256": "d32d4115849927d1f32eb521644328109342a0da28e57f78bfc07f3878993477"
+    },
+    {
+      "path": "analysis/r401_d_native_model_comparison_20261003/work_state.json",
+      "sha256": "75c5b345837d3127d60f1648e7323eb33821b868db9de6a2ca2fc42e5a9e9f0f"
+    },
+    {
+      "path": "analysis/r397_virtual_breakthrough_20261003/full_chain_report.json",
+      "sha256": "79d7ce546608cdab3ceb09be2fa61d23b4367dabe45653e611202c59dae3b474"
+    },
+    {
+      "path": "analysis/r397_virtual_breakthrough_20261003/protocol.json",
+      "sha256": "0d2e1f9ec62b21cb059c21e2402fb7585bc6884858ecbab1d0c6502922af813f"
+    },
+    {
+      "path": "analysis/r397_virtual_breakthrough_20261003/independent_audit.json",
+      "sha256": "00b4b2e17e20cd824e837e04a24bcce8f6f8b4258dee17f8b4db4249680565e4"
+    },
+    {
+      "path": "analysis/r405_frozen_virtual_real_replay_20261003/recovery_v2/report.json",
+      "sha256": "a6efa99698dca7b90fcb5d7c8cd693971734b9c064f275ec3383470f71232ff0"
+    },
+    {
+      "path": "analysis/r405_frozen_virtual_real_replay_20261003/recovery_v2/independent_audit.json",
+      "sha256": "cb7f8b942945cb83a8755c219dd3b7fa124164bf1f0654810369c89ac105e2d8"
+    },
+    {
+      "path": "analysis/r408_denoising_independent_audit_20261003/audit.json",
+      "sha256": "e7372b3c6cf9918c302a80846517585839f66878634009fd31a794dc0d61ecdc"
+    }
+  ],
+  "models": [
+    {
+      "id": "VirtualXY100_R373Z",
+      "study": "R379",
+      "weights_sha256": "ce9326a5f94fb76e236da7b2b725258ab443c0323e3ad983dd37eee48641ed09"
+    },
+    {
+      "id": "VirtualXY500_R373Z",
+      "study": "R379",
+      "weights_sha256": "92f750d7925cf5926319271f7653478be3d34aa8f509a0e328483cd785668046"
+    },
+    {
+      "id": "VirtualXY1000_R373Z",
+      "study": "R379",
+      "weights_sha256": "2eadbba142db96654e7a4c215c536f414b05cee14b505f13d16705cfda97533e"
+    },
+    {
+      "id": "common64",
+      "study": "R397/R405",
+      "weights_sha256": "bf0ef88da13747122a3c0322329dd0d05ef89ba04e43fbb570bad75c4203f74e"
+    },
+    {
+      "id": "uniform128",
+      "study": "R397/R405",
+      "weights_sha256": "2a4af071e9ab2f4ff4ac2b331e9fdde83ab0443fdd939fed083acc75d07e358b"
+    },
+    {
+      "id": "hard128",
+      "study": "R397/R405",
+      "weights_sha256": "fbb825b1cf0ec5df31bbde39adc5979e918e4ef5de158b1e8c23f03f6dfe105a"
+    },
+    {
+      "id": "raw128",
+      "study": "R399/R408",
+      "weights_sha256": "888923546bf44a7ff6b2a2de7ca0a454e3b5c929c6f4a345d7a910dc3ccefb64"
+    },
+    {
+      "id": "clean128",
+      "study": "R399/R408",
+      "weights_sha256": "7fd5a696f90a55cf0fef171a87b76fc1be0f0e7c03aead53aef0ef2eaebcd266"
+    },
+    {
+      "id": "causal128",
+      "study": "R399/R408",
+      "weights_sha256": "233f337678199c85bf9f9b590749e64b8a94d732d0c52d940a109c79691e087f"
+    }
+  ],
+  "main_text_candidates": [
+    "VirtualXY1000_R373Z",
+    "uniform128"
+  ],
+  "all_comparators_preserved": true,
+  "simulator_physics_claim": "empirical_dynamic_surrogate_not_validated_FEM",
+  "new_real_R401_scope": "Two separately acquired native online runs; NOT same-stream replay; actual raw predictions unchanged",
+  "R405_scope": "frozen retrospective same-stream replay",
+  "english_scope": "replacement conclusion only, not a full bilingual manuscript",
+  "production_changed": false
+}

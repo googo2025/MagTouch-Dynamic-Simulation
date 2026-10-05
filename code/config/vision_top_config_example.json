@@ -1,0 +1,16 @@
+{
+  "aruco_dictionary": "DICT_4X4_50",
+  "aruco_reference_mm": {
+    "10": [-20.0, 20.0],
+    "11": [20.0, 20.0],
+    "12": [20.0, -20.0],
+    "13": [-20.0, -20.0]
+  },
+  "indenter_aruco_id": 20,
+  "surface_roi_px": [250, 120, 780, 520],
+  "max_features": 180,
+  "quality_level": 0.015,
+  "min_distance_px": 7,
+  "mm_per_px": null,
+  "note": "Replace reference marker coordinates and ROI after camera installation. If 4 reference ArUco markers are visible, homography is used and mm_per_px is ignored."
+}

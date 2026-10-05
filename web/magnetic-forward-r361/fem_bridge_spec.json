@@ -1,0 +1,21 @@
+{
+  "schema": "MagTouch-FEM-Surface-1",
+  "purpose": "View externally solved nodal displacement only; no browser solve, training admission or physical validation.",
+  "required": {
+    "units": "mm",
+    "nodes_mm": "N x 3 undeformed node coordinates in a single explicitly declared Cartesian frame",
+    "triangles": "M x 3 zero-based surface node indices; export boundary faces, not internal tetrahedra",
+    "t_s": "T finite, strictly increasing solver times",
+    "displacement_mm": "T x N x 3 full vector displacements, not positions",
+    "provenance": {
+      "solver": "Name and version, including constitutive and element formulation",
+      "geometry_id": "Geometry identity and source; do not mix historical and final hardware geometries",
+      "material": "Material parameters, units and measured/assumed status",
+      "boundary_conditions": "Supports, constraints, contact and load definition"
+    }
+  },
+  "recommended_provenance": ["coordinate_frame", "source_sha256", "convergence_report", "contact_validation_report", "validation_status", "mesh_id"],
+  "limits": {"file_MB": 40, "nodes": 20000, "triangles": 50000, "frames": 5000, "node_frame_product": 2000000},
+  "display": "Original displacement norm sets fixed sequence-wide colors. Gain scales geometry only. Each file has an independent solver timeline.",
+  "not_supported": ["Inferring displacement from the empirical 15-channel magnetic model", "Arbitrary free dragging of precomputed FEM without a valid solver/surrogate", "Treating declared validation as independent verification", "Automatic admission to synthetic training data"]
+}

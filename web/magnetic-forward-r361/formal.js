@@ -1,0 +1,34 @@
+(function(){'use strict';
+const R=window.MAGTOUCH_FORMAL,$=id=>document.getElementById(id);
+for(const [id,label]of[['formal-case','完整记录'],['formal-arm','磁场来源'],['formal-model','模型／输入对照']])$(id).setAttribute('aria-label',label);
+if(!R){$('formal-score').textContent='正式闭环数据尚未生成，请完成回测后刷新。';return;}
+const labels={F:'实测静态磁图',M:'磁图＋慢磁记忆',G:'＋磁证据分支保护',N:'＋冻结因果XY',U:'完整模型：关闭增量Z',Final:'冻结完整模型',full:'真实五节点',S1:'四节点＋预测S1',S2:'四节点＋预测S2',S3:'四节点＋预测S3',S4:'四节点＋预测S4',S5:'四节点＋预测S5'};
+const armNames={empirical_dynamic:'经验动态正向场',atlas_static_control:'精确静态磁图控制',atlas_plus_history_control:'磁图＋历史残差控制',real:'真实采集磁场'};
+let a=R.cases[0],arm='empirical_dynamic',key='Final',frame=0,playing=false,last=0,yaw=-.7,pitch=.65,drag=null;
+const finite=p=>Array.isArray(p)&&p.length===3&&p.every(Number.isFinite);
+R.cases.forEach((r,i)=>{const o=document.createElement('option');o.value=i;o.textContent=(r.kind==='real'?(r.device==='source'?'源器件实测':'目标器件实测'):r.kind==='standard'?'标准虚拟动作':'复杂虚拟动作')+' · '+r.family+' · '+r.id;$('formal-case').append(o);});
+function options(id,keys,map,chosen){$(id).replaceChildren();for(const k of keys){const o=document.createElement('option');o.value=k;o.textContent=map[k]||k;$(id).append(o);}$(id).value=keys.includes(chosen)?chosen:keys[0];return $(id).value;}
+function setCase(){playing=false;frame=0;a=R.cases[Number($('formal-case').value)];arm=options('formal-arm',Object.keys(a.arms),armNames,arm);key=options('formal-model',Object.keys(a.arms[arm].predictions),labels,a.kind==='real'?'full':'Final');$('formal-slider').max=a.t.length-1;$('formal-play').textContent='播放';draw();}
+function ctx(id){const c=$(id),r=c.getBoundingClientRect(),d=Math.min(devicePixelRatio||1,2);c.width=Math.round(r.width*d);c.height=Math.round(r.height*d);const x=c.getContext('2d');x.setTransform(d,0,0,d,0,0);return[x,r.width,r.height];}
+function draw(){
+const p=a.arms[arm].predictions[key],base=a.arms[arm].predictions[a.kind==='real'?'full':'Final'],score=a.arms[arm].scores[key];
+const [c,w,h]=ctx('formal-scene'),all=[...a.q,...p,...(base||[])].filter(finite),bounds=[0,1,2].map(k=>[Math.min(...all.map(v=>v[k])),Math.max(...all.map(v=>v[k]))]);
+const center=bounds.map(v=>(v[0]+v[1])/2),extent=Math.max(6,...bounds.map(v=>v[1]-v[0])),scale=Math.min(w,h)/extent*.55;
+const project=q=>{const x=q[0]-center[0],y=q[1]-center[1],z=q[2]-center[2];return[w/2+(x*Math.cos(yaw)-y*Math.sin(yaw))*scale,h*.53+((x*Math.sin(yaw)+y*Math.cos(yaw))*Math.sin(pitch)-z*Math.cos(pitch))*scale];};
+function segment(v,u,color,width=1,dash=[]){c.strokeStyle=color;c.lineWidth=width;c.setLineDash(dash);c.beginPath();c.moveTo(...project(v));c.lineTo(...project(u));c.stroke();c.setLineDash([]);}
+const floor=Math.min(0,bounds[2][0]);for(let k=-6;k<=6;k+=2){segment([-6,k,floor],[6,k,floor],'#dbe5ee');segment([k,-6,floor],[k,6,floor],'#dbe5ee');}
+function trace(q,color,width,dash){for(let i=1;i<=frame;i++)if(finite(q[i-1])&&finite(q[i]))segment(q[i-1],q[i],color,width,dash);}
+trace(a.q,'#293e50',1,[4,3]);if(base&&key!==(a.kind==='real'?'full':'Final'))trace(base,'#a9b7c3',1,[]);trace(p,'#1667b9',1.7,[]);
+if(finite(p[frame])){c.fillStyle='#1667b9';c.beginPath();c.arc(...project(p[frame]),4,0,Math.PI*2);c.fill();}
+c.fillStyle='#536d82';c.font='12px Segoe UI,Microsoft YaHei';c.fillText('X / Y / 压深 Z：mm · 原始坐标',12,h-15);
+const [x,tw,th]=ctx('formal-times');x.font='11px Segoe UI';
+for(let axis=0;axis<3;axis++){const values=[...a.q,...p].filter(finite).map(v=>v[axis]);let lo=Math.min(...values),hi=Math.max(...values);const pad=Math.max(.1,(hi-lo)*.1);lo-=pad;hi+=pad;const top=axis*th/3+18,bottom=(axis+1)*th/3-20,left=44,right=tw-12;const px=t=>left+(t-a.t[0])/(a.t.at(-1)-a.t[0])*(right-left),py=v=>bottom-(v-lo)/(hi-lo)*(bottom-top);x.fillStyle='#60758b';x.fillText(['X','Y','Z'][axis]+' mm',left,top-4);x.fillText(hi.toFixed(1),3,top+6);x.fillText(lo.toFixed(1),3,bottom);x.strokeStyle='#dde6ef';x.beginPath();x.moveTo(left,bottom);x.lineTo(right,bottom);x.stroke();for(const [q,color,dash]of[[a.q,'#293e50',[4,3]],[p,'#1667b9',[]]]){x.strokeStyle=color;x.lineWidth=1;x.setLineDash(dash);x.beginPath();let open=false;for(let i=0;i<=frame;i++){if(!finite(q[i])){open=false;continue;}if(open)x.lineTo(px(a.t[i]),py(q[i][axis]));else x.moveTo(px(a.t[i]),py(q[i][axis]));open=true;}x.stroke();}x.setLineDash([]);}
+$('formal-score').textContent='覆盖 '+(score.coverage*100).toFixed(1)+'% · XY '+(score.xy_mean_mm??NaN).toFixed(3)+' mm · Z '+(score.z_mae_mm??NaN).toFixed(3)+' mm';
+$('formal-coordinate').textContent=finite(p[frame])?'本帧重建：'+p[frame].map(v=>v.toFixed(3)).join(' / ')+' mm':'本帧：不输出 XYZ';$('formal-time').textContent=a.t[frame].toFixed(1)+' s';$('formal-slider').value=frame;
+}
+$('formal-case').addEventListener('change',setCase);$('formal-arm').addEventListener('change',()=>{arm=$('formal-arm').value;key=options('formal-model',Object.keys(a.arms[arm].predictions),labels,key);draw();});$('formal-model').addEventListener('change',()=>{key=$('formal-model').value;draw();});$('formal-slider').addEventListener('input',()=>{playing=false;$('formal-play').textContent='播放';frame=Number($('formal-slider').value);draw();});$('formal-play').addEventListener('click',()=>{if(frame===a.t.length-1)frame=0;playing=!playing;last=0;$('formal-play').textContent=playing?'暂停':'播放';});
+function tick(t){if(playing&&(!last||t-last>=100)){last=t;frame=Math.min(frame+1,a.t.length-1);if(frame===a.t.length-1){playing=false;$('formal-play').textContent='播放';}draw();}requestAnimationFrame(tick);}requestAnimationFrame(tick);
+const scene=$('formal-scene');scene.addEventListener('pointerdown',e=>{drag={id:e.pointerId,x:e.clientX,y:e.clientY};scene.setPointerCapture(e.pointerId);e.preventDefault();});scene.addEventListener('pointermove',e=>{if(!drag||drag.id!==e.pointerId)return;yaw+=(e.clientX-drag.x)*.008;pitch=Math.max(.15,Math.min(1.35,pitch+(e.clientY-drag.y)*.006));drag.x=e.clientX;drag.y=e.clientY;draw();});for(const e of ['pointerup','pointercancel','lostpointercapture'])scene.addEventListener(e,()=>drag=null);
+$('formal-export').addEventListener('click',()=>{const p=a.arms[arm].predictions[key],lines=['t_s,x_reference_mm,y_reference_mm,z_reference_mm,x_reconstructed_mm,y_reconstructed_mm,z_reconstructed_mm,xyz_valid,data_origin,field_arm,variant'];a.t.forEach((t,i)=>lines.push([t,...a.q[i].map(v=>v??''),...(finite(p[i])?p[i]:['','','']),finite(p[i]),a.kind==='real'?'real_field_frozen_offline_replay':'synthetic_field_frozen_offline_replay',arm,key].join(',')));const csv=lines.join('\n');$('formal-csv').value=csv;$('formal-csv-panel').classList.remove('hidden');$('formal-csv-panel').open=true;const link=document.createElement('a');link.href=URL.createObjectURL(new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8'}));link.download=a.id+'_'+key+'_frozen.csv';link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000);});
+new ResizeObserver(draw).observe(scene);setCase();
+})();

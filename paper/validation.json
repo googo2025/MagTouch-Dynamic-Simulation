@@ -1,0 +1,16 @@
+{
+  "status": "PASSED_ALL_24_PAGES_VISUAL_QA",
+  "pages": {
+    "zh": 11,
+    "en": 13
+  },
+  "primary_source_trials": 24,
+  "secondary_target_trials": 12,
+  "source_examples": 4,
+  "source_selection_posthoc": true,
+  "all_source_target_trials_in_supplement": true,
+  "prior_manuscript_unchanged": true,
+  "training_or_replay_started": false,
+  "visual_review": "Chinese pages 1-11 and English pages 1-13 inspected; figures, captions, equations and tables legible; no clipped content or blank trailing appendix page",
+  "target_disclosure": "The target magnetic-layer configuration, evaluation role, and centered-localization limitation remain explicit in both main texts and complete target tables remain supplementary"
+}

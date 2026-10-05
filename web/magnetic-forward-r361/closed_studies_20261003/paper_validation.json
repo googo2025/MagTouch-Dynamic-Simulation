@@ -1,0 +1,39 @@
+{
+  "status": "PASS_RENDER_BILINGUAL_ARITHMETIC_AND_ALL_41_PAGE_VISUAL_QA",
+  "checks": {
+    "all_originals_unchanged": true,
+    "bilingual_equations_and_table_numbers_match": true,
+    "closed_denoising_no_stale_pending": true,
+    "all64_classification_conditions": true,
+    "all12_real_batch_arm_summaries": true,
+    "no_production_or_hardware_actions": true,
+    "all41_final_page_pixels_inspected": true
+  },
+  "documents": [
+    {
+      "pdf": "MagTouch_仿真平台与虚拟轨迹增强论文_中文.pdf",
+      "pages": 19,
+      "pdf_sha256": "44aeef9d4e8268bc9cd49dbd43212eb34d3a6c09845f77110a05efacd9e41fb6",
+      "source_sha256": "29bf29b77ae2c1cb51bcf8d3a8db96cf73d1548109f9d7fb44ea797513688a62",
+      "qa": "_qa"
+    },
+    {
+      "pdf": "english_full/MagTouch_Dynamic_Simulation_and_Virtual_Augmentation_English.pdf",
+      "pages": 22,
+      "pdf_sha256": "82f921e0709529c1f06af9f23782fb84a23287d95ca8a0d6c0f0940f7be02bb7",
+      "source_sha256": "da79198f99a6fe5f0db6845fcf8096c95a8b522a3e92600456e1d2cf29d7d87b",
+      "qa": "english_full\\_qa"
+    }
+  ],
+  "builder_sha256": "5198be71d29a8bbd6e6bd4384b6ef6c35fcd60fdcc56ac54604defd92175b8db",
+  "source_index_sha256": "1b185d78f3e3335aadfdcfad208f636a3cc1ee54ac3ddcc14b00898a16244846",
+  "originals_unchanged": true,
+  "production_changed": false,
+  "hardware_operated": false,
+  "visual_qa_manifest": "visual_qa_manifest.json",
+  "visual_qa_manifest_sha256": "21083c7ce743af59ebe3dd9996747b70e3ce9ce4760dbb32878521f51a426f23",
+  "formats": [
+    "PDF",
+    "editable Markdown source"
+  ]
+}

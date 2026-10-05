@@ -1,0 +1,7 @@
+{
+  "surface_roi_px": [300, 180, 650, 300],
+  "y_mm_per_px": 0.020,
+  "z_sign": -1.0,
+  "max_features": 100,
+  "note": "Calibrate y_mm_per_px with a ruler/checkerboard in the same depth plane. z_sign depends on image orientation."
+}

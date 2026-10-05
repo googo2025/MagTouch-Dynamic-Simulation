@@ -1,0 +1,14 @@
+{
+  "schema": "MagTouch-Physics-Forward-1",
+  "description": "External mechanical/magnetic simulation bridge. No valid physics solver is bundled.",
+  "required_arrays": {
+    "t_s": "T strictly increasing finite seconds",
+    "contacts_xyz_mm": "T x K x 3, indentation positive; physical contact geometry belongs in provenance",
+    "delta_b_uT": "T x 15; S1x,S1y,S1z,...,S5x,S5y,S5z"
+  },
+  "required_provenance": ["solver_version", "geometry_contract_sha256", "material_parameters", "initial_state", "contact_law", "magnetic_model", "validation_passed", "validation_sha256"],
+  "training_admission": "A supplied independent real-measurement validation report must match the hash, geometry and number of contacts. A metadata boolean alone is insufficient.",
+  "single_contact_superposition_admissible_as_truth": false,
+  "web_import": "Local view only; validation claims are not verified by browser import.",
+  "current_physics_status": "Static physical calibration pending in MagTouch_RA; dynamic/multi-contact not validated."
+}

@@ -1,0 +1,19 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MagTouch - closed-study evidence and bilingual papers</title>
+<style>body{font:17px/1.7 system-ui,sans-serif;max-width:1060px;margin:36px auto;padding:0 22px;color:#233746;background:#fafbfd}h1,h2{line-height:1.3}a{color:#145d8a}table{border-collapse:collapse;width:100%;font-size:15px}td,th{padding:8px;border:1px solid #ced8df;text-align:left}th{background:#e7eef3}img{width:100%;height:auto}small{color:#526775}section{margin:34px 0}.links{display:flex;flex-wrap:wrap;gap:22px}</style>
+<h1>MagTouch 仿真研究：已完成实验补充</h1>
+<p>独立于旧发布包的补充入口。研究结果按模型和评价任务分别报告，不要求所有候选都改善，也不把局部收益扩展成整体精度提升。</p>
+<nav class="links"><a href="../index.html">交互仿真 / Simulator</a><a href="../virtual_lab_r368.html">虚拟实验 / Virtual lab</a><a href="../model_results.html">原逐模型结果 / Model cards</a><a href="paper_zh.pdf">中文论文（19页）</a><a href="paper_en.pdf">English paper (22 pages)</a></nav>
+<section><h2>1. 可复算的正结果 / Positive, scoped findings</h2>
+<p>早期1000条虚拟扩集候选在既有Yellow真实测试上XY误差下降14.8%，但源侧没有同样改善。两批分别采集的原生D路径中，第一条去固定平移后的形状误差下降29.4%、跳变下降51.4%；第二条形状误差退化，但跳变下降。原始误差和批次差异仍保留。</p>
+<p>普通128条扩集模型在三批全部36条复杂真实轨迹上减少跳变（批均下降14.5%、14.1%、6.2%），三批停驻波动也降低；原始和去平移定位误差均未优于R373。稳定性收益与精度代价分别报告。</p>
+<p>新因果动作识别：64条留出虚拟几何中，宏F1由0.453提高至0.616，63/64条改善。仅一个训练种子，类别是名义动作，不是独立测得的接触或力；尚无真实动作识别迁移证据。</p>
+<img src="causal_action_recognition.png" alt="All 64 virtual geometries, confusion matrices and full learning curves">
+<small>两种输入、所有64条几何的配对差值及完整训练曲线；没有只选择有利轨迹。</small></section>
+<section><h2>2. 已闭环的去噪训练真实对照 / Completed real denoising comparison</h2>
+<p>四模型处理同一未经额外滤波的真实磁流，保持实际B0、dt及因果状态；每批12条复杂Trial等权汇总。Centered XY为每条路径拟合的固定平移诊断，不是在线校准。以下全12个条件均展示。</p>
+<table><thead><tr><th>Batch</th><th>Model</th><th>Raw XY mm</th><th>Centered XY mm</th><th>Jump rate</th><th>Dwell RMS mm</th></tr></thead><tbody><tr><td>SOURCE</td><td>R373</td><td>0.436</td><td>0.215</td><td>23.23%</td><td>0.1120</td></tr><tr><td>SOURCE</td><td>raw128</td><td>0.575</td><td>0.253</td><td>19.87%</td><td>0.1046</td></tr><tr><td>SOURCE</td><td>clean128</td><td>0.581</td><td>0.244</td><td>25.67%</td><td>0.1168</td></tr><tr><td>SOURCE</td><td>causal128</td><td>0.570</td><td>0.249</td><td>24.19%</td><td>0.1131</td></tr><tr><td>SOURCE_REPEAT</td><td>R373</td><td>0.452</td><td>0.224</td><td>24.56%</td><td>0.1171</td></tr><tr><td>SOURCE_REPEAT</td><td>raw128</td><td>0.583</td><td>0.264</td><td>21.09%</td><td>0.1068</td></tr><tr><td>SOURCE_REPEAT</td><td>clean128</td><td>0.590</td><td>0.255</td><td>26.71%</td><td>0.1192</td></tr><tr><td>SOURCE_REPEAT</td><td>causal128</td><td>0.580</td><td>0.261</td><td>25.36%</td><td>0.1164</td></tr><tr><td>Yellow</td><td>R373</td><td>0.521</td><td>0.478</td><td>46.34%</td><td>0.1596</td></tr><tr><td>Yellow</td><td>raw128</td><td>0.679</td><td>0.504</td><td>43.48%</td><td>0.1521</td></tr><tr><td>Yellow</td><td>clean128</td><td>0.733</td><td>0.529</td><td>49.50%</td><td>0.1698</td></tr><tr><td>Yellow</td><td>causal128</td><td>0.707</td><td>0.511</td><td>48.05%</td><td>0.1659</td></tr></tbody></table>
+<p>clean128及causal128没有超过raw128的真实稳定性收益。虚拟去噪收益并不自动迁移到真实定位。已查看的真实数据属于冻结后的回顾性评价，非新盲测。</p></section>
+<section><h2>3. 证据及边界 / Evidence and limits</h2><nav class="links"><a href="action_report.json">R410 all-condition report</a><a href="action_audit.json">R410 independent audit</a><a href="real_report.json">R412 all-condition report</a><a href="real_audit.json">R412 independent audit</a><a href="paper_validation.json">41-page paper QA</a><a href="source_index.json">Paper source hashes</a></nav>
+<p>D复杂历史的原非单调峰值假设在真实停驻中0/6通过，保留为负结果。当前正向模型是基于已有真实标定数据拟合的单点经验动态模型，不是任意触头、多点接触或完整有限元数字孪生。</p>
+<p>实物装置和运行现场参见<a href="https://github.com/googo2025/MagTouch-RA-3d-trajectory-recon/tree/main/media">原项目media</a>。本补包未上传或发布。浏览器可运行静态前端；Python训练、实时硬件采集和离线回测不在GitHub Pages运行。</p></section></html>

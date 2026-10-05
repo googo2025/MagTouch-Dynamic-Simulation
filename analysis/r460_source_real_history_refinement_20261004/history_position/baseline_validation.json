@@ -1,0 +1,52 @@
+{
+  "objective": 0.3792308098075457,
+  "rows": [
+    {
+      "trial": 27,
+      "mode": "grid_points",
+      "frames": 393,
+      "raw_xy_mm": 0.2881475301633629,
+      "centered_xy_mm": 0.1907690100517312,
+      "bias_xy_mm": [
+        -0.22282887278690475,
+        -0.04332292433616771
+      ],
+      "residual_step_rms_mm": 0.13985457701645634,
+      "jump_over_0p2_percent": 10.054347826086957,
+      "hold_xy_rms_mm": 0.09470146475935809,
+      "hold_blocks": 25
+    },
+    {
+      "trial": 28,
+      "mode": "angle_scan",
+      "frames": 2007,
+      "raw_xy_mm": 0.2956448911885373,
+      "centered_xy_mm": 0.20074392478704137,
+      "bias_xy_mm": [
+        -0.21765758233093502,
+        -0.0497193452103443
+      ],
+      "residual_step_rms_mm": 0.11390548031328523,
+      "jump_over_0p2_percent": 5.876443997990959,
+      "hold_xy_rms_mm": 0.0813703449539162,
+      "hold_blocks": 17
+    },
+    {
+      "trial": 29,
+      "mode": "circle_scan",
+      "frames": 738,
+      "raw_xy_mm": 0.43759086468293934,
+      "centered_xy_mm": 0.3273410363860054,
+      "bias_xy_mm": [
+        -0.29484786729015017,
+        -0.05962081764106483
+      ],
+      "residual_step_rms_mm": 0.11189930307098726,
+      "jump_over_0p2_percent": 6.065573770491803,
+      "hold_xy_rms_mm": 0.07764485805319132,
+      "hold_blocks": 3
+    }
+  ],
+  "anchor_rms_mm": 0.18123846857025983,
+  "note": "Frozen feature-domain source validation, NOT native full-chain evaluation"
+}

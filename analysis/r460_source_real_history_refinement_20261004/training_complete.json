@@ -1,0 +1,8 @@
+{
+  "status": "BOTH_ARMS_FROZEN",
+  "arms": [
+    "history_position",
+    "history_motion_hold_anchor"
+  ],
+  "native_real_evaluation": "PENDING"
+}

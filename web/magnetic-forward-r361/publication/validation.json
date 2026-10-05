@@ -1,0 +1,22 @@
+{
+  "status": "PASS_RENDER_AND_ALL_16_PAGE_VISUAL_QA",
+  "visual_qa": {"all_pages_inspected": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16], "repaired_pages_reinspected": [5,11], "clipping_overlap_or_missing_glyphs": false, "stale_pending_figure_label_repaired": true},
+  "pages": 16,
+  "pdf": "MagTouch_仿真平台与虚拟轨迹增强论文_中文.pdf",
+  "pdf_sha256": "70922054201aab8a7f3a27fd16383384770d72f754cbecb18364f364b43f898b",
+  "source_sha256": "0ee47fc7cf50eae2fd1e1d658166108f93dce19550b18b1dc735e16608bf796e",
+  "checks": {
+    "model_specific_positive_results": true,
+    "unregistered_and_centered_both_reported": true,
+    "old_negative_hypothesis_retained": true,
+    "not_all_candidate_success_required": true,
+    "no_live_result_placeholder": true,
+    "no_template_tokens": true,
+    "equations_preserved": true
+  },
+  "previous_source_sha256": "ceaee0ac346fdb56242a0fc23b31eac3dc99abfbbb9f4e87daae68d305feb05c",
+  "old_source_unchanged": true,
+  "production_changed": false,
+  "hardware_operated": false,
+  "english_scope": "English replacement conclusion only; not a complete English manuscript"
+}

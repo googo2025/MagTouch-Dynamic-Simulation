@@ -1,0 +1,113 @@
+{
+  "schema": "R460-Real-Stability-Accuracy-1",
+  "purpose": "Simulation-motivated representation refined with source real data",
+  "baseline": "Already completed pure-real R372 weights deployed as R373; NOT old undertrained model",
+  "baseline_xy_sha256": "65f3015e8c053b1c806fe6c56cb53e862a8b97c4f1f882cb8f8fbf7b694305ff",
+  "baseline_z_sha256": "26eca2f30c07caf03a2a018b64ca632991657cfdc12653e4e81bb9bf43e259c7",
+  "source_manifest_sha256": "6604b9ef0ee2391477543f8faa1484b2cb0dcab36e2626eb957e3f75e5326b37",
+  "source_dependencies": [
+    {
+      "path": "analysis/r372_direct_source_plateau_20261001/data_manifest.json",
+      "sha256": "6604b9ef0ee2391477543f8faa1484b2cb0dcab36e2626eb957e3f75e5326b37"
+    },
+    {
+      "path": "analysis/r372_direct_source_plateau_20261001/xy/best_model.npz",
+      "sha256": "65f3015e8c053b1c806fe6c56cb53e862a8b97c4f1f882cb8f8fbf7b694305ff"
+    },
+    {
+      "path": "analysis/r372_direct_source_plateau_20261001/z/best_model.npz",
+      "sha256": "26eca2f30c07caf03a2a018b64ca632991657cfdc12653e4e81bb9bf43e259c7"
+    },
+    {
+      "path": "analysis/r372_direct_source_plateau_20261001/inputs/xy_train.npz",
+      "sha256": "61b2a135af43a11e7d6ea58744eb123edd91151781c5382b282c93d544542e82"
+    },
+    {
+      "path": "training/train_source_to_plateau_r372.py",
+      "sha256": "1fb02c0692c8af78ab9969815216788ab9702ffc35ce23fe56f644cc62e09c92"
+    },
+    {
+      "path": "training/had239_causal_xy_features_r165.py",
+      "sha256": "9e7385d7d515184a66e9b811401d0fe6b862bcead81d3fff3c3742e1d85108f2"
+    },
+    {
+      "path": "training/retrain_r133_coverage_xy.py",
+      "sha256": "ac8e67a0383086678d7fdb56b513131f667fc089c826f0a10b4fe057c1384c48"
+    },
+    {
+      "path": "training/probe_causal_xy_neural_r164.py",
+      "sha256": "02a11641ba2289e2c3f9936b6fd376150bcc07afa6318b309beaa215a04b4a88"
+    },
+    {
+      "path": "training/build_trajectory_dataset_v1.py",
+      "sha256": "7df070a72c983a2982ad75b17db967756b0ce61fe6ddad5d7e9bd798b0c2e944"
+    }
+  ],
+  "train_arms": [
+    "history_position",
+    "history_motion_hold_anchor"
+  ],
+  "seed": 7,
+  "architecture": "101-64-64-2 tanh; original53 plus three16D corrected-phi causal EMA residuals",
+  "original_history": "unchanged0.1/0.4s differences and rank2 slow memory, original53 inputs retained",
+  "tau_seconds": [
+    0.3,
+    1.0,
+    4.0
+  ],
+  "reset": "same accepted-frame invalidity/B0/stream/nonincreasing time/>0.25s as original XY",
+  "initialization": "copy R373 all six arrays, pad first weight with48 zero rows; both arms exact same original function",
+  "normalization": "original53 immutable; new48 source TRAIN mean/std floor0.25; no VAL or test moments",
+  "split": "same32whole TRAIN/3wholeVAL as completed R372 XY; original7782 samples audited; add source TRAIN-only reliable holds",
+  "source_domain": "original D5 topD3 R1 rounded-flat x had239; old metadata aliases not new geometry",
+  "position_loss_group_masses": [
+    0.8,
+    0.1,
+    0.1
+  ],
+  "groups": [
+    "original_dynamic",
+    "additional_reliable_holds",
+    "original_static_anchors"
+  ],
+  "minimum_nominal_depth_mm": 0.45,
+  "hold_rule": "finite commandXYZ + accepted input + logged_EST segment + no movement/boundary + hold age0.2..1.5s; not measured contact/deformation truth",
+  "pair_rule": "sameTrial contiguous valid native rows, same logged_EST segment,0<dt<=0.25s, depth>=0.45 and away from command boundaries; no future history input",
+  "constraint_weights": {
+    "increment": 0.25,
+    "hold": 0.25,
+    "anchor": 0.25
+  },
+  "constraint_loss": "match delta(guard+neural correction) to delta(reference), not zero during moving; extra penalty only on qualified hold pairs; static anchors targetzero correction",
+  "identical_data_for_both_train_arms": true,
+  "baseline_vs_new_is_not_pure_history_ablation": "also new inputs/capacity and reliable-hold source rows; arm3 vs4 isolates explicit objectives",
+  "initial_lr": 0.0002,
+  "min_lr": 1e-06,
+  "lr_factor": 0.5,
+  "patience": 50,
+  "relative_min_delta": 0.0001,
+  "batch_size": 256,
+  "max_epochs": 2000,
+  "l2_weights": 0.001,
+  "stopping": "fulltraversal everyepoch;50VAL plateau reduceLR;atminimumLR50plateau stop;cap means incomplete, same optimizer resume",
+  "selection": "sourceVAL mean(rawXY+0.1residualstepRMS+0.1holdRMS)+0.1staticanchorRMS",
+  "accuracy_guard": "macro rawXY <=baseline+0.005mm;eachwholeVALTrial <=baseline+0.02mm;anchorRMS <=baseline+0.02mm",
+  "guards": "identity checkpointepoch0 admissible; also save unconstrained best and report no useful new checkpoint ifepoch0 selected",
+  "reference": "unchanged stage command estimated movement, no encoder/force/fullshape truth",
+  "inference": "replace bothXY feature/model routes in isolated fullR373 research replay;Z/gating/permission/slowmemory unchanged, their coupling evaluated",
+  "no_XYZ_output_smoothing_added": true,
+  "input_temporal_filtering": true,
+  "real_primary_test": "all newly collected complex geometries never in model TRAIN/VAL; SOURCE/SOURCE_REPEAT/Yellow each12 planned; not test-cherry-picked",
+  "test_source_protocols": [
+    "analysis/r395_new_real_simulation_paper_20261003/protocol.json",
+    "analysis/r395_new_real_simulation_paper_20261003/source_repeat/protocol.json"
+  ],
+  "new_test_records_or_Yellow_used_for_fit_selection": false,
+  "all_new_arms_freeze_before_test": true,
+  "test_is_retrospective": "records previously examined for other frozen models; not a fresh prospective blind trial",
+  "tests": "originalB0 actualdt complete nativeprefix incl gaps resets; all conditions raw/centeredXYZ,coverage,failures,jumps,hold,radius/amplitude,reversal_delay,oldskills",
+  "production_or_UI_changes": false,
+  "hardware_operations": false,
+  "server_deletions": false,
+  "finite_scope": "these2newarms then frozenrealcomparison, no automaticarchitecture/loss sweep"
+}

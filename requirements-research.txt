@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+Pillow
+scipy
+reportlab
+pypdf
+pyserial
+trimesh
+shapely
+
+# Torch is only needed for the recent offline training code, not the website.
+torch

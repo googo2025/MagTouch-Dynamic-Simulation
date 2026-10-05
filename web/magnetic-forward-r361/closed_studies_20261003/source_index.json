@@ -1,0 +1,82 @@
+{
+  "schema": "R430-ClosedStudies-Publication-1",
+  "previous_artifacts": {
+    "paper_export/R430_逐模型仿真收益_20261003/manuscript_zh.md": "0ee47fc7cf50eae2fd1e1d658166108f93dce19550b18b1dc735e16608bf796e",
+    "paper_export/R430_逐模型仿真收益_20261003/MagTouch_仿真平台与虚拟轨迹增强论文_中文.pdf": "70922054201aab8a7f3a27fd16383384770d72f754cbecb18364f364b43f898b",
+    "paper_export/R430_逐模型仿真收益_20261003/source_index.json": "082dfdf49a6c8005f572e94cc15a104b53e1ddd10e4e8bd8cc739ec22fdd1424",
+    "paper_export/R430_逐模型仿真收益_20261003/validation.json": "1a312f4e03eed56f6a8ab5142733261b09d8aac870496d2ec68acfc7030412ed",
+    "paper_export/R430_逐模型仿真收益_20261003/english_full/manuscript_en.md": "5ac4abfa934f88109222a057715a00dd9875fce6281ddd17f09e562a20aa993c",
+    "paper_export/R430_逐模型仿真收益_20261003/english_full/MagTouch_Dynamic_Simulation_and_Virtual_Augmentation_English.pdf": "301bfb112d2c2f82bd6f5ac1b21c9f9d20773acef3be8af083732409eefd1e4b",
+    "release/MagTouch_Simulation_GitHub_R430_20261003/package_summary.json": "3bda47fff0b56d33fae76ae64f4261862d38c99e94b47955271817dac9235071"
+  },
+  "prior_source_index": "prior_source_index.json",
+  "closed_input_files": {
+    "analysis/r410_causal_action_recognition_20261003/recovery_v2/report.json": {
+      "sha256": "1bee6e0be797dc908558b6568286e897ebab8c1bc3a53eb34ec69faafa1d92d6",
+      "bytes": 457136,
+      "origin": "verified completed D custody"
+    },
+    "analysis/r412_frozen_denoising_real_replay_20261003/recovery_v2/report.json": {
+      "sha256": "9155b44d27fd01642ca4afef588e16edaa744a2519b5109e61234c2b6d255a75",
+      "bytes": 692404,
+      "origin": "verified completed D custody"
+    },
+    "analysis/r410_causal_action_recognition_20261003/recovery_v2/independent_audit.json": {
+      "sha256": "40761be67d8871054fd34290a1049a60a93b6e8d03c2db89a61f6313d9ba0bd8",
+      "bytes": 63158,
+      "origin": "verified completed D custody"
+    },
+    "analysis/r412_frozen_denoising_real_replay_20261003/recovery_v2/independent_audit.json": {
+      "sha256": "33d443fb3eda5d6aa03d669bddeb5fb801b5503256196a8ac6fd09c3dbc8637b",
+      "bytes": 148803,
+      "origin": "verified completed D custody"
+    },
+    "analysis/r410_causal_action_recognition_20261003/protocol.json": {
+      "sha256": "422893a64350df1ad59a093b599c17588990fbd5484d406021aef5d05c178ce8",
+      "bytes": 8775,
+      "origin": "verified completed D custody"
+    },
+    "analysis/r410_causal_action_recognition_20261003/recovery_v2/instantaneous15/freeze.json": {
+      "sha256": "06f4c0a9ca2773b0098c44d8c8a62761553a25e62b729eec5757641f119774b4",
+      "bytes": 831,
+      "origin": "verified completed D custody"
+    },
+    "analysis/r410_causal_action_recognition_20261003/recovery_v2/causal75/freeze.json": {
+      "sha256": "7d72b13909ca98b8b9d22e1fd8dddac9616c4da4b3b2bef4ffed3380ef7a11d3",
+      "bytes": 824,
+      "origin": "verified completed D custody"
+    },
+    "analysis/r410_causal_action_recognition_20261003/recovery_v2/instantaneous15/history.json": {
+      "sha256": "1f409363d3649416f2c3ebcae4268740cf03a00e15f2d71c1a5815ae23b53e10",
+      "bytes": 224138,
+      "origin": "verified completed D custody"
+    },
+    "analysis/r410_causal_action_recognition_20261003/recovery_v2/causal75/history.json": {
+      "sha256": "493fc79b2df156b0c6f14ec6c71500da54b75f8d2df402a572ce6ebea91726e3",
+      "bytes": 290043,
+      "origin": "verified completed D custody"
+    }
+  },
+  "classification_scope": "Virtual nominal command classes, new whole geometries, single training seed; no real transfer",
+  "real_scope": "Previously viewed actual magnetic streams, frozen native causal replay; no real fitting or selection",
+  "figures": {
+    "causal_action_recognition.png": "f4571061f591465a4d630e511a7b1549240e10819d9abd88d3f540c8027f31fc",
+    "causal_simulation_pipeline.png": "1593a682f40df04cbb8431091eb1538562280e3c88ff98163535bba37bc75af0",
+    "learning_and_transfer.png": "7f4024aa6b6c33e44a805a4e841b77711460426e683a300eedfcd3d40577f22d",
+    "matched_mechanisms_and_xyz.png": "5faf1704b69ae5ceb089ffc1fda833cc7dd805b26db960bacd5ff35f05783226",
+    "new_causal_models.png": "c379fd97d2dd92c6922616a916e4809a820bb2de37edd9fc94a484e78c782c28",
+    "platform_panel_a.png": "eac1e42d4f9783317e44cf4caf561a5e6f22c1a3c53ae0c84624e493d958f9c4",
+    "platform_panel_b.png": "81c3f4e240cb6c1a6957dba8cad9300d92a6c254904d36a55636c951ac897889",
+    "platform_panel_c.png": "030b241e04e430a09ca7e35b75544ab5ee6e42feb49765cd176eb735d22ed4a1",
+    "platform_panel_d.png": "62e198532fcea5034051aca09cf6b037d01bd32c97a759a22c0eba077a63c45e",
+    "platform_panel_e.png": "9d78b9ac78cd7bdad77076ff561d89be9655f699a36928356a1ba25d3fa1d264",
+    "platform_panel_f.png": "5a4e4a5f78d42c3e15fb558285d99c9f0270c10c95d739a850e431fa0f4925db",
+    "simulation_platform_montage.png": "7fdd225215a5a39abbec3fd37a2711bb668875982b730099b072051e89deb3c7",
+    "virtual_coverage_and_relaxation.png": "288e891e29e6cfb2d87d7d336857188e325e54ad5d7e241ccfe477b8e5f74ac5",
+    "virtual_training_trajectories.png": "eb544cda57d50f09de6298a457fede1809259d0cc40f5e93f29ca6dc353dc040"
+  },
+  "raw_and_centered_retained": true,
+  "production_changed": false,
+  "hardware_operated": false,
+  "published": false
+}
