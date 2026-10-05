@@ -1,1 +1,10 @@
-<!doctype html><meta charset="utf-8"><title>运行与数据</title><h1>运行仿真与完整复算</h1><p><a href="index.html">仿真</a> · <a href="publication.html">最新双语论文与全部条件</a></p><pre>python -m http.server 8767</pre><p>网站ZIP解压后在其目录运行以上命令，打开http://127.0.0.1:8767/。不需要GPU或科学库；不要使用file://。完整科研仓库和数据分包见下载资料包的START_HERE.html，全部分包一起解压到新目录。不依赖旧补丁包。仅上传准备，尚无新的在线下载/Pages地址。Python训练和因果回放需独立环境，Pages仅静态前端。</p>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Run and data | MagTouch</title><style>body{max-width:850px;margin:40px auto;padding:0 20px;font:16px/1.65 system-ui,sans-serif;color:#26384b}a{color:#087d8a}pre{padding:12px;background:#edf3f7;overflow:auto}section{border-top:1px solid #ddd;margin-top:25px}</style></head><body>
+<nav><a href="index.html">Simulation</a> · <a href="publication.html">Bilingual paper and evidence</a> · <a href="https://github.com/googo2025/MagTouch-Dynamic-Simulation">GitHub repository</a></nav>
+<h1>Run the simulation</h1>
+<p>The public GitHub Pages site runs the static interactive simulator. To run a downloaded copy locally, start a static file server in the <code>web/magnetic-forward-r361</code> directory and open <code>http://127.0.0.1:8767/</code>:</p>
+<pre>python -m http.server 8767</pre>
+<p>No GPU or scientific Python packages are needed for the browser simulation. Do not use a <code>file://</code> URL. Python model training and causal replay require a separate environment and do not run on GitHub Pages.</p>
+<p>The public repository includes code, frozen research weights, selected de-identified prepared inputs, logs, protocol, aggregate evidence and papers. Original raw Trial streams with unresolved machine-path and acquisition metadata are withheld pending a separate release review. See <a href="https://github.com/googo2025/MagTouch-Dynamic-Simulation/blob/main/DATA_AVAILABILITY.md">data availability</a> for scope and limitations.</p>
+<section lang="zh-CN"><h2>中文说明</h2><p>在线页面只运行静态交互仿真。下载仓库后，在 <code>web/magnetic-forward-r361</code> 目录启动上述本地服务即可。Python 训练、因果回放及硬件采集均不在 GitHub Pages 上运行。公开仓库包含经检查的代码、研究权重、部分脱敏预处理输入和结果；尚未公开含本机路径或采集元数据的原始 Trial 时间流。</p></section>
+</body></html>

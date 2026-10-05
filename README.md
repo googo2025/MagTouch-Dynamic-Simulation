@@ -6,6 +6,9 @@ simulator](https://googo2025.github.io/MagTouch-Dynamic-Simulation/) runs in the
 browser. It shows commanded three-dimensional motion, history-dependent
 15-channel magnetic response, saved reconstruction examples, and a virtual
 laboratory. It does not control hardware.
+The R461 simulator interface opens in English and can be switched to Chinese
+with the `English / 中文` controls. The older Chinese-only R430 entry remains
+available as `web/magnetic-forward-r361/index_r430_legacy.html`.
 
 ## Main finding and limits
 
