@@ -1,23 +1,33 @@
 # Micromachines revision supplement — 24 October 2026
 
-This published revision supplements the existing MagTouch-Dynamic-Simulation repository and preserves its simulator website and historical evidence. Use the full manuscripts in this folder for the current scientific interpretation.
+The full revised manuscript and the versioned raw-data/code release are linked here. Historical simulator files and evidence are retained.
 
-## Main result and boundary
+## Main result
 
-Simulation and earlier real-record checks motivated multiscale causal features, which were added to an existing history-aware chain and trained on real data. In the original source conditions the refinement improved command-referenced trajectory error and stability. Matched continued training with the same enlarged sample pool did not reproduce the large stability gain. In nine archived evaluation sequences, stability benefits persisted but raw XY error increased; the raw-error regression is retained alongside the smaller centered diagnostic. The work supports a conditional simulation-assisted design route, not universal accuracy gains, independently measured contact-position precision or the necessity of simulation.
+An empirical simulator and real-record checks informed a multiscale causal-history expansion trained on real data. The original source conditions support joint command-referenced error and stability gains. Matched continued training did not reproduce the large stability benefit. In nine archived acquisitions, stability improved but raw XY error increased. This regression, the retrospective original evaluation, common-initialization order seeds and command-derived references remain explicit.
 
-## Contents
+## Raw inputs and executable reproduction
 
-- `paper/Manuscript_Revised_EN.md`: complete revised manuscript, retaining the submitted paper's methods, original controls and references and adding the matched and archived studies.
-- `paper/assets/`: unchanged-source original figures and new plots from frozen results.
-- `results/`: full-precision summary, per-record, pair-common and training-trace CSVs, including negative outcomes. The three order seeds are not independent initializations.
-- `models/`: the 18 added selected model artifacts and hashes; no model was selected using archived-extension performance.
-- `protocols/`: public, path-screened descriptions of the training and extension protocols and source versions.
-- `tools/reproduce_saved_outputs.py`: portable statistical entry point for the **complete reproduction archive**, not a claim that the raw inputs are included in this overlay.
-- `verification/`: numerical verification receipt for the separately packaged complete payload.
+Download **[the versioned raw-data and code capsule](https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-reproducibility)** and verify its SHA-256 against [public_release_manifest.json](public_release_manifest.json). It contains 35 TRAIN/DEV records, 57 evaluation records, raw sensor journals and CSVs, command timestamps, 92 record assignments, frozen outputs, model artifacts and versioned statistical sources. Machine identifiers are redacted with hash provenance; numerical observations, timestamps and arrays are preserved.
 
-## Reproduction level
+From the extracted capsule root (Linux/Python 3.11+):
 
-The complete author-held archive contains the raw command/magnetic inputs and frozen outputs required by the verified route. Run its `tools/reproduce_saved_outputs.py --root <complete-archive> --output <fresh-directory> --phase all` using Linux/Python 3.11+ and `requirements-statistics.txt`. Verification covers the original 504 per-record rows (5,976 numerical cells at reported precision) and all scientific sections of the two new reports, without model inference or training. A fresh full training/inference execution and independent physical metrology are distinct and are not claimed here.
+```sh
+python3 -m venv .venv-statistics
+.venv-statistics/bin/python -m pip install -r requirements-statistics.txt
+.venv-statistics/bin/python tools/reproduce_saved_outputs.py --root . --output ../verification-new --phase all
+.venv-statistics/bin/python tools/reproduce_principal_tables.py --root . --statistics ../verification-new --output ../principal-tables-new
+```
 
-This overlay intentionally excludes raw hardware streams and unredacted acquisition metadata. Publication of this supplement does not represent the separate original records as public. The existing project software and paper/figure license notices continue to apply; no raw-data license is newly granted by this supplement.
+The public copy passed in a fresh virtual environment: the original 504 per-sequence rows and 5,976 numerical cells, scientific fields of both new reports, source/target Table 6 rows and Table 7 bootstrap/sign-flip statistics, and the printed values of Tables 8, 9, S1 and S2. See [the completed verification](verification/public_capsule_verification.json). These are principal trajectory-statistics reproductions rather than new training or hardware experiments.
+
+## Files in this repository directory
+
+- [English manuscript](paper/Manuscript_Revised_EN.md) and [Chinese manuscript](paper/Manuscript_Revised_ZH.md), with figure assets.
+- `results/`: original, matched and archived summaries/per-sequence/paired results and training traces, including negative outcomes.
+- `models/`: all 18 added selected models and hashes.
+- `protocols/` and [record assignments](manifests/record_assignments.csv): protocol summaries, source versions and whole-record roles.
+- `tools/` and `expected_tables/`: portable reduction/table entry points and printed-table references. Run them against the downloaded capsule, which contains the required numerical inputs.
+- `FILE_MANIFEST.json`: checksums for this repository supplement.
+
+Original native streams retain the input actually received by the online decoder and its target queue-loss limitation. Archived reconstruction lacks the old complete inference journal and uses its disclosed separate policy. Command-derived coordinates are not independent physical ground truth. Source/software and manuscript/figure licenses remain those of the existing repository; no new dataset-wide reuse license is asserted.

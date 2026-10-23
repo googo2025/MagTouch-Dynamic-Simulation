@@ -1,0 +1,68 @@
+{
+  "status": "PUBLIC_REDACTED_RAW_CAPSULE_AND_PRINCIPAL_TABLES_PASS",
+  "fresh_virtual_environment": true,
+  "statistics_verification": {
+    "status": "PASS_PORTABLE_SAVED_OUTPUT_REDUCTION",
+    "results": [
+      {
+        "phase": "original-submitted-table",
+        "all_published_cells_match": true,
+        "rows": 504,
+        "numeric_cells_checked": 5976,
+        "source_csv_sha256": "abfc8c6b6159f0cf0abd0bbe1a541c7a3a04ff98ab6da4f5d35104bab8b57f74",
+        "rounding": "Exact agreement at submitted CSV precision: 5 decimals for errors/offset, 3 for jump percentages; counts exact."
+      },
+      {
+        "phase": "matched",
+        "all_scientific_sections_match": true,
+        "sections": [
+          "own_summaries",
+          "paired_summaries",
+          "order_seed_summaries",
+          "own_record_details",
+          "paired_record_details",
+          "input_hashes"
+        ],
+        "original_report_sha256": "525ebd2e1079c2c5eac212f76f95bc9fc5c64dd1d3f7f35781aacb8c03e45b53",
+        "reproduced_report_sha256": "a002aaa0413fc8b48287bba89d3e0f5ba9a0580dc28a696832f1a180f189cfab"
+      },
+      {
+        "phase": "archived",
+        "all_scientific_sections_match": true,
+        "sections": [
+          "summaries",
+          "paired_summaries",
+          "record_details",
+          "paired_record_details",
+          "input_hashes",
+          "validity_correction_audits"
+        ],
+        "original_report_sha256": "7beba60d35aaf520afda1fca53b740c070b0cad23c221924ada6e05d931d4558",
+        "reproduced_report_sha256": "84021c0f88c1f6bd29da2862f56d6b96e66b0a1460f19b49688b89cd34d48bb2"
+      }
+    ],
+    "wall_seconds": 55.762933591991896,
+    "CPU_seconds": 90.31575857300001,
+    "new_inference_calls": 0,
+    "new_training_updates": 0,
+    "hardware_operations": 0,
+    "root_mapping_only": true,
+    "scope": "Saved-output statistics verified; full model inference and training are distinct, not rerun here."
+  },
+  "principal_table_verification": {
+    "status": "PASS_PRINCIPAL_TRAJECTORY_TABLES",
+    "tables": {
+      "tab_source.tex": "all printed cells and group labels exact",
+      "tab_target.tex": "all printed cells and group labels exact",
+      "tab_stats.tex": "all printed cells and group labels exact",
+      "Table8": "all printed numerical cells exact, including order-seed SD",
+      "Table9": "all printed numerical cells exact, including order-seed SD",
+      "TableS1": "all printed numerical cells exact, including order-seed SD",
+      "TableS2": "all printed numerical cells exact, including order-seed SD"
+    },
+    "original_cluster_bootstrap_resamples": 10000,
+    "original_sign_flip_families": 6,
+    "new_inference": 0,
+    "new_training": 0
+  }
+}

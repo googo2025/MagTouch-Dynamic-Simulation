@@ -1,9 +1,5 @@
 # Revision publication and provenance
 
-Target repository: https://github.com/googo2025/MagTouch-Dynamic-Simulation
+This repository preserves historical baseline `0048460dd73e104101eea1696bd5c24737c9bd44` and the first revision-supplement commit `fd9aca878bcf5336727e2e7685ba2a77fd0c42d6`. The current update repairs Markdown group labels/headers, provides the public raw-data/code [reproduction release](https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-reproducibility), and updates scientific data-availability links. Numerical table cells, model weights, scientific arrays and figure assets are unchanged.
 
-This revision was prepared as a versioned additive supplement to historical baseline `0048460dd73e104101eea1696bd5c24737c9bd44`. The published change adds the supplement and updates repository entry points, manuscript-version guidance and data-availability wording. The existing simulator, workflows, original science files and historical evidence are retained.
-
-The immutable pre-publication overlay archive and the complete raw reproduction archive remain separate author-held deliverables. The public supplement file manifest records the publication copy, whose availability wording now links to the repository. Scientific tables, equations, model weights and figure assets are unchanged from the verified preparation.
-
-Publication of this supplement does not publish raw hardware streams or unredacted acquisition metadata, grant a raw-data license, or establish physical metrology. No connection helpers, credentials, hardware-control automation or automatic-upload workflow are included.
+The public capsule contains screened raw inputs and hash provenance. The original unredacted author-held archive and reviewer correspondence remain separate. The existing simulator, workflows and historical results are retained. No credentials, private conversation, connection helpers or remote-control automation are included.

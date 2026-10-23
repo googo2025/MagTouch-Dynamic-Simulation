@@ -4,6 +4,8 @@ This repository provides an interactive empirical magnetic-response simulator an
 
 ## Current revised manuscript and supplement
 
+**Raw inputs, split assignments and principal-table code are now available in the [versioned reproduction release](https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-reproducibility).** The public copy passed a fresh-environment numerical check.
+
 The **24 October 2026 revision** is the current manuscript. It retains the submitted study and adds matched continued-training controls and a fixed-protocol archived extension:
 
 - [Complete revised English manuscript](supplements/micromachines_revision_20261024/paper/Manuscript_Revised_EN.md) · [完整中文修订稿](supplements/micromachines_revision_20261024/paper/Manuscript_Revised_ZH.md)
@@ -35,6 +37,6 @@ References are reconstructed from stage commands and estimated timing, not indep
 python -m http.server 8767 --directory web/magnetic-forward-r361
 ```
 
-Open <http://127.0.0.1:8767/>. Browser simulation and saved examples require no Python backend. Training, original-stream replay and FEM are separate offline workflows. This public repository omits original hardware streams and is not a complete raw-data replication kit. The separate complete archive has verified saved-output statistics; full training/inference is a distinct execution level.
+Open <http://127.0.0.1:8767/>. Browser simulation and saved examples require no Python backend. Training, original-stream replay and FEM are separate offline workflows. The large raw-input capsule is distributed through the versioned GitHub release rather than the Git checkout. It contains the inputs and saved outputs for the verified principal trajectory tables; fresh execution of every historical training stage remains a distinct scope.
 
 Software is MIT-licensed. Manuscripts and figures are CC BY 4.0; see [LICENSE-CONTENT.md](LICENSE-CONTENT.md). No raw-data license is newly granted. Physical-platform photographs remain in the [related hardware repository](https://github.com/googo2025/MagTouch-RA-3d-trajectory-recon/tree/main/media).

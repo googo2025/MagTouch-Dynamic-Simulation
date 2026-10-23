@@ -1,12 +1,50 @@
 {
-  "schema": "MagTouch-Published-Revision-20261024-v1",
-  "historical_base_commit": "0048460dd73e104101eea1696bd5c24737c9bd44",
-  "raw_streams_public": false,
+  "schema": "MagTouch-Published-Revision-Raw-Release-v1",
   "files": [
     {
       "path": "README.md",
-      "bytes": 2960,
-      "sha256": "e2b35ffac62235e45e02231588d20a62b6ff69b86cb11f734d053ee64ea5fb28"
+      "bytes": 3403,
+      "sha256": "9ff14a6da0a68904a66e2f4d43a4a34cf8812dd9dae211ee526c959e1f97353b"
+    },
+    {
+      "path": "expected_tables/Table8.md",
+      "bytes": 877,
+      "sha256": "e9b8714bc3a1fb793191e70c079de22e7c5621c06bae771e9e8a285b42627d86"
+    },
+    {
+      "path": "expected_tables/Table9.md",
+      "bytes": 879,
+      "sha256": "2cac874c3eab67e1bc4dd52afc853697ad052baa4930e0cd0feb0fe917a1e174"
+    },
+    {
+      "path": "expected_tables/TableS1.md",
+      "bytes": 877,
+      "sha256": "a49efa70abce0887def1694a707e4c1ed8f1d53ead41e781115a9df973ed85cb"
+    },
+    {
+      "path": "expected_tables/TableS2.md",
+      "bytes": 879,
+      "sha256": "0d5532fc22d9bd3d895e2f0df028eafe8817b4e0f69fc7ac4ce1243082e3f910"
+    },
+    {
+      "path": "expected_tables/tab_source.tex",
+      "bytes": 1146,
+      "sha256": "a7454604753b717bdf7e320859a9201a07d32dbd106719e7316498a07b7b351e"
+    },
+    {
+      "path": "expected_tables/tab_stats.tex",
+      "bytes": 3809,
+      "sha256": "e4d124d9189aaef694f717640babe99566ca69f3d695b3acd03973d919a5b927"
+    },
+    {
+      "path": "expected_tables/tab_target.tex",
+      "bytes": 570,
+      "sha256": "41a11c148e4a4e811035107e3de2c65b4f688c5ee38468fa399ca9610e661bc4"
+    },
+    {
+      "path": "manifests/record_assignments.csv",
+      "bytes": 23724,
+      "sha256": "4bb9658bdee509f0618c7594c108bb96fe61f640d113325c28bb3eb44ca4675a"
     },
     {
       "path": "models/H0_matched_L1_seed17/best_model.npz",
@@ -105,13 +143,13 @@
     },
     {
       "path": "paper/Manuscript_Revised_EN.md",
-      "bytes": 154134,
-      "sha256": "dc0876d8f24ab4a2c27f217e7a1ebd5cf39301de8d7fac9207caf2701502b939"
+      "bytes": 156946,
+      "sha256": "cf8f5c53b92257b707eff62ee289b859c2e3311db845187cb95d8fce7de02ab9"
     },
     {
       "path": "paper/Manuscript_Revised_ZH.md",
-      "bytes": 91445,
-      "sha256": "763cb76e146c35f96bfd98b43d83874ce1d68b0a1bc83233e3f125ed6ee05009"
+      "bytes": 93881,
+      "sha256": "c8dfdca64f9496754c79ee5d834f60233e5cf6ea0979661fc28356a550b86b61"
     },
     {
       "path": "paper/assets/fig_arch_revision.svg",
@@ -230,13 +268,18 @@
     },
     {
       "path": "protocols/source_versions.json",
-      "bytes": 552,
-      "sha256": "74ca5d26b744da3e28d4ed9bad3afc9ee9db0be1a4a60271446e8fb812f54378"
+      "bytes": 1096,
+      "sha256": "9a6b8baa7f731c5946fe5288b16b3889ce29465224e47489a56f2eb9349a8420"
     },
     {
       "path": "protocols/training.json",
       "bytes": 1847,
       "sha256": "1c9de84fee30af68320f62af57b5462c894e80aa9d80dfc29fdfaabe808ede4a"
+    },
+    {
+      "path": "public_release_manifest.json",
+      "bytes": 1056,
+      "sha256": "fa2b7648882b75dd128d389b3b6c73e69aee3d7a819dce118a7b45c749e096cf"
     },
     {
       "path": "requirements-statistics.txt",
@@ -274,14 +317,25 @@
       "sha256": "e4e3105ff683ede0d496301b965da476c4fcc9f2fe940036693d1401a90ecea1"
     },
     {
+      "path": "tools/reproduce_principal_tables.py",
+      "bytes": 6029,
+      "sha256": "7cdf9503808ad2045e949d83e53fe8e2ef3ed968ddf2035db4e32c01dab14761"
+    },
+    {
       "path": "tools/reproduce_saved_outputs.py",
       "bytes": 11454,
       "sha256": "e4611fdc5de81bc9bbe8900f310b8a2fb4414534a2e5f3f4e0301a2f5e01a001"
+    },
+    {
+      "path": "verification/public_capsule_verification.json",
+      "bytes": 2720,
+      "sha256": "82e615aec2d656de76c17a1554aa49211da5a9f258004728672e787c07b86b93"
     },
     {
       "path": "verification/saved_output_verification.json",
       "bytes": 1717,
       "sha256": "6d71cbf9c0321434aa71c9e4cea0c3ddd7c3ede78c83dd756c258ef810fae2a3"
     }
-  ]
+  ],
+  "raw_inputs_available_from": "https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-reproducibility"
 }

@@ -1,5 +1,3 @@
-# Current MagTouch Micromachines revision
+# Current revision and public reproduction
 
-The [24 October 2026 supplement](supplements/micromachines_revision_20261024/README.md) contains the full revised manuscript and figures, matched controls, archived-extension results, selected models, protocol summaries and statistical verification. It retains the archived raw-error regression alongside stability gains. See the root README for current manuscript links and DATA_AVAILABILITY.md for the raw-data boundary.
-
-The original simulator website and historical files are preserved. The complete original-stream archive is author-held and separate from this public release.
+Use the [revised manuscripts and supplement](supplements/micromachines_revision_20261024/README.md) and the [versioned raw-input/code release](https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-reproducibility). The public data and commands reproduce the principal trajectory tables in a fresh Python environment. Original source-domain joint gains and archived raw-error regressions are both retained. Earlier manuscript/PDF and simulator snapshots remain historical provenance.

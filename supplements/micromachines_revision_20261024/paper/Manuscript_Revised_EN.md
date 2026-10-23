@@ -311,13 +311,13 @@ Figure 11 (Appendix B) shows that selection mattered; both runs start from H0,
 |  | H1 | H2 |
 | --- | --- | --- |
 | Objective | $\mathcal{L}_1$ (14) | $\mathcal{L}_2$ (15) |
-| Training samples | 11,415 (Section 2.3.3) |  |
-| Network | 101–64–64–2, $\tanh$, 10,818 parameters |  |
-| Initialization | H0 weights; 48 new input rows zero |  |
-| Optimizer | Adam, $\beta_1=0.9$, $\beta_2=0.999$, $\epsilon=10^{-8}$ |  |
-| Batch size (nominal); updates per epoch | 256; 45 |  |
-| Learning rate | $2\times10^{-4}$, halved on plateau to $10^{-6}$ |  |
-| Seed; precision | 7; 64-bit floating point |  |
+| Training samples | 11,415 (Section 2.3.3) | 11,415 (Section 2.3.3) |
+| Network | 101–64–64–2, $\tanh$, 10,818 parameters | 101–64–64–2, $\tanh$, 10,818 parameters |
+| Initialization | H0 weights; 48 new input rows zero | H0 weights; 48 new input rows zero |
+| Optimizer | Adam, $\beta_1=0.9$, $\beta_2=0.999$, $\epsilon=10^{-8}$ | Adam, $\beta_1=0.9$, $\beta_2=0.999$, $\epsilon=10^{-8}$ |
+| Batch size (nominal); updates per epoch | 256; 45 | 256; 45 |
+| Learning rate | $2\times10^{-4}$, halved on plateau to $10^{-6}$ | $2\times10^{-4}$, halved on plateau to $10^{-6}$ |
+| Seed; precision | 7; 64-bit floating point | 7; 64-bit floating point |
 | Epochs run | 1015 | 854 |
 | Selected epoch | 146 | 269 |
 | Parameter updates | 45,675 | 38,430 |
@@ -452,26 +452,26 @@ Table 6 lists the trial-averaged results, Figure 6 the individual trials and T
 
 **Table 6.** Trial-averaged results on the 12 complex trajectories of each session (lengths in mm). The rows with an output filter are post hoc controls.
 
-| Session | Model | $E_{xy}$ | $E_{xy}$, 95th pct. | $E^{\mathrm c}_{xy}$ | $E_{xyz}$ | $Z$ MAE | Step RMS | Jump rate (%) | Dwell RMS | Coverage (%) |
+| Session | Model | Accuracy / $E_{xy}$ | Accuracy / $E_{xy}$, 95th pct. | Accuracy / $E^{\mathrm c}_{xy}$ | Accuracy / $E_{xyz}$ | Accuracy / $Z$ MAE | Fluctuation / Step RMS | Fluctuation / Jump rate (%) | Fluctuation / Dwell RMS | Coverage (%) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  | H0 | 0.436 | 0.715 | 0.215 | 0.480 | 0.165 | 0.173 | 23.23 | 0.112 | 99.90 |
-|  | H1 | 0.415 | 0.647 | 0.190 | 0.459 | 0.163 | 0.120 | 7.77 | 0.083 | 99.90 |
-|  | H2 | 0.408 | 0.627 | 0.195 | 0.454 | 0.164 | 0.094 | 3.13 | 0.071 | 99.90 |
-|  | H0+EMA<sub>0.03</sub> | 0.432 | 0.694 | 0.205 | 0.476 | 0.165 | 0.094 | 2.82 | 0.080 | – |
-|  | H0+EMA<sub>0.05</sub> | 0.433 | 0.692 | 0.206 | 0.477 | 0.165 | 0.064 | 0.43 | 0.068 | – |
-|  | H2+EMA<sub>0.05</sub> | 0.410 | 0.620 | 0.199 | 0.455 | 0.164 | 0.037 | 0.06 | 0.054 | – |
-|  | H0 | 0.452 | 0.750 | 0.224 | 0.487 | 0.156 | 0.176 | 24.56 | 0.117 | 99.91 |
-|  | H1 | 0.429 | 0.674 | 0.196 | 0.464 | 0.153 | 0.123 | 8.21 | 0.083 | 99.89 |
-|  | H2 | 0.424 | 0.656 | 0.204 | 0.460 | 0.155 | 0.097 | 3.31 | 0.070 | 99.89 |
-|  | H0+EMA<sub>0.03</sub> | 0.448 | 0.731 | 0.214 | 0.483 | 0.156 | 0.097 | 3.21 | 0.082 | – |
-|  | H0+EMA<sub>0.05</sub> | 0.449 | 0.729 | 0.215 | 0.483 | 0.156 | 0.066 | 0.46 | 0.069 | – |
-|  | H2+EMA<sub>0.05</sub> | 0.426 | 0.653 | 0.208 | 0.462 | 0.155 | 0.038 | 0.05 | 0.051 | – |
-|  | H0 | 0.521 | 0.982 | 0.478 | 0.565 | 0.172 | 0.256 | 46.32 | 0.160 | 98.49 |
-|  | H1 | 0.526 | 1.015 | 0.488 | 0.570 | 0.172 | 0.195 | 28.87 | 0.130 | 98.48 |
-|  | H2 | 0.512 | 0.985 | 0.484 | 0.557 | 0.170 | 0.161 | 18.54 | 0.113 | 98.47 |
-|  | H0+EMA<sub>0.03</sub> | 0.514 | 0.971 | 0.472 | 0.558 | 0.172 | 0.174 | 22.48 | 0.131 | – |
-|  | H0+EMA<sub>0.05</sub> | 0.514 | 0.974 | 0.474 | 0.559 | 0.172 | 0.132 | 11.45 | 0.115 | – |
-|  | H2+EMA<sub>0.05</sub> | 0.515 | 0.994 | 0.489 | 0.560 | 0.170 | 0.089 | 3.36 | 0.093 | – |
+| Source 1 | H0 | 0.436 | 0.715 | 0.215 | 0.480 | 0.165 | 0.173 | 23.23 | 0.112 | 99.90 |
+| Source 1 | H1 | 0.415 | 0.647 | 0.190 | 0.459 | 0.163 | 0.120 | 7.77 | 0.083 | 99.90 |
+| Source 1 | H2 | 0.408 | 0.627 | 0.195 | 0.454 | 0.164 | 0.094 | 3.13 | 0.071 | 99.90 |
+| Source 1 | H0+EMA<sub>0.03</sub> | 0.432 | 0.694 | 0.205 | 0.476 | 0.165 | 0.094 | 2.82 | 0.080 | – |
+| Source 1 | H0+EMA<sub>0.05</sub> | 0.433 | 0.692 | 0.206 | 0.477 | 0.165 | 0.064 | 0.43 | 0.068 | – |
+| Source 1 | H2+EMA<sub>0.05</sub> | 0.410 | 0.620 | 0.199 | 0.455 | 0.164 | 0.037 | 0.06 | 0.054 | – |
+| Source 2 | H0 | 0.452 | 0.750 | 0.224 | 0.487 | 0.156 | 0.176 | 24.56 | 0.117 | 99.91 |
+| Source 2 | H1 | 0.429 | 0.674 | 0.196 | 0.464 | 0.153 | 0.123 | 8.21 | 0.083 | 99.89 |
+| Source 2 | H2 | 0.424 | 0.656 | 0.204 | 0.460 | 0.155 | 0.097 | 3.31 | 0.070 | 99.89 |
+| Source 2 | H0+EMA<sub>0.03</sub> | 0.448 | 0.731 | 0.214 | 0.483 | 0.156 | 0.097 | 3.21 | 0.082 | – |
+| Source 2 | H0+EMA<sub>0.05</sub> | 0.449 | 0.729 | 0.215 | 0.483 | 0.156 | 0.066 | 0.46 | 0.069 | – |
+| Source 2 | H2+EMA<sub>0.05</sub> | 0.426 | 0.653 | 0.208 | 0.462 | 0.155 | 0.038 | 0.05 | 0.051 | – |
+| Target | H0 | 0.521 | 0.982 | 0.478 | 0.565 | 0.172 | 0.256 | 46.32 | 0.160 | 98.49 |
+| Target | H1 | 0.526 | 1.015 | 0.488 | 0.570 | 0.172 | 0.195 | 28.87 | 0.130 | 98.48 |
+| Target | H2 | 0.512 | 0.985 | 0.484 | 0.557 | 0.170 | 0.161 | 18.54 | 0.113 | 98.47 |
+| Target | H0+EMA<sub>0.03</sub> | 0.514 | 0.971 | 0.472 | 0.558 | 0.172 | 0.174 | 22.48 | 0.131 | – |
+| Target | H0+EMA<sub>0.05</sub> | 0.514 | 0.974 | 0.474 | 0.559 | 0.172 | 0.132 | 11.45 | 0.115 | – |
+| Target | H2+EMA<sub>0.05</sub> | 0.515 | 0.994 | 0.489 | 0.560 | 0.170 | 0.089 | 3.36 | 0.093 | – |
 
 H0: baseline chain. H1: history expansion with position loss. H2: history expansion with motion-aware loss. EMA<sub>$\tau$</sub>: causal first-order filter with time constant $\tau$ (s) on the planar output (18). $E^{\mathrm c}_{xy}$: planar error after removing the mean error vector of each trial (diagnostic). Step RMS and jump rate (threshold 0.2 mm) refer to the frame-to-frame change in the planar residual. Coverage is not listed for filtered outputs because the filter does not change which frames are valid.
 
@@ -493,42 +493,42 @@ H0: baseline chain. H1: history expansion with position loss. H2: history expans
 
 | Comparison | Metric | Control | H2 | Change (%) | 95% CI of difference | $p$ | Trials improved | Families improved |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  | $E_{xy}$ (mm) | 0.436 | 0.408 | $-6.4$ | $[-0.041,\,-0.014]$ | 0.031 | 11/12 | 6/6 |
-|  | $E_{xy}$, 95th pct. (mm) | 0.715 | 0.627 | $-12.3$ | $[-0.117,\,-0.059]$ | 0.031 | 12/12 | 6/6 |
-|  | $E^{\mathrm c}_{xy}$ (mm) | 0.215 | 0.195 | $-9.2$ | $[-0.027,\,-0.013]$ | 0.031 | 12/12 | 6/6 |
-|  | Step RMS (mm) | 0.173 | 0.094 | $-45.3$ | $[-0.086,\,-0.071]$ | 0.031 | 12/12 | 6/6 |
-|  | Jump rate (%) | 23.23 | 3.13 | $-86.5$ | $[-23.02,\,-17.23]$ | 0.031 | 12/12 | 6/6 |
-|  | Dwell RMS (mm) | 0.112 | 0.071 | $-36.8$ | $[-0.050,\,-0.033]$ | 0.031 | 12/12 | 6/6 |
-|  | $E_{xy}$ (mm) | 0.452 | 0.424 | $-6.3$ | $[-0.041,\,-0.018]$ | 0.031 | 12/12 | 6/6 |
-|  | $E_{xy}$, 95th pct. (mm) | 0.750 | 0.656 | $-12.6$ | $[-0.124,\,-0.066]$ | 0.031 | 12/12 | 6/6 |
-|  | $E^{\mathrm c}_{xy}$ (mm) | 0.224 | 0.204 | $-9.3$ | $[-0.026,\,-0.016]$ | 0.031 | 12/12 | 6/6 |
-|  | Step RMS (mm) | 0.176 | 0.097 | $-45.1$ | $[-0.086,\,-0.074]$ | 0.031 | 12/12 | 6/6 |
-|  | Jump rate (%) | 24.56 | 3.31 | $-86.5$ | $[-23.83,\,-18.70]$ | 0.031 | 12/12 | 6/6 |
-|  | Dwell RMS (mm) | 0.117 | 0.070 | $-40.6$ | $[-0.055,\,-0.040]$ | 0.031 | 12/12 | 6/6 |
-|  | $E_{xy}$ (mm) | 0.521 | 0.512 | $-1.7$ | $[-0.025,\,+0.008]$ | 0.344 | 8/12 | 4/6 |
-|  | $E_{xy}$, 95th pct. (mm) | 0.982 | 0.985 | $+0.2$ | $[-0.032,\,+0.025]$ | 0.969 | 5/12 | 2/6 |
-|  | $E^{\mathrm c}_{xy}$ (mm) | 0.478 | 0.484 | $+1.3$ | $[-0.014,\,+0.029]$ | 0.625 | 5/12 | 3/6 |
-|  | Step RMS (mm) | 0.256 | 0.161 | $-37.3$ | $[-0.102,\,-0.088]$ | 0.031 | 12/12 | 6/6 |
-|  | Jump rate (%) | 46.32 | 18.54 | $-60.0$ | $[-29.80,\,-25.88]$ | 0.031 | 12/12 | 6/6 |
-|  | Dwell RMS (mm) | 0.160 | 0.113 | $-28.9$ | $[-0.057,\,-0.037]$ | 0.031 | 12/12 | 6/6 |
-|  | $E_{xy}$ (mm) | 0.432 | 0.408 | $-5.6$ | $[-0.038,\,-0.010]$ | 0.062 | 11/12 | 5/6 |
-|  | $E_{xy}$, 95th pct. (mm) | 0.694 | 0.627 | $-9.7$ | $[-0.102,\,-0.035]$ | 0.031 | 11/12 | 6/6 |
-|  | $E^{\mathrm c}_{xy}$ (mm) | 0.205 | 0.195 | $-4.8$ | $[-0.016,\,-0.003]$ | 0.062 | 10/12 | 5/6 |
-|  | Step RMS (mm) | 0.094 | 0.094 | $+1.0$ | $[-0.002,\,+0.004]$ | 0.500 | 3/12 | 1/6 |
-|  | Jump rate (%) | 2.82 | 3.13 | $+10.9$ | $[-0.25,\,+0.80]$ | 0.344 | 4/12 | 2/6 |
-|  | Dwell RMS (mm) | 0.080 | 0.071 | $-11.6$ | $[-0.013,\,-0.006]$ | 0.031 | 11/12 | 6/6 |
-|  | $E_{xy}$ (mm) | 0.448 | 0.424 | $-5.5$ | $[-0.038,\,-0.015]$ | 0.031 | 12/12 | 6/6 |
-|  | $E_{xy}$, 95th pct. (mm) | 0.731 | 0.656 | $-10.2$ | $[-0.116,\,-0.040]$ | 0.031 | 12/12 | 6/6 |
-|  | $E^{\mathrm c}_{xy}$ (mm) | 0.214 | 0.204 | $-5.0$ | $[-0.015,\,-0.006]$ | 0.031 | 11/12 | 6/6 |
-|  | Step RMS (mm) | 0.097 | 0.097 | $+0.1$ | $[-0.002,\,+0.003]$ | 0.938 | 8/12 | 4/6 |
-|  | Jump rate (%) | 3.21 | 3.31 | $+3.3$ | $[-0.61,\,+0.80]$ | 0.781 | 5/12 | 2/6 |
-|  | Dwell RMS (mm) | 0.082 | 0.070 | $-15.6$ | $[-0.017,\,-0.010]$ | 0.031 | 12/12 | 6/6 |
-|  | $E_{xy}$ (mm) | 0.514 | 0.512 | $-0.3$ | $[-0.019,\,+0.016]$ | 0.906 | 6/12 | 3/6 |
-|  | $E_{xy}$, 95th pct. (mm) | 0.971 | 0.985 | $+1.4$ | $[-0.020,\,+0.042]$ | 0.438 | 5/12 | 1/6 |
-|  | $E^{\mathrm c}_{xy}$ (mm) | 0.472 | 0.484 | $+2.5$ | $[-0.008,\,+0.034]$ | 0.344 | 4/12 | 2/6 |
-|  | Step RMS (mm) | 0.174 | 0.161 | $-7.5$ | $[-0.021,\,-0.003]$ | 0.062 | 10/12 | 5/6 |
-|  | Jump rate (%) | 22.48 | 18.54 | $-17.5$ | $[-6.14,\,-0.91]$ | 0.062 | 10/12 | 5/6 |
-|  | Dwell RMS (mm) | 0.131 | 0.113 | $-13.7$ | $[-0.029,\,-0.008]$ | 0.031 | 10/12 | 6/6 |
+| H2 vs. H0; Source 1 | $E_{xy}$ (mm) | 0.436 | 0.408 | $-6.4$ | $[-0.041,\,-0.014]$ | 0.031 | 11/12 | 6/6 |
+| H2 vs. H0; Source 1 | $E_{xy}$, 95th pct. (mm) | 0.715 | 0.627 | $-12.3$ | $[-0.117,\,-0.059]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0; Source 1 | $E^{\mathrm c}_{xy}$ (mm) | 0.215 | 0.195 | $-9.2$ | $[-0.027,\,-0.013]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0; Source 1 | Step RMS (mm) | 0.173 | 0.094 | $-45.3$ | $[-0.086,\,-0.071]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0; Source 1 | Jump rate (%) | 23.23 | 3.13 | $-86.5$ | $[-23.02,\,-17.23]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0; Source 1 | Dwell RMS (mm) | 0.112 | 0.071 | $-36.8$ | $[-0.050,\,-0.033]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0; Source 2 | $E_{xy}$ (mm) | 0.452 | 0.424 | $-6.3$ | $[-0.041,\,-0.018]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0; Source 2 | $E_{xy}$, 95th pct. (mm) | 0.750 | 0.656 | $-12.6$ | $[-0.124,\,-0.066]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0; Source 2 | $E^{\mathrm c}_{xy}$ (mm) | 0.224 | 0.204 | $-9.3$ | $[-0.026,\,-0.016]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0; Source 2 | Step RMS (mm) | 0.176 | 0.097 | $-45.1$ | $[-0.086,\,-0.074]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0; Source 2 | Jump rate (%) | 24.56 | 3.31 | $-86.5$ | $[-23.83,\,-18.70]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0; Source 2 | Dwell RMS (mm) | 0.117 | 0.070 | $-40.6$ | $[-0.055,\,-0.040]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0; Target | $E_{xy}$ (mm) | 0.521 | 0.512 | $-1.7$ | $[-0.025,\,+0.008]$ | 0.344 | 8/12 | 4/6 |
+| H2 vs. H0; Target | $E_{xy}$, 95th pct. (mm) | 0.982 | 0.985 | $+0.2$ | $[-0.032,\,+0.025]$ | 0.969 | 5/12 | 2/6 |
+| H2 vs. H0; Target | $E^{\mathrm c}_{xy}$ (mm) | 0.478 | 0.484 | $+1.3$ | $[-0.014,\,+0.029]$ | 0.625 | 5/12 | 3/6 |
+| H2 vs. H0; Target | Step RMS (mm) | 0.256 | 0.161 | $-37.3$ | $[-0.102,\,-0.088]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0; Target | Jump rate (%) | 46.32 | 18.54 | $-60.0$ | $[-29.80,\,-25.88]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0; Target | Dwell RMS (mm) | 0.160 | 0.113 | $-28.9$ | $[-0.057,\,-0.037]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Source 1 | $E_{xy}$ (mm) | 0.432 | 0.408 | $-5.6$ | $[-0.038,\,-0.010]$ | 0.062 | 11/12 | 5/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Source 1 | $E_{xy}$, 95th pct. (mm) | 0.694 | 0.627 | $-9.7$ | $[-0.102,\,-0.035]$ | 0.031 | 11/12 | 6/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Source 1 | $E^{\mathrm c}_{xy}$ (mm) | 0.205 | 0.195 | $-4.8$ | $[-0.016,\,-0.003]$ | 0.062 | 10/12 | 5/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Source 1 | Step RMS (mm) | 0.094 | 0.094 | $+1.0$ | $[-0.002,\,+0.004]$ | 0.500 | 3/12 | 1/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Source 1 | Jump rate (%) | 2.82 | 3.13 | $+10.9$ | $[-0.25,\,+0.80]$ | 0.344 | 4/12 | 2/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Source 1 | Dwell RMS (mm) | 0.080 | 0.071 | $-11.6$ | $[-0.013,\,-0.006]$ | 0.031 | 11/12 | 6/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Source 2 | $E_{xy}$ (mm) | 0.448 | 0.424 | $-5.5$ | $[-0.038,\,-0.015]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Source 2 | $E_{xy}$, 95th pct. (mm) | 0.731 | 0.656 | $-10.2$ | $[-0.116,\,-0.040]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Source 2 | $E^{\mathrm c}_{xy}$ (mm) | 0.214 | 0.204 | $-5.0$ | $[-0.015,\,-0.006]$ | 0.031 | 11/12 | 6/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Source 2 | Step RMS (mm) | 0.097 | 0.097 | $+0.1$ | $[-0.002,\,+0.003]$ | 0.938 | 8/12 | 4/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Source 2 | Jump rate (%) | 3.21 | 3.31 | $+3.3$ | $[-0.61,\,+0.80]$ | 0.781 | 5/12 | 2/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Source 2 | Dwell RMS (mm) | 0.082 | 0.070 | $-15.6$ | $[-0.017,\,-0.010]$ | 0.031 | 12/12 | 6/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Target | $E_{xy}$ (mm) | 0.514 | 0.512 | $-0.3$ | $[-0.019,\,+0.016]$ | 0.906 | 6/12 | 3/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Target | $E_{xy}$, 95th pct. (mm) | 0.971 | 0.985 | $+1.4$ | $[-0.020,\,+0.042]$ | 0.438 | 5/12 | 1/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Target | $E^{\mathrm c}_{xy}$ (mm) | 0.472 | 0.484 | $+2.5$ | $[-0.008,\,+0.034]$ | 0.344 | 4/12 | 2/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Target | Step RMS (mm) | 0.174 | 0.161 | $-7.5$ | $[-0.021,\,-0.003]$ | 0.062 | 10/12 | 5/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Target | Jump rate (%) | 22.48 | 18.54 | $-17.5$ | $[-6.14,\,-0.91]$ | 0.062 | 10/12 | 5/6 |
+| H2 vs. H0+EMA<sub>0.03</sub>$^{\dagger}$; Target | Dwell RMS (mm) | 0.131 | 0.113 | $-13.7$ | $[-0.029,\,-0.008]$ | 0.031 | 10/12 | 6/6 |
 
 Difference: H2 minus control, in the units of the metric; negative values favor H2. CI: percentile interval of a cluster bootstrap over the six path families (10,000 resamples). $p$: exact two-sided sign-flip test over the six family means; 0.031 is the smallest attainable value. $^{\dagger}$Post hoc comparison.
 
@@ -708,48 +708,48 @@ Table 10 lists the results of all 36 complex test trajectories, and Table 11 t
 
 **Table 10.** Per-trial results on the complex test trajectories (lengths in mm; jump rate in % at the 0.2-mm threshold).
 
-| Session | Path family | (mm/s) | Frames | H0 | H1 | H2 | H0 | H1 | H2 | H0 | H1 | H2 | H0 | H1 | H2 |
+| Session | Path family | Speed / (mm/s) | Frames | $E_{xy}$ / H0 | $E_{xy}$ / H1 | $E_{xy}$ / H2 | $E^{\mathrm c}_{xy}$ / H0 | $E^{\mathrm c}_{xy}$ / H1 | $E^{\mathrm c}_{xy}$ / H2 | Jump rate / H0 | Jump rate / H1 | Jump rate / H2 | Dwell RMS / H0 | Dwell RMS / H1 | Dwell RMS / H2 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  | Bézier 3-D | 0.7 | 1473 | 0.236 | 0.248 | 0.251 | 0.145 | 0.142 | 0.141 | 15.1 | 2.0 | 0.6 | 0.089 | 0.063 | 0.051 |
-|  | Bézier 3-D | 1.3 | 835 | 0.392 | 0.368 | 0.372 | 0.199 | 0.182 | 0.192 | 21.6 | 7.1 | 2.4 | 0.118 | 0.087 | 0.074 |
-|  | Inertial turns | 0.7 | 1615 | 0.529 | 0.498 | 0.487 | 0.188 | 0.165 | 0.154 | 30.1 | 13.2 | 5.7 | 0.138 | 0.099 | 0.084 |
-|  | Inertial turns | 1.3 | 838 | 0.533 | 0.502 | 0.491 | 0.207 | 0.191 | 0.185 | 34.1 | 16.3 | 7.7 | 0.147 | 0.107 | 0.091 |
-|  | Stop–return | 0.7 | 2428 | 0.401 | 0.395 | 0.387 | 0.180 | 0.143 | 0.141 | 27.0 | 6.4 | 1.9 | 0.130 | 0.092 | 0.074 |
-|  | Stop–return | 1.3 | 1308 | 0.420 | 0.415 | 0.406 | 0.206 | 0.172 | 0.177 | 27.7 | 7.6 | 1.6 | 0.136 | 0.102 | 0.085 |
-|  | Multiscale curve | 0.7 | 2181 | 0.521 | 0.500 | 0.492 | 0.239 | 0.216 | 0.227 | 19.4 | 5.8 | 2.5 | 0.089 | 0.065 | 0.054 |
-|  | Multiscale curve | 1.3 | 1172 | 0.505 | 0.483 | 0.471 | 0.264 | 0.227 | 0.245 | 19.7 | 7.0 | 2.8 | 0.103 | 0.072 | 0.060 |
-|  | Depth-reversing spiral | 0.7 | 2250 | 0.444 | 0.401 | 0.389 | 0.244 | 0.221 | 0.230 | 20.6 | 6.5 | 2.5 | 0.096 | 0.070 | 0.061 |
-|  | Depth-reversing spiral | 1.3 | 1220 | 0.459 | 0.422 | 0.406 | 0.261 | 0.232 | 0.238 | 18.8 | 5.6 | 2.9 | 0.095 | 0.077 | 0.069 |
-|  | Three-lobe XYZ | 0.7 | 3749 | 0.379 | 0.358 | 0.354 | 0.215 | 0.188 | 0.200 | 22.7 | 7.5 | 3.2 | 0.089 | 0.072 | 0.061 |
-|  | Three-lobe XYZ | 1.3 | 2103 | 0.414 | 0.391 | 0.393 | 0.230 | 0.195 | 0.208 | 21.9 | 8.3 | 3.8 | 0.113 | 0.091 | 0.086 |
-|  | Bézier 3-D | 0.7 | 1496 | 0.333 | 0.303 | 0.313 | 0.178 | 0.155 | 0.160 | 24.3 | 7.1 | 2.2 | 0.118 | 0.085 | 0.068 |
-|  | Bézier 3-D | 1.3 | 783 | 0.409 | 0.386 | 0.389 | 0.202 | 0.182 | 0.192 | 24.2 | 7.7 | 3.6 | 0.119 | 0.085 | 0.071 |
-|  | Inertial turns | 0.7 | 1550 | 0.504 | 0.484 | 0.476 | 0.203 | 0.182 | 0.174 | 32.5 | 14.7 | 6.4 | 0.153 | 0.111 | 0.094 |
-|  | Inertial turns | 1.3 | 823 | 0.530 | 0.512 | 0.504 | 0.203 | 0.188 | 0.181 | 31.8 | 14.8 | 5.8 | 0.149 | 0.109 | 0.094 |
-|  | Stop–return | 0.7 | 2382 | 0.406 | 0.397 | 0.389 | 0.183 | 0.148 | 0.151 | 23.9 | 6.0 | 1.4 | 0.132 | 0.085 | 0.066 |
-|  | Stop–return | 1.3 | 1284 | 0.443 | 0.443 | 0.439 | 0.215 | 0.179 | 0.184 | 29.1 | 8.8 | 2.9 | 0.141 | 0.102 | 0.082 |
-|  | Multiscale curve | 0.7 | 2135 | 0.470 | 0.437 | 0.435 | 0.260 | 0.233 | 0.248 | 19.3 | 5.3 | 2.0 | 0.096 | 0.062 | 0.049 |
-|  | Multiscale curve | 1.3 | 1164 | 0.490 | 0.468 | 0.461 | 0.277 | 0.240 | 0.258 | 19.8 | 4.9 | 1.9 | 0.100 | 0.072 | 0.060 |
-|  | Depth-reversing spiral | 0.7 | 2231 | 0.470 | 0.432 | 0.420 | 0.245 | 0.224 | 0.235 | 20.1 | 6.6 | 3.0 | 0.099 | 0.070 | 0.058 |
-|  | Depth-reversing spiral | 1.3 | 1199 | 0.517 | 0.470 | 0.452 | 0.283 | 0.249 | 0.255 | 20.1 | 6.3 | 2.6 | 0.093 | 0.073 | 0.065 |
-|  | Three-lobe XYZ | 0.7 | 3723 | 0.407 | 0.384 | 0.380 | 0.215 | 0.185 | 0.199 | 24.7 | 7.2 | 3.1 | 0.093 | 0.067 | 0.057 |
-|  | Three-lobe XYZ | 1.3 | 2024 | 0.448 | 0.431 | 0.428 | 0.229 | 0.193 | 0.204 | 24.9 | 9.1 | 4.7 | 0.112 | 0.080 | 0.069 |
-|  | Bézier 3-D | 0.7 | 1474 | 0.406 | 0.417 | 0.410 | 0.372 | 0.391 | 0.386 | 45.7 | 25.4 | 15.5 | 0.169 | 0.136 | 0.118 |
-|  | Bézier 3-D | 1.3 | 642 | 0.437 | 0.432 | 0.430 | 0.395 | 0.401 | 0.400 | 52.3 | 29.5 | 18.5 | 0.173 | 0.140 | 0.121 |
-|  | Inertial turns | 0.7 | 883 | 0.469 | 0.517 | 0.505 | 0.427 | 0.444 | 0.423 | 40.3 | 25.5 | 16.5 | 0.175 | 0.138 | 0.122 |
-|  | Inertial turns | 1.3 | 500 | 0.453 | 0.481 | 0.458 | 0.436 | 0.458 | 0.437 | 50.8 | 34.6 | 24.9 | 0.166 | 0.124 | 0.109 |
-|  | Stop–return | 0.7 | 1351 | 0.406 | 0.378 | 0.371 | 0.387 | 0.359 | 0.364 | 47.0 | 28.8 | 16.5 | 0.183 | 0.135 | 0.114 |
-|  | Stop–return | 1.3 | 727 | 0.441 | 0.423 | 0.412 | 0.431 | 0.401 | 0.400 | 50.5 | 32.1 | 22.7 | 0.175 | 0.135 | 0.110 |
-|  | Multiscale curve | 0.7 | 1264 | 0.653 | 0.636 | 0.604 | 0.596 | 0.585 | 0.568 | 38.6 | 25.3 | 16.5 | 0.115 | 0.096 | 0.081 |
-|  | Multiscale curve | 1.3 | 649 | 0.656 | 0.655 | 0.629 | 0.586 | 0.583 | 0.577 | 43.1 | 26.5 | 15.4 | 0.121 | 0.096 | 0.082 |
-|  | Depth-reversing spiral | 0.7 | 1287 | 0.577 | 0.595 | 0.596 | 0.506 | 0.545 | 0.573 | 40.1 | 24.0 | 14.5 | 0.145 | 0.119 | 0.105 |
-|  | Depth-reversing spiral | 1.3 | 692 | 0.638 | 0.637 | 0.631 | 0.563 | 0.590 | 0.606 | 48.8 | 29.8 | 19.2 | 0.133 | 0.121 | 0.113 |
-|  | Three-lobe XYZ | 0.7 | 2109 | 0.561 | 0.581 | 0.557 | 0.510 | 0.542 | 0.535 | 48.6 | 32.2 | 20.3 | 0.178 | 0.152 | 0.133 |
-|  | Three-lobe XYZ | 1.3 | 1308 | 0.553 | 0.558 | 0.543 | 0.526 | 0.553 | 0.542 | 50.0 | 32.7 | 21.9 | 0.183 | 0.165 | 0.153 |
+| Source 1 | Bézier 3-D | 0.7 | 1473 | 0.236 | 0.248 | 0.251 | 0.145 | 0.142 | 0.141 | 15.1 | 2.0 | 0.6 | 0.089 | 0.063 | 0.051 |
+| Source 1 | Bézier 3-D | 1.3 | 835 | 0.392 | 0.368 | 0.372 | 0.199 | 0.182 | 0.192 | 21.6 | 7.1 | 2.4 | 0.118 | 0.087 | 0.074 |
+| Source 1 | Inertial turns | 0.7 | 1615 | 0.529 | 0.498 | 0.487 | 0.188 | 0.165 | 0.154 | 30.1 | 13.2 | 5.7 | 0.138 | 0.099 | 0.084 |
+| Source 1 | Inertial turns | 1.3 | 838 | 0.533 | 0.502 | 0.491 | 0.207 | 0.191 | 0.185 | 34.1 | 16.3 | 7.7 | 0.147 | 0.107 | 0.091 |
+| Source 1 | Stop–return | 0.7 | 2428 | 0.401 | 0.395 | 0.387 | 0.180 | 0.143 | 0.141 | 27.0 | 6.4 | 1.9 | 0.130 | 0.092 | 0.074 |
+| Source 1 | Stop–return | 1.3 | 1308 | 0.420 | 0.415 | 0.406 | 0.206 | 0.172 | 0.177 | 27.7 | 7.6 | 1.6 | 0.136 | 0.102 | 0.085 |
+| Source 1 | Multiscale curve | 0.7 | 2181 | 0.521 | 0.500 | 0.492 | 0.239 | 0.216 | 0.227 | 19.4 | 5.8 | 2.5 | 0.089 | 0.065 | 0.054 |
+| Source 1 | Multiscale curve | 1.3 | 1172 | 0.505 | 0.483 | 0.471 | 0.264 | 0.227 | 0.245 | 19.7 | 7.0 | 2.8 | 0.103 | 0.072 | 0.060 |
+| Source 1 | Depth-reversing spiral | 0.7 | 2250 | 0.444 | 0.401 | 0.389 | 0.244 | 0.221 | 0.230 | 20.6 | 6.5 | 2.5 | 0.096 | 0.070 | 0.061 |
+| Source 1 | Depth-reversing spiral | 1.3 | 1220 | 0.459 | 0.422 | 0.406 | 0.261 | 0.232 | 0.238 | 18.8 | 5.6 | 2.9 | 0.095 | 0.077 | 0.069 |
+| Source 1 | Three-lobe XYZ | 0.7 | 3749 | 0.379 | 0.358 | 0.354 | 0.215 | 0.188 | 0.200 | 22.7 | 7.5 | 3.2 | 0.089 | 0.072 | 0.061 |
+| Source 1 | Three-lobe XYZ | 1.3 | 2103 | 0.414 | 0.391 | 0.393 | 0.230 | 0.195 | 0.208 | 21.9 | 8.3 | 3.8 | 0.113 | 0.091 | 0.086 |
+| Source 2 | Bézier 3-D | 0.7 | 1496 | 0.333 | 0.303 | 0.313 | 0.178 | 0.155 | 0.160 | 24.3 | 7.1 | 2.2 | 0.118 | 0.085 | 0.068 |
+| Source 2 | Bézier 3-D | 1.3 | 783 | 0.409 | 0.386 | 0.389 | 0.202 | 0.182 | 0.192 | 24.2 | 7.7 | 3.6 | 0.119 | 0.085 | 0.071 |
+| Source 2 | Inertial turns | 0.7 | 1550 | 0.504 | 0.484 | 0.476 | 0.203 | 0.182 | 0.174 | 32.5 | 14.7 | 6.4 | 0.153 | 0.111 | 0.094 |
+| Source 2 | Inertial turns | 1.3 | 823 | 0.530 | 0.512 | 0.504 | 0.203 | 0.188 | 0.181 | 31.8 | 14.8 | 5.8 | 0.149 | 0.109 | 0.094 |
+| Source 2 | Stop–return | 0.7 | 2382 | 0.406 | 0.397 | 0.389 | 0.183 | 0.148 | 0.151 | 23.9 | 6.0 | 1.4 | 0.132 | 0.085 | 0.066 |
+| Source 2 | Stop–return | 1.3 | 1284 | 0.443 | 0.443 | 0.439 | 0.215 | 0.179 | 0.184 | 29.1 | 8.8 | 2.9 | 0.141 | 0.102 | 0.082 |
+| Source 2 | Multiscale curve | 0.7 | 2135 | 0.470 | 0.437 | 0.435 | 0.260 | 0.233 | 0.248 | 19.3 | 5.3 | 2.0 | 0.096 | 0.062 | 0.049 |
+| Source 2 | Multiscale curve | 1.3 | 1164 | 0.490 | 0.468 | 0.461 | 0.277 | 0.240 | 0.258 | 19.8 | 4.9 | 1.9 | 0.100 | 0.072 | 0.060 |
+| Source 2 | Depth-reversing spiral | 0.7 | 2231 | 0.470 | 0.432 | 0.420 | 0.245 | 0.224 | 0.235 | 20.1 | 6.6 | 3.0 | 0.099 | 0.070 | 0.058 |
+| Source 2 | Depth-reversing spiral | 1.3 | 1199 | 0.517 | 0.470 | 0.452 | 0.283 | 0.249 | 0.255 | 20.1 | 6.3 | 2.6 | 0.093 | 0.073 | 0.065 |
+| Source 2 | Three-lobe XYZ | 0.7 | 3723 | 0.407 | 0.384 | 0.380 | 0.215 | 0.185 | 0.199 | 24.7 | 7.2 | 3.1 | 0.093 | 0.067 | 0.057 |
+| Source 2 | Three-lobe XYZ | 1.3 | 2024 | 0.448 | 0.431 | 0.428 | 0.229 | 0.193 | 0.204 | 24.9 | 9.1 | 4.7 | 0.112 | 0.080 | 0.069 |
+| Target | Bézier 3-D | 0.7 | 1474 | 0.406 | 0.417 | 0.410 | 0.372 | 0.391 | 0.386 | 45.7 | 25.4 | 15.5 | 0.169 | 0.136 | 0.118 |
+| Target | Bézier 3-D | 1.3 | 642 | 0.437 | 0.432 | 0.430 | 0.395 | 0.401 | 0.400 | 52.3 | 29.5 | 18.5 | 0.173 | 0.140 | 0.121 |
+| Target | Inertial turns | 0.7 | 883 | 0.469 | 0.517 | 0.505 | 0.427 | 0.444 | 0.423 | 40.3 | 25.5 | 16.5 | 0.175 | 0.138 | 0.122 |
+| Target | Inertial turns | 1.3 | 500 | 0.453 | 0.481 | 0.458 | 0.436 | 0.458 | 0.437 | 50.8 | 34.6 | 24.9 | 0.166 | 0.124 | 0.109 |
+| Target | Stop–return | 0.7 | 1351 | 0.406 | 0.378 | 0.371 | 0.387 | 0.359 | 0.364 | 47.0 | 28.8 | 16.5 | 0.183 | 0.135 | 0.114 |
+| Target | Stop–return | 1.3 | 727 | 0.441 | 0.423 | 0.412 | 0.431 | 0.401 | 0.400 | 50.5 | 32.1 | 22.7 | 0.175 | 0.135 | 0.110 |
+| Target | Multiscale curve | 0.7 | 1264 | 0.653 | 0.636 | 0.604 | 0.596 | 0.585 | 0.568 | 38.6 | 25.3 | 16.5 | 0.115 | 0.096 | 0.081 |
+| Target | Multiscale curve | 1.3 | 649 | 0.656 | 0.655 | 0.629 | 0.586 | 0.583 | 0.577 | 43.1 | 26.5 | 15.4 | 0.121 | 0.096 | 0.082 |
+| Target | Depth-reversing spiral | 0.7 | 1287 | 0.577 | 0.595 | 0.596 | 0.506 | 0.545 | 0.573 | 40.1 | 24.0 | 14.5 | 0.145 | 0.119 | 0.105 |
+| Target | Depth-reversing spiral | 1.3 | 692 | 0.638 | 0.637 | 0.631 | 0.563 | 0.590 | 0.606 | 48.8 | 29.8 | 19.2 | 0.133 | 0.121 | 0.113 |
+| Target | Three-lobe XYZ | 0.7 | 2109 | 0.561 | 0.581 | 0.557 | 0.510 | 0.542 | 0.535 | 48.6 | 32.2 | 20.3 | 0.178 | 0.152 | 0.133 |
+| Target | Three-lobe XYZ | 1.3 | 1308 | 0.553 | 0.558 | 0.543 | 0.526 | 0.553 | 0.542 | 50.0 | 32.7 | 21.9 | 0.183 | 0.165 | 0.153 |
 
 **Table 11.** Control records with motions of the kinds used in training (one record each; lengths in mm).
 
-| Session | Motion | Frames | H0 | H1 | H2 | H0 | H1 | H2 | H0 | H1 | H2 |
+| Session | Motion | Frames | $E_{xy}$ / H0 | $E_{xy}$ / H1 | $E_{xy}$ / H2 | $E_{xyz}$ / H0 | $E_{xyz}$ / H1 | $E_{xyz}$ / H2 | Step RMS / H0 | Step RMS / H1 | Step RMS / H2 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Source 1 | Circle | 1168 | 0.400 | 0.352 | 0.356 | 0.475 | 0.431 | 0.436 | 0.143 | 0.095 | 0.074 |
 | Source 1 | Normal press | 100 | 0.323 | 0.323 | 0.341 | 0.361 | 0.361 | 0.378 | 0.206 | 0.131 | 0.100 |
@@ -776,7 +776,7 @@ This appendix collects material that supports the main text but is not needed to
 
 **Table 12.** Jump rate (%) for different thresholds and for frame pairs with intervals of 20–45 ms only (post hoc).
 
-| Session | Model | 0.1 | 0.2 | 0.3 | 0.2 mm |
+| Session | Model | Threshold (mm) / 0.1 | Threshold (mm) / 0.2 | Threshold (mm) / 0.3 | Interval-matched, / 0.2 mm |
 | --- | --- | --- | --- | --- | --- |
 | Source 1 | H0 | 65.2 | 23.2 | 6.2 | 23.5 |
 |  | H1 | 42.6 | 7.8 | 1.4 | 7.9 |
@@ -859,7 +859,7 @@ The original source-repeat and target summaries are provided here without poolin
 
 ## Supplementary Materials
 
-The revision supplement provides the original per-sequence metric table and analysis scripts, the matched-control protocols and all order-specific results, the archived-input eligibility and evaluation protocol, raw command/magnetic inputs needed by the added saved-output reductions, frozen outputs and model artifacts, record-level roles, hashes and portable reduction entry points. The public repository supplement is organized separately from the complete author-held reproduction archive. Their contents and verification level are specified in `README_REPRODUCTION.md` and the package manifests; a public repository link is not represented as proof that unreleased raw records have already been deposited there.
+The [versioned public reproduction release](https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-reproducibility) provides raw magnetic and command records, native input journals and flattened magnetic-stream CSVs, record-level TRAIN/DEV/evaluation assignments, frozen outputs and model artifacts, exact source versions and portable numerical entry points. It includes 35 refinement TRAIN/DEV records and 57 evaluation records. The repository supplement provides the full revised manuscripts and figures, public result tables and training traces. The release README maps the archive contents to the principal trajectory tables and gives executable commands and SHA-256 checksums.
 
 ## Author Contributions
 
@@ -879,7 +879,9 @@ Not applicable.
 
 ## Data Availability Statement
 
-The public simulator and research snapshot are hosted at [MagTouch-Dynamic-Simulation](https://github.com/googo2025/MagTouch-Dynamic-Simulation). The [versioned revision supplement](https://github.com/googo2025/MagTouch-Dynamic-Simulation/tree/main/supplements/micromachines_revision_20261024) provides the complete revised manuscript and figure assets, full-precision summary and per-record tables, matched-control models and training traces, protocol summaries and verification records. The historical public baseline is commit `0048460dd73e104101eea1696bd5c24737c9bd44`. That historical public snapshot omits original hardware Trial streams and is not by itself a complete raw-data reproduction kit. The versioned revision supplement assembles the added controls, frozen outputs, record-level manifests, original magnetic and command inputs required for their saved-output statistics, and portable reduction code. The complete archive is retained for review and distribution by the corresponding author; it is not described as an already published raw-data release. Instructions distinguish verified saved-output numerical reduction from a new full inference or training execution. No new independent physical metrology or new hardware acquisition is included.
+The simulator, revised manuscripts, results and code are available in [MagTouch-Dynamic-Simulation](https://github.com/googo2025/MagTouch-Dynamic-Simulation). The raw-input and code capsule is publicly downloadable from the [versioned reproduction release](https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-reproducibility). It contains the magnetic observations and command timestamps for the refinement/evaluation records, record-level split assignments, frozen outputs, selected models and pinned statistical sources. The original raw observations received by the online decoder are retained in the native journals and exported sensor CSVs; the target-session queue losses remain part of that protocol. The archived extension's separately prescribed reconstruction policy is documented.
+
+The publication copy removes machine usernames, private network addresses and local account identifiers, with explicit original/public hash mappings. Scientific arrays, model checkpoints, numerical observations and timestamps are preserved. The unredacted author-held archive remains immutable. The public capsule was checked in a fresh Python virtual environment: all 504 rows and 5,976 numerical cells of the original metric table matched at reported precision, both added reports' scientific fields matched, and the generated principal trajectory Tables 6 and 7 and printed values of Tables 8, 9, S1 and S2 matched the manuscript. Table 7 includes its cluster-bootstrap intervals and exact sign-flip results. The release supplies file hashes and verification receipts. This route reproduces saved-output statistics; it does not claim a new execution of every historical training stage or a new physical experiment.
 
 ## Acknowledgments
 

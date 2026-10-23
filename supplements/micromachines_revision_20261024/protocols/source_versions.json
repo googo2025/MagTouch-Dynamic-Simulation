@@ -4,5 +4,14 @@
   "matched_report_sha256": "d457e98141c6cd2d836fea1e2293f37908129607c91c831a82f7a67bab79d804",
   "archived_effective_report_sha256": "39318cff452b24215ae71717fe970ff6797fc1c7e901c4deb6c011d346bd8dcd",
   "archived_statistics_version": "v2; input validity bookkeeping corrected without changing predictions",
-  "original_submitted_table_sha256": "abfc8c6b6159f0cf0abd0bbe1a541c7a3a04ff98ab6da4f5d35104bab8b57f74"
+  "original_submitted_table_sha256": "abfc8c6b6159f0cf0abd0bbe1a541c7a3a04ff98ab6da4f5d35104bab8b57f74",
+  "public_raw_release": {
+    "tag": "micromachines-revision-20261024-reproducibility",
+    "archive_sha256": "eabb7d3eeb0993b3e82b0a45c6ea91771745ea320a1aad3b991551f72639c778",
+    "public_scientific_report_hashes": {
+      "matched": "525ebd2e1079c2c5eac212f76f95bc9fc5c64dd1d3f7f35781aacb8c03e45b53",
+      "archived": "7beba60d35aaf520afda1fca53b740c070b0cad23c221924ada6e05d931d4558"
+    },
+    "hash_rebinding_scope": "Identifier redaction and transitive byte contracts only; original private report hashes above remain provenance."
+  }
 }
