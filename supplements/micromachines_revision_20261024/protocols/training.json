@@ -1,0 +1,73 @@
+{
+  "purpose": "Matched added-data refinement, single versus three history timescales, paired order seeds; preserve original frozen H0/H1/H2.",
+  "configurations": [
+    {
+      "name": "H0_matched_L1",
+      "history_blocks": [],
+      "objective": "L1"
+    },
+    {
+      "name": "multi_L1",
+      "history_blocks": [
+        0,
+        1,
+        2
+      ],
+      "objective": "L1"
+    },
+    {
+      "name": "multi_L2",
+      "history_blocks": [
+        0,
+        1,
+        2
+      ],
+      "objective": "L2"
+    },
+    {
+      "name": "single_0p3_L1",
+      "history_blocks": [
+        0
+      ],
+      "objective": "L1"
+    },
+    {
+      "name": "single_1_L1",
+      "history_blocks": [
+        1
+      ],
+      "objective": "L1"
+    },
+    {
+      "name": "single_4_L1",
+      "history_blocks": [
+        2
+      ],
+      "objective": "L1"
+    }
+  ],
+  "seeds": [
+    7,
+    17,
+    27
+  ],
+  "seed_interpretation": "All start from identical frozen R373 weights; seeds vary order/stochastic execution, not independent initial networks.",
+  "source_counts": {
+    "TRAIN_records": 32,
+    "VAL_records": 3,
+    "samples": 11415,
+    "dynamic": 7217,
+    "qualified_dwell": 3633,
+    "static_anchors": 565
+  },
+  "initial_lr": 0.0002,
+  "max_epochs": 2000,
+  "updates_per_epoch": 45,
+  "constraint_weights": {
+    "increment": 0.25,
+    "hold": 0.25,
+    "anchor": 0.25
+  },
+  "training_protocol": "Original Adam float64, batch array_split into45, L2 weight0.001, sourceVAL composite/accuracy guards,50 plateau halving to1e-6 then50; budget cap is not convergence. Same underlying sample order per seed.",
+  "comparison_limits": "Effective input and parameter counts differ; this tests the history expansion at matched data/optimization, not a unique physical mechanism. No GRU or scaled-triplet sensitivity study in this finite phase."
+}

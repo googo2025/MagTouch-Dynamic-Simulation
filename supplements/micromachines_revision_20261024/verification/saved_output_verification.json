@@ -1,0 +1,48 @@
+{
+  "status": "PASS_PORTABLE_SAVED_OUTPUT_REDUCTION",
+  "results": [
+    {
+      "phase": "original-submitted-table",
+      "all_published_cells_match": true,
+      "rows": 504,
+      "numeric_cells_checked": 5976,
+      "source_csv_sha256": "abfc8c6b6159f0cf0abd0bbe1a541c7a3a04ff98ab6da4f5d35104bab8b57f74",
+      "rounding": "Exact agreement at submitted CSV precision: 5 decimals for errors/offset, 3 for jump percentages; counts exact."
+    },
+    {
+      "phase": "matched",
+      "all_scientific_sections_match": true,
+      "sections": [
+        "own_summaries",
+        "paired_summaries",
+        "order_seed_summaries",
+        "own_record_details",
+        "paired_record_details",
+        "input_hashes"
+      ],
+      "original_report_sha256": "d457e98141c6cd2d836fea1e2293f37908129607c91c831a82f7a67bab79d804",
+      "reproduced_report_sha256": "078e3fcb5a569b2081f90486d2ed3a2cefb368cf0a83356a0d17b6019f36e427"
+    },
+    {
+      "phase": "archived",
+      "all_scientific_sections_match": true,
+      "sections": [
+        "summaries",
+        "paired_summaries",
+        "record_details",
+        "paired_record_details",
+        "input_hashes",
+        "validity_correction_audits"
+      ],
+      "original_report_sha256": "39318cff452b24215ae71717fe970ff6797fc1c7e901c4deb6c011d346bd8dcd",
+      "reproduced_report_sha256": "9ed35a5df7934041a7b4d42ccbd5b952dbd7b6ba16b0784f575ac8e215f8c5a5"
+    }
+  ],
+  "wall_seconds": 55.831563088009716,
+  "CPU_seconds": 90.674624739,
+  "new_inference_calls": 0,
+  "new_training_updates": 0,
+  "hardware_operations": 0,
+  "root_mapping_only": true,
+  "scope": "Saved-output statistics verified; full model inference and training are distinct, not rerun here."
+}

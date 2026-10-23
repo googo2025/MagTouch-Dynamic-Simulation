@@ -1,0 +1,82 @@
+{
+  "record_count": 9,
+  "models_frozen_before_scoring": 21,
+  "model_record_replays": 189,
+  "reference": "Command-derived; no independent position or synchronization metrology",
+  "records": [
+    {
+      "sequence_id": "A1",
+      "mode": "circle_scan",
+      "nominal_speed_mm_s": 2.0,
+      "nominal_depth_mm": 1.0,
+      "role": "evaluation_only_for_this_study_fitting_and_selection"
+    },
+    {
+      "sequence_id": "A2",
+      "mode": "circle_scan",
+      "nominal_speed_mm_s": 20.0,
+      "nominal_depth_mm": 1.0,
+      "role": "evaluation_only_for_this_study_fitting_and_selection"
+    },
+    {
+      "sequence_id": "A3",
+      "mode": "grid_points",
+      "nominal_speed_mm_s": 20.0,
+      "nominal_depth_mm": 1.0,
+      "role": "evaluation_only_for_this_study_fitting_and_selection"
+    },
+    {
+      "sequence_id": "A4",
+      "mode": "circle_scan",
+      "nominal_speed_mm_s": 2.0,
+      "nominal_depth_mm": 1.2,
+      "role": "evaluation_only_for_this_study_fitting_and_selection"
+    },
+    {
+      "sequence_id": "A5",
+      "mode": "cross_scan",
+      "nominal_speed_mm_s": 2.0,
+      "nominal_depth_mm": 1.2,
+      "role": "evaluation_only_for_this_study_fitting_and_selection"
+    },
+    {
+      "sequence_id": "A6",
+      "mode": "cross_scan",
+      "nominal_speed_mm_s": 1.0,
+      "nominal_depth_mm": 1.2,
+      "role": "evaluation_only_for_this_study_fitting_and_selection"
+    },
+    {
+      "sequence_id": "A7",
+      "mode": "cross_scan",
+      "nominal_speed_mm_s": 1.0,
+      "nominal_depth_mm": 1.2,
+      "role": "evaluation_only_for_this_study_fitting_and_selection"
+    },
+    {
+      "sequence_id": "A8",
+      "mode": "circle_scan",
+      "nominal_speed_mm_s": 10.0,
+      "nominal_depth_mm": 1.2,
+      "role": "evaluation_only_for_this_study_fitting_and_selection"
+    },
+    {
+      "sequence_id": "A9",
+      "mode": "compound",
+      "nominal_speed_mm_s": 1.0,
+      "nominal_depth_mm": 3.0,
+      "role": "evaluation_only_for_this_study_fitting_and_selection"
+    }
+  ],
+  "limitations": [
+    "Archived acquisition independent of this study fitting and checkpoint selection; not a sealed blind test or new physical collection.",
+    "No native inference journal: availability-ordered reconstruction and newly prescribed baseline controls cannot establish exact old online state or execution parity.",
+    "Commands/EST and host timestamps do not replace independent physical position or synchronization metrology.",
+    "No proof of unchanged mounting or complete long four-direction same-point dwell; missing evidence must remain visible.",
+    "Three CPU seeds vary training order from a common initialization; no independent-initialization statistical significance.",
+    "All21 frozen models are fixed before the first new score; no tuning, architecture change, baseline-window selection or seed selection using these predictions."
+  ],
+  "execution": "Prespecified availability-ordered archived reconstruction; no certification of old online-state parity",
+  "raw_input_groups": 51597,
+  "primary_reference_frames": 14606
+}

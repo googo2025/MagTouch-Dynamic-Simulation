@@ -7,3 +7,8 @@ International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
 Please attribute the paper title and this repository URL. The code is under
 the MIT license in `LICENSE`. This content notice does **not** assign a reuse
 license to raw experimental records or other numerical data.
+
+The revised manuscripts and figure assets under
+`supplements/micromachines_revision_20261024/paper/` are also covered by
+CC BY 4.0 on the same terms. This clarification does not assign a new reuse
+license to numerical data or unreleased raw acquisition records.

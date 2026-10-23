@@ -1,0 +1,8 @@
+{
+  "base_public_repository": "googo2025/MagTouch-Dynamic-Simulation",
+  "base_public_commit": "0048460dd73e104101eea1696bd5c24737c9bd44",
+  "matched_report_sha256": "d457e98141c6cd2d836fea1e2293f37908129607c91c831a82f7a67bab79d804",
+  "archived_effective_report_sha256": "39318cff452b24215ae71717fe970ff6797fc1c7e901c4deb6c011d346bd8dcd",
+  "archived_statistics_version": "v2; input validity bookkeeping corrected without changing predictions",
+  "original_submitted_table_sha256": "abfc8c6b6159f0cf0abd0bbe1a541c7a3a04ff98ab6da4f5d35104bab8b57f74"
+}
