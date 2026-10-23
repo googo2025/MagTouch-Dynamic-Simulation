@@ -1,0 +1,11 @@
+{
+  "status": "TEXTUAL_ARCHITECTURE_CLARIFICATION",
+  "original_protocol_sha256": "216bf79b8948eb4ac0b47204a92522734230673e784183bff26a10789d9f5976",
+  "original_phrase": "53->64->32->2",
+  "correct_architecture": "53->64->64->2, inherited actual tensor shapes; executable model never used the incorrect32 description",
+  "inherited_H0_parameters": 7746,
+  "multiscale_MLP_parameters": 10818,
+  "GRU_parameters": 11234,
+  "GRU_over_multiscale_percent": 3.845442780550923,
+  "active_training_changed": false
+}

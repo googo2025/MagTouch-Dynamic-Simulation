@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETED_PLATEAU",
+  "seed": 17,
+  "epochs": 760,
+  "updates": 34200,
+  "best_epoch": 0,
+  "best_objective": 0.37923080980754564,
+  "baseline_objective": 0.37923080980754564,
+  "stop_reason": "early_stop_min_lr_plateau",
+  "best_model_sha256": "62c67a05ad948849bc9134f756cd6b0d24610b0411638eeed12b560a3b8f6c61",
+  "protocol_sha256": "216bf79b8948eb4ac0b47204a92522734230673e784183bff26a10789d9f5976",
+  "worker_sha256": "7322aed675dd70f42c17884aff45dd35e2662c1675da8aaf5e345e9afbd99d92",
+  "wall_seconds": 3680.147847721004,
+  "CPU_seconds": 3663.418064308,
+  "peak_RSS_KiB": 1654876,
+  "GPU_used": false,
+  "evaluation_records_read": 0,
+  "native_evaluation_pending": true
+}

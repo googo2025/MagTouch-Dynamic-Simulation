@@ -1,0 +1,361 @@
+{
+  "schema": "MagTouch-formal-revision-v2-repository-files",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4264,
+      "sha256": "6467c93065e8743f39b934d2468b9b141e1ce6a4b52d812b2118c37326c0466f"
+    },
+    {
+      "path": "execution_source/mm_gru_common_20261024.py",
+      "bytes": 6051,
+      "sha256": "80a5260d744e9798d9159d3c44541b8aeae0ddb10c6a1912141215c95204fecf"
+    },
+    {
+      "path": "execution_source/mm_gru_prepare_20261024.py",
+      "bytes": 4185,
+      "sha256": "fce9666abd2c45fd177c7cb9a39925b1a44c113e415ab8f4c034f420047f00be"
+    },
+    {
+      "path": "execution_source/mm_gru_worker_20261024.py",
+      "bytes": 11248,
+      "sha256": "7322aed675dd70f42c17884aff45dd35e2662c1675da8aaf5e345e9afbd99d92"
+    },
+    {
+      "path": "expected_tables/Table9.md",
+      "bytes": 541,
+      "sha256": "dd3cc4709ee758a911ef41cd86065c4bbbdb731ecb045683fd15e1c0e4fcb4a4"
+    },
+    {
+      "path": "expected_tables/TableS3.md",
+      "bytes": 735,
+      "sha256": "3946bd5e967f32ccb2164f25e363f80e5aab4809f24eb03cd7baa1972a46f694"
+    },
+    {
+      "path": "expected_tables/TableS4.md",
+      "bytes": 384,
+      "sha256": "891613aea13d507c804250de1bcd18d4a33ed795b24f1b7f3e8ab65f2fb25b75"
+    },
+    {
+      "path": "manifests/GRU_data_roles.json",
+      "bytes": 1682,
+      "sha256": "99ffd29016ce7e31243484bbc345a533dd221f7f3fe22d4cd6f03a9552152273"
+    },
+    {
+      "path": "manifests/architecture_clarification.json",
+      "bytes": 508,
+      "sha256": "13121461e084dadcd5965572b32e9b6f2393c0d04382dd12158ca196322ae1f9"
+    },
+    {
+      "path": "manifests/function_versions.json",
+      "bytes": 2561,
+      "sha256": "7bc648a846842f3cff965a055d38dbcadd9c74bc5d23f9728781826819da7d1a"
+    },
+    {
+      "path": "manifests/original_online_parity.json",
+      "bytes": 4980,
+      "sha256": "ece4fd40bfc7e13889d8603e5b51d83c6f9a03e9eb797d61ba7ef99122ba9153"
+    },
+    {
+      "path": "manifests/redaction_provenance.json",
+      "bytes": 248200,
+      "sha256": "06a61c0d4853dce872b0fcfe41ada4d2f9b81fd237b82bbc3c7932c31c1f6ebd"
+    },
+    {
+      "path": "manifests/same_condition_roles.json",
+      "bytes": 2614,
+      "sha256": "d9cd68b02f1dda2e6125d5b0acd4201cfd9fe963791b393df2d1577fa1532736"
+    },
+    {
+      "path": "manifests/study.json",
+      "bytes": 78240,
+      "sha256": "2264176795f761089aecec3a4189e0e461864dcce0d5b8d57940b6112d450e3a"
+    },
+    {
+      "path": "manifests/training_roles.json",
+      "bytes": 14129,
+      "sha256": "3c09787f5335638920e629fb9835d94b142fc61e273675e6535cf4989f490baa"
+    },
+    {
+      "path": "models/GRU_seed17/best_model.npz",
+      "bytes": 89537,
+      "sha256": "62c67a05ad948849bc9134f756cd6b0d24610b0411638eeed12b560a3b8f6c61"
+    },
+    {
+      "path": "models/GRU_seed17/freeze.json",
+      "bytes": 691,
+      "sha256": "9406503dfa50d2af4c20e1009ada232c88369909350140b25dd5143ee2bd75c9"
+    },
+    {
+      "path": "models/GRU_seed17/history.jsonl",
+      "bytes": 1108421,
+      "sha256": "759fec58fa8a6e990eada1727739c0d686658f7a65c31ff78d661a936f59c604"
+    },
+    {
+      "path": "models/GRU_seed17/initial_model.npz",
+      "bytes": 89537,
+      "sha256": "62c67a05ad948849bc9134f756cd6b0d24610b0411638eeed12b560a3b8f6c61"
+    },
+    {
+      "path": "models/GRU_seed17/qualification.json",
+      "bytes": 1791,
+      "sha256": "47f29ec08a2bdec46751a43cd32dd020144a524edf003eb9f9783f21819a17f5"
+    },
+    {
+      "path": "models/GRU_seed27/best_model.npz",
+      "bytes": 89854,
+      "sha256": "d07cb19487d2c9b6b63b96029b569c7f119b52f2c60ea6162bc155f0f8288105"
+    },
+    {
+      "path": "models/GRU_seed27/freeze.json",
+      "bytes": 691,
+      "sha256": "377d3e4303a69438c00eb86214d5f69034854a81774135fed3123ef3db6dd920"
+    },
+    {
+      "path": "models/GRU_seed27/history.jsonl",
+      "bytes": 977374,
+      "sha256": "9667adbe68e4dcd58d0ad1e6a176b9ac50636799bb39c33e70069725d8d8c544"
+    },
+    {
+      "path": "models/GRU_seed27/initial_model.npz",
+      "bytes": 89537,
+      "sha256": "62c67a05ad948849bc9134f756cd6b0d24610b0411638eeed12b560a3b8f6c61"
+    },
+    {
+      "path": "models/GRU_seed27/qualification.json",
+      "bytes": 1792,
+      "sha256": "53fd098bbc3349ee0eb5394f32004648fc02b5a4b72cace83e5757fbe3b4f5a2"
+    },
+    {
+      "path": "models/GRU_seed7/best_model.npz",
+      "bytes": 89881,
+      "sha256": "da87c3123e07a744d1985ce0f9900a03942597d27e1454c01b70a05d6bd02de1"
+    },
+    {
+      "path": "models/GRU_seed7/freeze.json",
+      "bytes": 688,
+      "sha256": "004249238209439baed72d39edea92a0f01d1540f2dc33dd15e2d5c03b2b0d83"
+    },
+    {
+      "path": "models/GRU_seed7/history.jsonl",
+      "bytes": 1384131,
+      "sha256": "53ae409e7924920d6bb55359e9e8c08a4995ae1b9d3d7e783ddb0974fd781e61"
+    },
+    {
+      "path": "models/GRU_seed7/initial_model.npz",
+      "bytes": 89537,
+      "sha256": "62c67a05ad948849bc9134f756cd6b0d24610b0411638eeed12b560a3b8f6c61"
+    },
+    {
+      "path": "models/GRU_seed7/qualification.json",
+      "bytes": 1792,
+      "sha256": "fcb4573ff1edf393bda1e5aadb189ddb72efaee49e1a61e2efd5e0a8ca5dfee9"
+    },
+    {
+      "path": "models/H0.npz",
+      "bytes": 61548,
+      "sha256": "65f3015e8c053b1c806fe6c56cb53e862a8b97c4f1f882cb8f8fbf7b694305ff"
+    },
+    {
+      "path": "models/H2.npz",
+      "bytes": 85571,
+      "sha256": "24d5d72f6b496782acfffbf23228f4047a8426aec6fc2f71517ce7a56809ffa0"
+    },
+    {
+      "path": "paper/Manuscript_Revised_EN.md",
+      "bytes": 156001,
+      "sha256": "130431838d0c4a56777ab5beac9c928807953537430971f8f8c383e1bcebd9c1"
+    },
+    {
+      "path": "paper/Manuscript_Revised_ZH.md",
+      "bytes": 95997,
+      "sha256": "7dee8bd5050ef8897db64fac09047f35e818c1c9f225519631c5bd3233711a9b"
+    },
+    {
+      "path": "paper/assets/fig_arch_revision.svg",
+      "bytes": 3507,
+      "sha256": "3a8c1fa031bd635d6fad97383aebb331f3ab5af4ae9f208d117189952d310f36"
+    },
+    {
+      "path": "paper/assets/fig_character.png",
+      "bytes": 148709,
+      "sha256": "ef1d79400a6ee734b8496805feac346d027f07c39a7beba3cc7d7a41f324fc54"
+    },
+    {
+      "path": "paper/assets/fig_examples.png",
+      "bytes": 135893,
+      "sha256": "259f35c53739ced883abcb5a5f923a7e872eaa36acd60e820573f6ca8fabb761"
+    },
+    {
+      "path": "paper/assets/fig_gru_comparison_en.pdf",
+      "bytes": 24043,
+      "sha256": "eab383f0cb684c56ae0ae31be46a328591794022f6672b7973aa9df2c1050c8e"
+    },
+    {
+      "path": "paper/assets/fig_gru_comparison_en.png",
+      "bytes": 288034,
+      "sha256": "4e0db71316e2c67025bc2eaa6011c718f4ad5c9baaea5339d681675907a39140"
+    },
+    {
+      "path": "paper/assets/fig_gru_comparison_en.svg",
+      "bytes": 119469,
+      "sha256": "2ac8a19bdaf150e5843f1054c75861d3a0cb86ff77b1a5bb368d772fa6673636"
+    },
+    {
+      "path": "paper/assets/fig_gru_comparison_zh.pdf",
+      "bytes": 33470,
+      "sha256": "926daa8fb27571c14c5045155264d8c7ee2c9686270fa9d97e6d3f4c1d8be204"
+    },
+    {
+      "path": "paper/assets/fig_gru_comparison_zh.png",
+      "bytes": 284325,
+      "sha256": "ffea523797f7aad60e0cd22e296d0e7eecb09e2bed66b42cee3f725fc009c9f7"
+    },
+    {
+      "path": "paper/assets/fig_gru_comparison_zh.svg",
+      "bytes": 123617,
+      "sha256": "15fb3b64c84265fbe4f484e96a2e168e26ca24f5d3305ed443c80bfb3c6ddfaa"
+    },
+    {
+      "path": "paper/assets/fig_gru_learning_en.pdf",
+      "bytes": 52381,
+      "sha256": "e4466f31b09d58367d78d84736b3121df94f6c2e140a968f5e8b3d2b7fc6565c"
+    },
+    {
+      "path": "paper/assets/fig_gru_learning_en.png",
+      "bytes": 412354,
+      "sha256": "03b1d6f0ea67265c93f8a15042dd2fb591659f8d2dfb9a79880262212e92735c"
+    },
+    {
+      "path": "paper/assets/fig_gru_learning_en.svg",
+      "bytes": 164104,
+      "sha256": "d11e41949d18f88ad79d2aaee2545faa05b31fabb6c108d6f2c1437387d4423a"
+    },
+    {
+      "path": "paper/assets/fig_gru_learning_zh.pdf",
+      "bytes": 54912,
+      "sha256": "f737798600f51b44ca96ee7dfb9ea34082b6bf953ebce684cb6830c1062cd606"
+    },
+    {
+      "path": "paper/assets/fig_gru_learning_zh.png",
+      "bytes": 420565,
+      "sha256": "545a55a2f5b6c4a2de77c7adf8031c897578bddddf440bff02151a9ccd9751c7"
+    },
+    {
+      "path": "paper/assets/fig_gru_learning_zh.svg",
+      "bytes": 169651,
+      "sha256": "8980c902082ab43b06fd28ca70ada0a2bd6d945526be4c077f642df4988de499"
+    },
+    {
+      "path": "paper/assets/fig_main.png",
+      "bytes": 122913,
+      "sha256": "aa32bae78af1b3df2737494f36afd240e6be963f0da817f543805078351aface"
+    },
+    {
+      "path": "paper/assets/fig_matched_controls.svg",
+      "bytes": 84207,
+      "sha256": "beadc95438f5898e45cadd89017649c2b9f510775a592320a13c0790db4dc28d"
+    },
+    {
+      "path": "paper/assets/fig_matched_learning.svg",
+      "bytes": 419616,
+      "sha256": "c0096fe273cb9579a4d9c1cfcff7a3ad1bdccfc0eda960a08ad2692cfd6e56a7"
+    },
+    {
+      "path": "paper/assets/fig_matched_training.svg",
+      "bytes": 316399,
+      "sha256": "e146cba1c0dd46ae59e92147355a53507dbfa9180ad4f20c3176d581f5564a86"
+    },
+    {
+      "path": "paper/assets/fig_orig_s1.png",
+      "bytes": 282002,
+      "sha256": "7b764797c7ed28364a09afae6dd5c1fdd71d3d85d0445c10f06d0be94f6daca8"
+    },
+    {
+      "path": "paper/assets/fig_orig_s2.png",
+      "bytes": 277960,
+      "sha256": "c4c4fc26876425c688c222086b8ffa6c895531fef0d11de46b14eb7454996698"
+    },
+    {
+      "path": "paper/assets/fig_simulator.png",
+      "bytes": 2357454,
+      "sha256": "5fd001526c305bf5c02e0eac7a05358bea2b9a878e3d0325864b4ee204fb302c"
+    },
+    {
+      "path": "paper/assets/fig_surrogate.png",
+      "bytes": 95274,
+      "sha256": "419cea1ee61815ee3a0699f93450c0f894def914789b7a3b9aba42f9612329d5"
+    },
+    {
+      "path": "paper/assets/fig_system_revised.png",
+      "bytes": 397124,
+      "sha256": "6eaee432d54d05bd68c53ea02df0429d979645ed0645adfc8b2b8029947d3ba1"
+    },
+    {
+      "path": "paper/assets/fig_threshold.png",
+      "bytes": 39895,
+      "sha256": "5e69a9a389f0bc2cccf8a4227eb9ff25746e1334b0721abf5b72e2944f8538d0"
+    },
+    {
+      "path": "paper/assets/fig_tradeoff.png",
+      "bytes": 66490,
+      "sha256": "fdbaece1291cb22f72ff25a823d5ee0a7f7908f09a79f190bad20a125197d5b7"
+    },
+    {
+      "path": "paper/assets/fig_training.png",
+      "bytes": 40735,
+      "sha256": "70566546d33234308982693fad22f2ffd46b9dbcbe6a0ada7fdcacf8245f0d2f"
+    },
+    {
+      "path": "paper/assets/fig_workflow_revision.svg",
+      "bytes": 4559,
+      "sha256": "c3684c642cd350c364d89bf96cb39f5c3ffc06d6aff169fdc8336076d2c13a26"
+    },
+    {
+      "path": "public_release_manifest.json",
+      "bytes": 1006,
+      "sha256": "cfe02af16b30413ab7c7920a58203c29353666805013098d61a37260ff876542"
+    },
+    {
+      "path": "requirements-statistics.txt",
+      "bytes": 13,
+      "sha256": "7242524339a9388141e1383e79b66ac2fd4b82276448eae06b8fa428192ccd1f"
+    },
+    {
+      "path": "results/GRU_table.md",
+      "bytes": 1643,
+      "sha256": "54fa980af29376478714fba707aa6c5614044f7e9d78905dd0f5d42ce8d05278"
+    },
+    {
+      "path": "results/Same_condition_Table9.md",
+      "bytes": 243,
+      "sha256": "854b8380aa46dc8c7914bd171c6ff949563e8b5bbba3fda51b5ea796cf51240f"
+    },
+    {
+      "path": "results/scientific_results.json",
+      "bytes": 2199857,
+      "sha256": "4affe38ce791a8fb219c9d4c9d50b6c18ff28b4fedb73de36583ae8a3b44a860"
+    },
+    {
+      "path": "tools/reproduce_followup_tables.py",
+      "bytes": 8108,
+      "sha256": "5cda8e3a379e3b8863c73e8ae1c69526fa8f8f69a414763ab01fc9a8d70f7017"
+    },
+    {
+      "path": "tools/statistics_core.py",
+      "bytes": 10217,
+      "sha256": "886a18e23f961f2ef65573e6d4a5599931b39e8f66569d4e248fe6d71fbe6b08"
+    },
+    {
+      "path": "verification/manuscript_numerical_QA.json",
+      "bytes": 842,
+      "sha256": "85cbc9319d61fd19d5b28b01ed7f6e8746b53855daa2eb5e7dd4dcaceeb59f8c"
+    },
+    {
+      "path": "verification/saved_output_reproduction.json",
+      "bytes": 794,
+      "sha256": "dbf96c1f1309506ac80a2dbabd515447215817b7a9078b5fef100ae87d72f1c1"
+    }
+  ],
+  "large_payload_release": "https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-formal-v2"
+}

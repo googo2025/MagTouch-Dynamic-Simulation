@@ -1,0 +1,1416 @@
+{
+  "schema": "MagTouch-formal-GRU-and-same-condition-saved-output-supplement-v2",
+  "formal_records": [
+    {
+      "id": "Yellow_000076",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000076_M-magnetic__T-original__094a3d39_none",
+      "group": "R385_UNLOADED_BEFORE",
+      "mode": "none",
+      "speed_mm_s": 0.7,
+      "repeats": 1,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:07:53",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "3447fc21878bc10657e41bc95541ef92a226a057cfb57482d1a54c0b2caf447c",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "f408d1fe97f0420a685657d72d105aa8d6b754b335be26a2715ff1922e75320c",
+        "magnetic_raw.csv": "7564b93c653894020bb5caf11faa26f29896fb5bdc410a51c24e0a4b3f0b6249",
+        "stage_commands.csv": "0b9e908c58d90e627cf913f6f88a518c19e2fccc2de884918aff8f59a7fa7328",
+        "events.csv": "463e76e8936f84b9b3caaa2671e7f81b9c6be52e62282e71dd2259040b0b5e45",
+        "live_predictions.csv": "f39ba7a78e024e8152331c74fe0abd90eb224215ca6bb7e319680ce41a561fe9",
+        "live_predictions_virtual1000.csv": "a1605045b14435b1b42d79c0f7cc86ee27dd890db4143a2d634c5cbdd562f47e"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "quality_control",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 474,
+      "prediction_rows": 478,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "Yellow_000077",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000077_M-magnetic__T-original__094a3d39_waypoint_xyz",
+      "group": "R385_01_bezier_3d_V0.7",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:09:42",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "2f602d18f5520bf0d9ab2a5a3c24bee5c1a936540e2b914c09cb9a19eacb18bf",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "7346dd89013c192f5231649979ffe2969b77c085c3a28a9c24094c3b03588d30",
+        "magnetic_raw.csv": "e0f3c905049d257a75907fb461dba66559d3e73d5dd76a17f0ba6bae22578717",
+        "stage_commands.csv": "9a37a392f2d29379f84280198a121df3b4553323bfa09588819147e70a9839ad",
+        "events.csv": "9f1aa9f871d1a5daeb22f8256a91d42e8bd0fc414ceee4ec46eeb76742349fe9",
+        "live_predictions.csv": "311cc9248470a7d05da065691b42a49d63553f6c114778045d81b1633d9ccc7c",
+        "live_predictions_virtual1000.csv": "5b00f5e5b2c6898190121f80ad8b7f6ef42d761bfcee60cb0aec2eef9d6d0e71"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 3848,
+      "prediction_rows": 3668,
+      "queue_drops_recorded": 181
+    },
+    {
+      "id": "Yellow_000078",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000078_M-magnetic__T-original__094a3d39_waypoint_xyz",
+      "group": "R385_01_bezier_3d_V1.3",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:11:11",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "2fc6abf154650abfb799efb760513726cd4b42330c738f67c076ce0d40c58a0c",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "d68bede24e598822ca79b298288550ef76f182373dea00f016b84ba1ede7bf04",
+        "magnetic_raw.csv": "c4b7d6221beedd95c69748b3c4ed2b717c7249661504d5a811afa0c7c14f9728",
+        "stage_commands.csv": "4826a19f6c96b9c8db9d26ccb402e680930c4d242071fb98219dc6604f1db66d",
+        "events.csv": "1981e38e22f71d5b55b2379d0516993966ffe2f3256f403dbea4b959994a231a",
+        "live_predictions.csv": "168f54bbcb80517675c188229b959dcf60ff8a79e784dbbdcd99fa795faa8647",
+        "live_predictions_virtual1000.csv": "8167d1fb3c3645e848e4a804beb8477c15a03f9269f1f3ce5cd027bcc16e5644"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 3074,
+      "prediction_rows": 2668,
+      "queue_drops_recorded": 409
+    },
+    {
+      "id": "Yellow_000079",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000079_M-magnetic__T-original__094a3d39_waypoint_xyz",
+      "group": "R385_02_inertial_turns_V0.7",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:13:08",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "84dfa3c370dbf0952ee187c5ce737d54c89041c9f5bc66bc85dbb489ceff8c05",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "f0f895f94975685da6fd13bf27d63a0bca20a7be28e42b3fdf19d176c5233654",
+        "magnetic_raw.csv": "dea57c0c0421a21d3505cc4e4d8a69fc7e078c5b1c1480ee210e397c39d3a948",
+        "stage_commands.csv": "93482489c17f96b3ad0c7d7fd9ff87d7edd7ce6c39566c007b25be0c7a6aa086",
+        "events.csv": "77b15e6c8db7282ba30a97cc1c8309d199bbbb70c09f5c81dc53ca26494e4188",
+        "live_predictions.csv": "176ab08b77cc9012dc59e3d53dbc163e8219ca441bef807a955ff5376dc42641",
+        "live_predictions_virtual1000.csv": "6effaa83e084a92ffd815c4f86646e2a566317e4f09ded2eefccc590562648b8"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 3820,
+      "prediction_rows": 2735,
+      "queue_drops_recorded": 1087
+    },
+    {
+      "id": "Yellow_000080",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000080_M-magnetic__T-original__094a3d39_waypoint_xyz",
+      "group": "R385_02_inertial_turns_V1.3",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:14:38",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "1329fc7d104e66b9c81ac80d6821d7ef7c31ac06d59bdcf9b9a139ecd36627e1",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "6f26dd162a15897db1b499a96831308627965d42b8793904a6f0355b8059f9a5",
+        "magnetic_raw.csv": "cc9b54626adf68a7dd9ca8a381f2e5e265c5a7364f586a98783b1a87a034c29e",
+        "stage_commands.csv": "d40b5bf62f1111c2a53a906f43d51995cdb2f2c6977de7ff2d42438ea44987ee",
+        "events.csv": "71f6bbead796f1359ca760c4d95fee06225de72f824459c83012175c1056a5a6",
+        "live_predictions.csv": "562d4657c56b20e1d951d315883c90aab73836bc29212d5512985d8b9459fb9a",
+        "live_predictions_virtual1000.csv": "c31297618a72c39c3972f86e4c698ee637f94e495cfeca1026e8e900507994fc"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 2975,
+      "prediction_rows": 2276,
+      "queue_drops_recorded": 702
+    },
+    {
+      "id": "Yellow_000081",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000081_M-magnetic__T-original__094a3d39_waypoint_xyz",
+      "group": "R385_03_free_stop_return_V0.7",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:16:56",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "1a3fe1d21ba0f2fd4b7d618df5820adbbe0a0d1ed0a54818e08414d808618422",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "3746a04d28b06e0da2fc42209bcf69bf62922a49ba7b328126f14f5d06f2b3d9",
+        "magnetic_raw.csv": "fb6afdd5aa5830bb32eb55900b613d092a12b722ff248822f9847c9753ad4bbe",
+        "stage_commands.csv": "3e6088ed32d61ce7d84ffd6e4e8cc42f6ff5da23b9d636a07770b30adfbca9dd",
+        "events.csv": "00237f30e30d122d2bb3380fbd2480ec18079aa17139a7661512f259a1f426c2",
+        "live_predictions.csv": "2b7b7213e9df15b6fc3fa900b310c8f420e23f43dc7635938b632453800b3a56",
+        "live_predictions_virtual1000.csv": "320b7ed113eae31792010a1d8ba47fabf558649635658a4bacf052d2f4f0da35"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 4510,
+      "prediction_rows": 3114,
+      "queue_drops_recorded": 1401
+    },
+    {
+      "id": "Yellow_000082",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000082_M-magnetic__T-original__094a3d39_waypoint_xyz",
+      "group": "R385_03_free_stop_return_V1.3",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:18:35",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "02319e11ff821f9de63392ca488f5bdd2e851fafbe4cd1e2ae0eb30bd80a5cfa",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "fb97259a9911a724fd77ca8bcb76d33fb0e73bb57a973b892d70fb0976bff4c3",
+        "magnetic_raw.csv": "dea2edc055b4736dc39365f5fdc9f4b044360209df7d8d6b37740f3d330dedfa",
+        "stage_commands.csv": "386460a516f4a09bda0712186c6b6a2416e4c4206486c283bde204ee1488f322",
+        "events.csv": "e6c9d959d4ffbe96286ca1f17e5002555c03ddffddccd731e5952d5ee0b8d792",
+        "live_predictions.csv": "605f8b113b2efca1e6909d923250d2313c8f8cb9ecde3052952a4b83081d2238",
+        "live_predictions_virtual1000.csv": "e8a2a577685ffaaaf075fd9e0a8d089a2b8eff5b2dae894009e606ec5b077cfb"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 3255,
+      "prediction_rows": 2445,
+      "queue_drops_recorded": 811
+    },
+    {
+      "id": "Yellow_000083",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000083_M-magnetic__T-original__094a3d39_waypoint_xyz",
+      "group": "R385_04_multiscale_curve_V0.7",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:20:52",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "67a8e80fdb01d4877c368dbeaeafeb07f600446d0139fc7d6a68cdf29a7e4a4b",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "b330469790a1f764ede981a84a99ada8119244868141d30967bb35f6e8b0519a",
+        "magnetic_raw.csv": "0b0d6d7720ab019de8f803b305cd9fcc3153fb639a03d07ce847edda77cb295c",
+        "stage_commands.csv": "b94ed180efdf5a9b229bfaa8ae1fca1827b514c180cd0131dfe54e64091a05c6",
+        "events.csv": "db68d5602ee4b1b0a6e033b59943449fff87443717bf80c785eecf870275ee0d",
+        "live_predictions.csv": "7d4d48cbeefe3cd06959f7d06e7aeb71e60c6ae6ee2326f1b4482afecaabba40",
+        "live_predictions_virtual1000.csv": "6927436e56c7c1296c599800bb345d98cc02b6bf4224f030346ab60bd142bf78"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 4490,
+      "prediction_rows": 3099,
+      "queue_drops_recorded": 1396
+    },
+    {
+      "id": "Yellow_000084",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000084_M-magnetic__T-original__094a3d39_waypoint_xyz",
+      "group": "R385_04_multiscale_curve_V1.3",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:22:34",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "c1f23236e94d4c1664bb05898be169b8080f53f8f203e738a47a825384f6b2f6",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "aa4900b9e22998ea9ac70f91487bba2358cafdc79f688ed399ae70ec0cf95e03",
+        "magnetic_raw.csv": "53eebdf1ece34835a40ef3a487e3b512fd72cc6903a8ee1292e61b78759874bc",
+        "stage_commands.csv": "98856963ddcb1a1fa87b025d2e23ac81e7e2c61b9df82cfe76498200b744d601",
+        "events.csv": "e6484497fb2d48ea99f4c3621d12e36dd04362805e3a5a2400edc2d55eb230ef",
+        "live_predictions.csv": "0148502ac1bdf369261bf7a1763a69b9e5bc9950d72fc7c6e0b9a5d220083a88",
+        "live_predictions_virtual1000.csv": "2032d89acf0a30636a85259219449ff611b112f61eea1293677821a4436d5bd8"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 3367,
+      "prediction_rows": 2489,
+      "queue_drops_recorded": 879
+    },
+    {
+      "id": "Yellow_000085",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000085_M-magnetic__T-original__094a3d39_waypoint_xyz",
+      "group": "R385_05_spiral_depth_reverse_V0.7",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:25:06",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "728daf652f36fe522c79619ce4bf5102a04c6bd5d3307aa2a0dd88af25d36a0b",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "a43bc325300cf401ab2cd9ffcec10576ce45d8021562f691ce388e6f33e03168",
+        "magnetic_raw.csv": "63dfb9bb8371cdd5d75b45dc25c77f813039a7df27d82b251102121b2922808a",
+        "stage_commands.csv": "06e19d977c01bf2fc152dcfd75a85f34018476f7a55476f0143639d0c86e4101",
+        "events.csv": "a5c3858deabc47efca3dc64a5226a00ad752525481a93363d2ca9e231f7285f5",
+        "live_predictions.csv": "eaf312be8f99041e36169ab2c096222ddae15f4d79cf3156f548847319e0bd96",
+        "live_predictions_virtual1000.csv": "f8a6c7c4df97efe98372fcf1c8aa405897b94f3aa33d4368bff7df2db8619258"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 4970,
+      "prediction_rows": 3353,
+      "queue_drops_recorded": 1620
+    },
+    {
+      "id": "Yellow_000086",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000086_M-magnetic__T-original__094a3d39_waypoint_xyz",
+      "group": "R385_05_spiral_depth_reverse_V1.3",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:27:01",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "711fca486c7a76cfa3458f2a8743b5d43c06aed4ba627be7bfc1b0b51f878fc4",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "ad0e15db03a402253f0513635edc3551d3017fcada590706cd994b5ba01bee75",
+        "magnetic_raw.csv": "6fa223c488f796afc24ec7ac6d0be645724ec7f1605e8be6c6c12755eeebddc9",
+        "stage_commands.csv": "27b056ecde7f2c050b91d9a1879923edf13e33f4574baef377b75ff79788c26e",
+        "events.csv": "88b172fc1a46db0329667d4780554ca30e624e88b0e8d717c5a061e8a222d4ff",
+        "live_predictions.csv": "7a05bb576b9015b7f54aed7c02d295599e62f9699fd67f86fc2458d07914c752",
+        "live_predictions_virtual1000.csv": "8409d51090ed394301e814bac64c93ece838d0826b811c387aeed3f6dc791eb1"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 3802,
+      "prediction_rows": 2704,
+      "queue_drops_recorded": 1102
+    },
+    {
+      "id": "Yellow_000087",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000087_M-magnetic__T-original__094a3d39_waypoint_xyz",
+      "group": "R385_06_three_lobe_xyz_V0.7",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:30:21",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "aed26ed704b4027ef038d0de43960bd0238ed07b75bd6735b60b5b43b30ef9d8",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "55aab8886cc980c7c8b1e918cdfdcb4dae179759a40ee6bd62e781e868259ade",
+        "magnetic_raw.csv": "692a3f526db1211065c2d28916d83bdaee0cf74306cbcc9e9483f775e27c215a",
+        "stage_commands.csv": "2f634bef8d545aad861cdf0add4c53e39c50c564316f913d301feec1c0b558c3",
+        "events.csv": "3bbe1f4089e35cc4a75a52adc8753159874dd5e9f70e6e46ea2d26ba960ba8fd",
+        "live_predictions.csv": "7ebefdd41795ddc9217d178db83d9d4c5aba2a4e24ca8f359e62f20a547b0cf9",
+        "live_predictions_virtual1000.csv": "28bb1c2140917698cfea3bcce03184c5a3a8229132aee907d93a86ebaddf3164"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 6496,
+      "prediction_rows": 4221,
+      "queue_drops_recorded": 2276
+    },
+    {
+      "id": "Yellow_000088",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000088_M-magnetic__T-original__094a3d39_waypoint_xyz",
+      "group": "R385_06_three_lobe_xyz_V1.3",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:32:37",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "63cb734c7fb02ad04a809fca8cc88a67d567a672c4522e637e46997add94a08d",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "385006f01a104f5347857c3ae70a675e97fbf9097af96348d517d388cb45c474",
+        "magnetic_raw.csv": "ee99ac081cbfa2ff0ee416460c6135f76ab513c29eec99b5ef519108bb1c85bd",
+        "stage_commands.csv": "353762f09fe72c845afc2c87bb73c8fb3942aa1271c0a41af5f034faea8c3774",
+        "events.csv": "0d58cb919c4c9cafc45cfa26e61a33a5871a53c3c406144d6ded0b3025e65309",
+        "live_predictions.csv": "4060f24c637d8d4661c2cc92951998154c7d15a31a3d74de4b0ead9870c2d506",
+        "live_predictions_virtual1000.csv": "16c2f0da2ad6ec83e9d5bdcdbcced2db2d71a84d5ef09bf41fd6587a28e23bbe"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 4504,
+      "prediction_rows": 3347,
+      "queue_drops_recorded": 1160
+    },
+    {
+      "id": "Yellow_000089",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000089_M-magnetic__T-original__094a3d39_circle_scan",
+      "group": "R385_OLD_SKILL_CIRCLE",
+      "mode": "circle_scan",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:34:33",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "0438acb5748222f54a227db8ca750d22f03ce1aac7c937a5fd5a5e70236ed138",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "f035241ef2fbdf8202efa41b792dc192a2ea97ff905b672ea6cc5b6f3cadc126",
+        "magnetic_raw.csv": "8963d0febf1f4f5baa0ae923b85e2fc39762684762b3c566f33597175961e571",
+        "stage_commands.csv": "899f738583632e723ec1b18e568b51b818f08c71e82593d7b620e1d21d419a57",
+        "events.csv": "a9fffa0571efe797318faeb2077c3d2041dacd91882c5e1214483b70630f9b88",
+        "live_predictions.csv": "3b5ace4f7391a4061729f46f8041b893388092339a857960ab0e9fd0274816c5",
+        "live_predictions_virtual1000.csv": "dc6606e767dbbb984d4bf13f98b976391de235cde2ebb2b44193a305f264b899"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 3834,
+      "prediction_rows": 2741,
+      "queue_drops_recorded": 1061
+    },
+    {
+      "id": "Yellow_000090",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000090_M-magnetic__T-original__094a3d39_z_path",
+      "group": "R385_OLD_SKILL_Z",
+      "mode": "z_path",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:35:23",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "749628988bcac4a0792c7901581d9a7858ea033ff808a67b4499a92188f03121",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "55676c79997f7a29067778ac81c20f0116a9ed68c6baf1f7e8cb69d88c2880e8",
+        "magnetic_raw.csv": "29363415adbd6035eb71562bac70ea0c569570e7c1d8ad46bf02cb62c706ec1c",
+        "stage_commands.csv": "4ba94f16cc3f247fc5856b65232f4140706dec35ce9e348af5ef88d4044fec7f",
+        "events.csv": "b5d5125421d02e65a35881e3785c25404de5e8c7dc0152258c4c73438e23ebb2",
+        "live_predictions.csv": "9aab5e5060c2e126430e4cb4a1b48ba1895e63a7ab799b8f123cfd8891e4bfbc",
+        "live_predictions_virtual1000.csv": "c954a8ce61f20d5eb535cc0bcfead702fc7eb7c6a7c108ecbdce5925dc8a1742"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 1762,
+      "prediction_rows": 1697,
+      "queue_drops_recorded": 36
+    },
+    {
+      "id": "Yellow_000091",
+      "device": "Yellow",
+      "path": "data/S20261002_A/Plan_20261002_220737_R385_VALUE_094a3d39c0bc7c_R389_eb5fd3c6e4__mag_5x5-had-Yelow/Trial_000091_M-magnetic__T-original__094a3d39_none",
+      "group": "R385_UNLOADED_AFTER",
+      "mode": "none",
+      "speed_mm_s": 0.7,
+      "repeats": 1,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.059999
+      ],
+      "closed_local": "2026-10-02T22:35:39",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r387\\Run_20261002_220726_5b37b1a8\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "3506c48668ecd4c21a2170863a52a574f9586fa48b5ffc5581751aed6f539147",
+        "identity.json": "65e083c724d112b5efebbc668d38dc4b6714e585c4ad4c0c832a123ef5c5a05c",
+        "batch_plan_item.json": "ccfcc6244839f316d8d2c4a8a7e8621e29d64532c73d564abcaea758fbff51f5",
+        "magnetic_raw.csv": "37400487116b99cae7e9416b414051c30d2cf9ee8df5c942f71015f3572a724c",
+        "stage_commands.csv": "0cb46d57cb130f36f1330ee3a14bef377c23f30049118a5d0a310a250240a090",
+        "events.csv": "e1b55cf7d7c3ae0142f8b7e0e0c45f1ea2a424c8ab82f04e68613e9be1275606",
+        "live_predictions.csv": "815e8892f18c2f07c2d30aa0b34121b635c87cfe9311dbee3dbba5ce805ef2d6",
+        "live_predictions_virtual1000.csv": "6fbac1cbc623badb8c840dd2dedf686fe55f94853bf8fc4e96182d2b81bc5aae"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "quality_control",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 467,
+      "prediction_rows": 469,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000096",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000096_M-magnetic__T-original__01e298cf_none",
+      "group": "R385_UNLOADED_BEFORE",
+      "mode": "none",
+      "speed_mm_s": 0.7,
+      "repeats": 1,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-02T23:33:16",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "e7ead559eebd3284c5ae82eb865b3d981e7c62652da121627540b63a231260cf",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "723af75eebe5b83b15fa9fe725bd4e6d20bff899ae0c81bdb61371e3825e8e43",
+        "magnetic_raw.csv": "18ff3dcf51fcb73e39fb43a89ec2bcd5dc25a6ad9849c23a0a5f929f2e3888c4",
+        "stage_commands.csv": "882ba6ec67a63054edb924e12438ab7d4a735194b552834d354116e7f7345d78",
+        "events.csv": "283eb5016daafdf837defdfcebaa7248c4bf726677b5968eb361ac2945f4a440",
+        "live_predictions.csv": "cc4f44e9071b6e3e218bf9b346c49fdc3fdf10db359cdd3947e2e36c704aa841"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "quality_control",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 485,
+      "prediction_rows": 487,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000097",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000097_M-magnetic__T-original__01e298cf_waypoint_xyz",
+      "group": "R385_01_bezier_3d_V0.7",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-02T23:35:07",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "728a9f46b13dba786b8885b4b126d004691188960473717a693b052a4cf548f3",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "e428624ec3302224e86a752e05a49f2d59dec7639d685d017549c5453202221a",
+        "magnetic_raw.csv": "2bddfe107f52c5db0b5f37b6727403105e482b2f33cc4f42017c824cf450b414",
+        "stage_commands.csv": "e7e896d8a8e920e7ac80eb810ab730da8b77c5e9c4f8d83be29a1dfd93d481dd",
+        "events.csv": "30e59bf2a008f46f8e33eef7b0e276f09948b9ad8ca4b3b734ab1aa07cf40f9b",
+        "live_predictions.csv": "127c80623590f1e87c48d857033af8deaf5f160100d0176484015aebff094e89"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 3735,
+      "prediction_rows": 3738,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000098",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000098_M-magnetic__T-original__01e298cf_waypoint_xyz",
+      "group": "R385_01_bezier_3d_V1.3",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-02T23:36:32",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "1828f382160a7ab8c83cc4d77196afa2128213cb2795bb4620d145b14ffdfac6",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "000e4b2cbf70eb90d3ee9aede1999646a7f6dd433dbceef84c4ec271dc1bfa55",
+        "magnetic_raw.csv": "9bb218e0e54b13603795501fc3d961b80c9b3fe6cf740b00d955ec9e3ba3a5c8",
+        "stage_commands.csv": "2e43815a23d4a0af78afcb1935408e2096c85bc9108284df66576ba7b91297b5",
+        "events.csv": "0f80b83d071448fb33b3c9ea588e864a9809bdb03a528719d27556154dc57791",
+        "live_predictions.csv": "7084fd1c70eadf945458a9ec450647960aea96fa60434075a904ed54be3feff4"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 3060,
+      "prediction_rows": 3065,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000099",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000099_M-magnetic__T-original__01e298cf_waypoint_xyz",
+      "group": "R385_02_inertial_turns_V0.7",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-02T23:38:23",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "c23c9174eda8c5b70eb7a890e4719e5886fe58edf6f49ccb6057f405cec44593",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "24dc2e4c42c3edcf36bd4a73c34a9e54ad364bc30f5686fe88fb9456285733ec",
+        "magnetic_raw.csv": "7d4475943d6051765491a18180e23515f1700f076516097127bd3f4625902689",
+        "stage_commands.csv": "8fcd869f89908fd511ff2476ad698cdf64e6fbf3476a397aef99ced62066304b",
+        "events.csv": "78ef38f92eaabd58e0a7a71b4e1d721b266fbdd83a07de1b132914fd00116f77",
+        "live_predictions.csv": "4f3d23c8507ad84e324056094071ff0860905e3a31576093672cb22031621e97"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 3850,
+      "prediction_rows": 3852,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000100",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000100_M-magnetic__T-original__01e298cf_waypoint_xyz",
+      "group": "R385_02_inertial_turns_V1.3",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-02T23:39:49",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "7b30204e43e3813c2737420efe915893269e205f61605b87c0c85540447bf47a",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "6448bbc7f382a51b5b1e9bf75e3b7f928bcc85fa1df877cb6d4fd36003109dbb",
+        "magnetic_raw.csv": "0292413bb9feb5cdb30bb3e1ef46cc048bd5d5ba814fb155ad9471ffdbca7660",
+        "stage_commands.csv": "ce5079ff5dfe1d90d3911dd777b95637f9f67bfa1db1408fea83c7ed6649b81f",
+        "events.csv": "325c55a50876a2ffd5d7ab1b42606817bf5935cb4dd819cd0ee741df3447b676",
+        "live_predictions.csv": "7cfb7061d2ffc2896954298706dad53441c761dcd0d20be90eaf1849a22dd3d3"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 2994,
+      "prediction_rows": 2997,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000101",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000101_M-magnetic__T-original__01e298cf_waypoint_xyz",
+      "group": "R385_03_free_stop_return_V0.7",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-02T23:42:05",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "34fa014caeee36085dc0d9341966492d0eaa596b4c4fa0bcf326e27c5d7e2eb2",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "710f9d0f9ec8c74c06c28c6a02dc5dd3e178254d9c6bdf806fccf6afc74bd92d",
+        "magnetic_raw.csv": "d13d22d2b635ee3809bf5e83e3644edce28df17f95fe71fe89898420ed619281",
+        "stage_commands.csv": "25229b7b286dd5cafe0447324958a4e454502b3db3c95def121166dc4d30bf31",
+        "events.csv": "babae4a88430a6bc5e6828d9bffaf94f0090c09b4417cac29a06e163c3d5e3b5",
+        "live_predictions.csv": "2721ad44effbd845806d0a21b7fa692aecf1bdfde14ca219e51616eb98d54a76"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 4672,
+      "prediction_rows": 4675,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000102",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000102_M-magnetic__T-original__01e298cf_waypoint_xyz",
+      "group": "R385_03_free_stop_return_V1.3",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-02T23:43:41",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "b64bcb83114269cf5c03fe7f8c13f0da4e19582579d9e3b77cc7182710e5cbbc",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "cd2249ef901e80866fa554f653eeef9bb977a6b6d84c1f448a6e534117805e9a",
+        "magnetic_raw.csv": "5c3262d1b1aa6f52014f73f250790a66fffdfa12b59f4e3cb6f7a10de7dedb96",
+        "stage_commands.csv": "86af4020e3e3df0a18a4f2ebcc03f41b0b2826a17a952094bfc1934a7522914a",
+        "events.csv": "a5a502c7e968fa1d167a07746dd9f56ba8b083465ba1622557a32e73fcd286a7",
+        "live_predictions.csv": "46343b4e53e49083acee76cc7868cf23a336d83fa229d2fa2051e1c6f2076811"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 3328,
+      "prediction_rows": 3332,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000103",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000103_M-magnetic__T-original__01e298cf_waypoint_xyz",
+      "group": "R385_04_multiscale_curve_V0.7",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-02T23:45:55",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "bc5e0ad384ab4bd6e126aa40aa73a6dc1378a3c70f30baa3aac9ce158fd2c910",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "e264c1a5089eb6996444ec9e5e90c2044ef91117c45853ef3ab097e626dbbaaf",
+        "magnetic_raw.csv": "d57f0f4aed5019a6e9ed8d97d25ff84f923ad62817b0c2d4a0189446d51f75a8",
+        "stage_commands.csv": "f87a2c34ab992e22d338f053af0e3b61b638281c0b44dc6e16d02750c9b1b88e",
+        "events.csv": "1f728161d376b9151c25ce775fb717b437f09737426ace6533a8bf3432f84154",
+        "live_predictions.csv": "9d2e9fd1a1753b547c0ff1e7a5714f6215c0264136dd799a052161adc9ff10ad"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 4563,
+      "prediction_rows": 4564,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000104",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000104_M-magnetic__T-original__01e298cf_waypoint_xyz",
+      "group": "R385_04_multiscale_curve_V1.3",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-02T23:47:34",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "c211ddc33ebcf08c4b3c4cc0eebf4dbaf17d6ca5bf8853e852fd6842ff77575b",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "fa16cbd27c674293a4908b78e7434c67b2bc55daef63ce70e7dede486c1fe62c",
+        "magnetic_raw.csv": "886bb0ab1552a91551a7adb48f81171dd88ff419830156a0e2d87151fcda4504",
+        "stage_commands.csv": "366b3b461d56f45597581934435d3ecf09efac412f9d3a354846807a21b8c338",
+        "events.csv": "b6667478b1190332bc016f6f859af352da98a882315481c3b0569dca22577e66",
+        "live_predictions.csv": "d056165eb03465eae2cd78044df8ed8c74b9316074b694098c4383ff18e3f938"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 3395,
+      "prediction_rows": 3397,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000105",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000105_M-magnetic__T-original__01e298cf_waypoint_xyz",
+      "group": "R385_05_spiral_depth_reverse_V0.7",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-02T23:50:01",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "590ee8e0cf3706d91f5c504f192ca295dc8864bcac1d6964b866db8e0d606e24",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "39f581af74bd52a7833b7945fb386f0f6a743521dc7f97b337c6848d4c638d27",
+        "magnetic_raw.csv": "b66fe5ae149810214a72781f2333d555d877c8ee64790aa774e47484b6127190",
+        "stage_commands.csv": "981bb79ea92b1559e9278d10537716bdee2687cba2cb4cc24657281bd4189453",
+        "events.csv": "cded1b87854471d132da6fd7052d2d8d7ca7f8564faa456df738be2aee034d73",
+        "live_predictions.csv": "ea18c952a6ebd7899f187059f1788a8fe041b5d5f95a08f59e124b248cb67ae6"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 4945,
+      "prediction_rows": 4949,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000106",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000106_M-magnetic__T-original__01e298cf_waypoint_xyz",
+      "group": "R385_05_spiral_depth_reverse_V1.3",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-02T23:51:52",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "1f48b90dcdcc3ee130cd3d4305689b21a13348f3623b74027d06965496c7cf52",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "c207020d368ef632b3b3ac0cd7cb5a7a2cb5775fed4a48aefc0f639deab03e5f",
+        "magnetic_raw.csv": "9472c7d545e79013c358b03f54a8e98fe0f2327a4cd77797a70236359caebc8b",
+        "stage_commands.csv": "ee306201ec6f04df91057863de342975755c00cd234cfc955b5310984d54ff75",
+        "events.csv": "d9a88fb729ec423f9ca1e887df9f98e35298f46ab1852d98931f10aaf511de27",
+        "live_predictions.csv": "0e3d0bf47eb9e82150d49459e30f727bf0f7cf29c13e639865512b904f40739f"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 3764,
+      "prediction_rows": 3767,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000107",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000107_M-magnetic__T-original__01e298cf_waypoint_xyz",
+      "group": "R385_06_three_lobe_xyz_V0.7",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-02T23:55:06",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "44cc9e52511015e988cb84cb876f8acb060c7c163b3acb2df19a25729a256e86",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "0390ae5b6f526fd9cb23f446c1122a7b37398698648e561f24e286251c74eca2",
+        "magnetic_raw.csv": "e377c9507f6f3c017c395b58c1e9146e17fcf72a7d42d4f0ea070a654b0bb349",
+        "stage_commands.csv": "7723dc2163079ed5e3e82dbda8b475eac71d3b3d08b9fb86bf01478821acd58d",
+        "events.csv": "3b1b005f5ac583153acbf088d2cfc8321b3b514416f0fa979f299626db92e5bc",
+        "live_predictions.csv": "c92065cb1a9d5b2010cba5f01fdf695a57cb249587cbaf97c499be57fd11289a"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 6521,
+      "prediction_rows": 6524,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000108",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000108_M-magnetic__T-original__01e298cf_waypoint_xyz",
+      "group": "R385_06_three_lobe_xyz_V1.3",
+      "mode": "waypoint_xyz",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-02T23:57:18",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "5eeaf18c3fc156e890de12584f71f1e517699aae59fa28134e2382d689c3e51f",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "d4e499996033f2217aade6d519687ea3e3d86849487fb3ed45e759ec2becb70d",
+        "magnetic_raw.csv": "a68dc7b7a7dcb36d05ba26001de2237df59e7b9ff330e49eaef845b83fe1598a",
+        "stage_commands.csv": "d7be56a67bf16f3b2661513785ec7ad12bc5921ffa544d8c0b892d9be2895168",
+        "events.csv": "888a2e8994ed4106c6d903c17e08251cb903027c2103fda2e8f24a56857caadb",
+        "live_predictions.csv": "44992383e827b9134a1ddde4952e6f10045d3d97aefa15e6a3889b4739fb8144"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 4611,
+      "prediction_rows": 4614,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000109",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000109_M-magnetic__T-original__01e298cf_circle_scan",
+      "group": "R385_OLD_SKILL_CIRCLE",
+      "mode": "circle_scan",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-02T23:59:10",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "762f84283dfcf1bb13558abdc3a6288efd9031c1d80f6310b57730249fe5209b",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "65a64dff2f387389eb71141d9e86a028f8ba077ef9b52dab147d9d1a834ab82b",
+        "magnetic_raw.csv": "ccf8c9e182d6fd15b1509b046cd3dc7fc8b280c396828469d9379bd06b9c707f",
+        "stage_commands.csv": "18204a4fa546712b24e06de617ab8bf2124c6de7347480f2eb7510a2d0034fa8",
+        "events.csv": "5dc32de912c800ae2461532438fcec29083a47a75f2d20f01864b774fe286415",
+        "live_predictions.csv": "37090d757f3dd201767e160f213bafa01ade7adcf8098a654e1f2449f46b25a3"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 3820,
+      "prediction_rows": 3790,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000110",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000110_M-magnetic__T-original__01e298cf_z_path",
+      "group": "R385_OLD_SKILL_Z",
+      "mode": "z_path",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-03T00:00:00",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "20fa5a3c1cbba275255b2f8a01513e9a343ade7b0011b3a463ffb4295d862471",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "d43c48828b09f811d91aa32bd6b22c09e6357488a2b21c818245ac38f79698fd",
+        "magnetic_raw.csv": "f181698277e99e5f2a78182df72e6a5968ef3255871c8e715166e0974a9c68f8",
+        "stage_commands.csv": "145dda1faf6ba4fd621755a0fa9e5760a125cf28f333a65570d976d6f5c57ae8",
+        "events.csv": "3ed10623e9970c4e9c3380f8499efa92d1016429a51ef71cd6e8144c25365c64",
+        "live_predictions.csv": "464686f647358778128ae095c80fa86b3acca75d84c6e7fc8ebf8e5fdec4c798"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "model_building",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 1805,
+      "prediction_rows": 1777,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_000111",
+      "device": "SOURCE",
+      "path": "data/S20261002_A/Plan_20261002_233300_R385_VALUE_01e298cf91cae1_R389_e83c104f9121__mag_5x5-had-239/Trial_000111_M-magnetic__T-original__01e298cf_none",
+      "group": "R385_UNLOADED_AFTER",
+      "mode": "none",
+      "speed_mm_s": 0.7,
+      "repeats": 1,
+      "origin_mm": [
+        149.0,
+        147.0,
+        23.360001
+      ],
+      "closed_local": "2026-10-03T00:00:16",
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261002_233159_d45f848c\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "a5d65dfabea02498d8b010dd473ba95ed676ed3f4015f7a99c0b88688ae7e087",
+        "identity.json": "e0c01474c0ae18680be92409d9bb27635101c00916badcea2640949444e905ff",
+        "batch_plan_item.json": "b751602fd6caf17c5e9c8828511997f384718ca2940d18f04fc774112dc6a724",
+        "magnetic_raw.csv": "ec90176085b2a89859a8ccad8fc51efbbe316d23d13e509f988012df94255825",
+        "stage_commands.csv": "bb7b3f39b25c2c931544cbb28f37653a2d68d4f212b3aa4b09fc97fe219ed3d7",
+        "events.csv": "5add0a2a036c6e2e4ad4057a4c1da59c0e6216b6cc903f432dd85e7b99cb7ab8",
+        "live_predictions.csv": "ed5e71e54df099bfce3a57e4938d5dd44524812c1dd5e9c3f63f1638bdaf411e"
+      },
+      "model_family_online": "DirectPlateauReconstructionR373",
+      "recorded_role": "quality_control",
+      "analysis_role": "frozen_real_test_only",
+      "raw_rows": 488,
+      "prediction_rows": 490,
+      "queue_drops_recorded": 0
+    },
+    {
+      "id": "SOURCE_REPEAT_000001",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000001_M-magnetic__T-original__1b7bb870_none",
+      "mode": "none",
+      "group": "R385_UNLOADED_BEFORE",
+      "speed_mm_s": 0.7,
+      "repeats": 1,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "269a1cd0702b649302288da0eafb4440aab914810cb8fad1857540ac82b5aaec",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "8846a6be74c79ad09ab56c1b4e50d094058cd61fb153dddaf846055d8b10e465",
+        "magnetic_raw.csv": "f53dd4c1b97d817e077e14c59d06faefb5d8b589fbf71c8fa9dcfbb4afc9b2fe",
+        "stage_commands.csv": "7554122cd809c8e147d1af40b397f711fd1092ab376362790ce1aa38c02c8f52",
+        "events.csv": "32da3b8929f5e3afbc3a16cafa93568b317905a8a808022da9b95c2e08531a3f",
+        "live_predictions.csv": "4b46eba31801f6cde4940e5b5d908e3bc942fa99b3dfd1421c3e962ded009f88"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000002",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000002_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "mode": "waypoint_xyz",
+      "group": "R385_01_bezier_3d_V0.7",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "897aa0a1545e27eb3c366e91774bcb26ef1c0a04ef4d569343f042f834dc0e2a",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "877376856762992a4d7730933fa0b6ba626c5d5df1cb9ee8c727a4dee415b9f0",
+        "magnetic_raw.csv": "31dd8eb8c65d146f9e1db4e0424e6e5cb7fa218676b2e1d091e0c37e736f51cd",
+        "stage_commands.csv": "d2039bca721493fbbf0a20cb8751e472042eb781ffde4989df655aeac9aa9e3d",
+        "events.csv": "ca76e664c34b4199c6e67b65c717dc890529d7a37d0fd72708e27766f53fb5bf",
+        "live_predictions.csv": "214175b18823a624fa50efe8416b49cb0fab7e317d7934dd9e255df9238fb5e1"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000003",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000003_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "mode": "waypoint_xyz",
+      "group": "R385_01_bezier_3d_V1.3",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "270e9e8f85ed1baab1958f5d18ac8be4afcbdb3ff6c8130d4e82ab5eaa3bf24c",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "1089cfac3483ee57c571868526ebb0f6352b82b3c442e0ee44bdacd65e5dab50",
+        "magnetic_raw.csv": "d2147101a3dd839d9caca7f622eab48ae2dbe4360d698ec3ce58d824f5460ee9",
+        "stage_commands.csv": "ba73db45b1f49658910bb80ba9ca9c0ef154c3b95fb0b810b597e59878a01a14",
+        "events.csv": "e609badf0246946259c56850eddd97e868bcd0b54c855036ae66585bc9f9f888",
+        "live_predictions.csv": "017855e38ccff5546f8945296fc50c5e29285624d49ebefbd8ba2c8a7cbe2469"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000004",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000004_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "mode": "waypoint_xyz",
+      "group": "R385_02_inertial_turns_V0.7",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "a4f06534270541a955a9f135eec948f28a1f69198d4e1f89fdafe24ddcc86869",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "cc2599dcb5f31d90591f5ac94761bf5b12a214a7ddd097c9e09aaa08f9de733a",
+        "magnetic_raw.csv": "ece887cbfd37e6515e6c867bd1acac0cee9d2e8e8701aaa370d2fe07a8e89f97",
+        "stage_commands.csv": "367d587f7ecc4252de0e3072c6e5cb02937ee6ca81a1ac27a9714922b1fa22b7",
+        "events.csv": "a93cf330293980ac6451da2ad9518ab5c9bdd0b0bf2c7a064b4fbfc1330154e3",
+        "live_predictions.csv": "c1b45746c9b8e9ffcfdc5fbea2999c59c08dce546ec1343c376b23b3cfc22a5a"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000005",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000005_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "mode": "waypoint_xyz",
+      "group": "R385_02_inertial_turns_V1.3",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "df742c87745b21448ab213913f9df7f7d8ffc814cbb43b4d79f096263bf0d778",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "65332e9eae21aae2b5129a4e2b3109f0678de523017a14760b90885f0b1c11fe",
+        "magnetic_raw.csv": "8734e72943bd983e29fd03fe94483db3eaeafc843b47630f52449ff5d29993b1",
+        "stage_commands.csv": "be6c34e0dcfe6ef358c1f0c703009aed0c1b41be8d17dd6f8c52c29527dcaf1a",
+        "events.csv": "aeb6953cf0d0cb7e8218e23f4b6789f4476f9ab7378fa6857b94a76fb93b4a22",
+        "live_predictions.csv": "6f24bd5f94f263795ca085fead9f5656cc028a97e10bb53edb51f66563505100"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000006",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000006_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "mode": "waypoint_xyz",
+      "group": "R385_03_free_stop_return_V0.7",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "621a42528946e9d164cbb773e29b9494cc8ee898167af758ceb87651cfb84f77",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "58a6980615197397f67c4ad8b0c08fbe9425f9e4688e7e15f0baa27313602f68",
+        "magnetic_raw.csv": "d10343b621778a1d936b180fa828b53f2f778d6c71bd76b99335773983d7cd7b",
+        "stage_commands.csv": "00473c86972e0c82589e1b8b4a16c5d1cac5545ace891b14b422da42392aac8e",
+        "events.csv": "f42fac58433d6273a1027e95166e8ebbc880eb4a5e5741c14a485f47cad7dd34",
+        "live_predictions.csv": "4a3449898938b189674393fe2f25be05152d629a0bbb94cc60bf54526f55cb06"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000007",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000007_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "mode": "waypoint_xyz",
+      "group": "R385_03_free_stop_return_V1.3",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "bd3dc3beac309d4bba4b2558a22940a9db8a837cda9ac968ebfb2aaf28d43d0a",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "7f4ed6442109606ba60e1ed52018a6b7d805e915d8add2be56bb8ff5bbd37ecb",
+        "magnetic_raw.csv": "873e189e9a673034abd9166f0e54f67b4d4bdd7905db122c7e87357f9ac9603d",
+        "stage_commands.csv": "69a7af6c05b71beb8b505a3772a1565677405a5b912b9f5f7107ec5c3a7a1360",
+        "events.csv": "c66978b20347e062f6123f052c4c4187f35a6dc7aa184ce03d685ac79fd1ad8d",
+        "live_predictions.csv": "ad74d551c3e90c439d903b40fc5a5f043a8c5a911618219bbfe22b3f5fd899fa"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000008",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000008_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "mode": "waypoint_xyz",
+      "group": "R385_04_multiscale_curve_V0.7",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "70b4a19ec5cbdc30da745348c580693c5d3902bd8c4a493d873d64b439909a3c",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "9f1921c7683e20582c3330228142a737a1186d0c216bf5778e247224648433f0",
+        "magnetic_raw.csv": "3e98552dc141e5f000ef3591645ec121eaaae16725ddc30615266778b7448703",
+        "stage_commands.csv": "a2d30d6115e90ff61beb481c8dbf47997590dee8a6da25674a919b923b65d569",
+        "events.csv": "bfa30a1236a24f156998db3c753edd776ae5c6d6be67fdd7182bae979a50a199",
+        "live_predictions.csv": "1ad12574d19e99b19e098806ee7fffaeca0fc23ba357bd06d4368a00e658880e"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000009",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000009_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "mode": "waypoint_xyz",
+      "group": "R385_04_multiscale_curve_V1.3",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "4ada3266a6018d5a268b1a0a9508b03bc4ddcbe422747d259bde99f47ef7b066",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "a2e1cf37cb6a1153667e90ff1eadd7f954f6e7acbdd1270d228edd2b2c7f11ca",
+        "magnetic_raw.csv": "189c46fe854721842325d34e23e52d1ed6adcb97ac5b74e99d6ec6458dd0195d",
+        "stage_commands.csv": "d55c14e789de7222d16c121806642374a6cf58aed0907235c8833076ea82ed62",
+        "events.csv": "ee79d167931f1500c8adaa3165f6d89c426137692dd65780b9e2163321bec18c",
+        "live_predictions.csv": "0d38dba44c57a86abc7399019c4803edd37aa8c421cb264eb42c961cde5393b3"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000010",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000010_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "mode": "waypoint_xyz",
+      "group": "R385_05_spiral_depth_reverse_V0.7",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "b6234f3920567734bd529256c02ea2c4146eb3366a307494221c2ba050942117",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "c5dcffd515da2d89c4feea8ea14adf1d1dccebbc4c6b966209d4e1ff442feee9",
+        "magnetic_raw.csv": "3cb40e3bf4a8fb05ab9fb0b9d0554cb76e7f4377363a7d1102d83b14349084e2",
+        "stage_commands.csv": "c8a9c577820a1986fe64b2b2f660083714aa5dc3b527c1d3f1da6f5ff4691665",
+        "events.csv": "269fde516bd5be23843c925287b1b183a74b3a132a6b3c77ff74c6efc182b3b7",
+        "live_predictions.csv": "4fe1c97386e8c478e65a4102b6bba533e76fe58d615b32176d049a02b3271e24"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000011",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000011_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "mode": "waypoint_xyz",
+      "group": "R385_05_spiral_depth_reverse_V1.3",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "4704bc44b72f8e92d036b80b3a0ad5838d8f0ea49b89a92306f00307963addcb",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "2e95d6a4899bab9069c71de7d595ffeaff1dbf51b6062c4d8d2aa7cee9429b79",
+        "magnetic_raw.csv": "24484fb7bbf04d092e4c8bbed820c3d9c6c34ca16b87cc2e2ffe4a6e45b4a243",
+        "stage_commands.csv": "70eee3be83ba94798c9ca4f578d887e617b4e137a98c534fbe3c6702bb63c00d",
+        "events.csv": "da73ab200739c3541f6280f6945b85f2aa92b9d5f91500f7d317de33cef1070b",
+        "live_predictions.csv": "45070627c81132920eb0ada801a1aaec047b3b569ef0df0d923ed77d25ce183a"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000012",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000012_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "mode": "waypoint_xyz",
+      "group": "R385_06_three_lobe_xyz_V0.7",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "93306e3fa3f015f81d98df019ac028898fa2a128ab245305c73b3a027a02c2bd",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "4d3e03d64307ec89c0366f0d0174eb64e037b8c5d063b2bfcd73b0394cea63fa",
+        "magnetic_raw.csv": "5e2f3dd8b91d2abbfd42eab86b21102c316adf4a6ca585061df03e8e5e2b6cbf",
+        "stage_commands.csv": "951f00738f843705c4e80fa1634953abaea67c1f4c6f94e327d42396e9a23891",
+        "events.csv": "216cfd1102a3b355ccba4fd1646cf7b3f3b12e6a5b4ed447e6eed29b803f5d8f",
+        "live_predictions.csv": "163a6fb37f7512455094eed13c87efbf7fde5135a77cb3d4959450122caa132b"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000013",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000013_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "mode": "waypoint_xyz",
+      "group": "R385_06_three_lobe_xyz_V1.3",
+      "speed_mm_s": 1.3,
+      "repeats": 2,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "aa35549d63cbd045fa9b2d14be8004d02911b567cebbe9f1dab2526a56b26124",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "3454c786884c2da9109fed5d8b076d277a10c64bf990facc76f3b8da57077971",
+        "magnetic_raw.csv": "1717edd1a95be4dc01c401ecbc37329e90d1838be7a4be287e9c2896dc6a9377",
+        "stage_commands.csv": "0894403c668860ede1a41ba84c16bd2379c819934a37445f06226f385dac41d8",
+        "events.csv": "c820f1f551bf84057f8e47a76accc39f27b0fb83175257607d40d7622bae84a0",
+        "live_predictions.csv": "8e8c12c89e82c7823fcb4cc041f93c9c4c73ba8dfd89ea8223eac3aabc3d3eb4"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000014",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000014_M-magnetic__T-original__1b7bb870_circle_scan",
+      "mode": "circle_scan",
+      "group": "R385_OLD_SKILL_CIRCLE",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "67693f6b2b24d727aaba2b8aa2a02cfada799d3c6aa0773931ae94fe009a75e3",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "0e8fa605b1a31613e4065d3187befe0b50b038632c99174cb87b269d9c332480",
+        "magnetic_raw.csv": "8d65c3b7ba0ec34a0f6d93f6b9e4dd276768ede18919314c63348f11d46ec089",
+        "stage_commands.csv": "bcea834dfa205567ed5a934806d7661fb47aac39fe3e2ec26e58e5272226376e",
+        "events.csv": "0e6f30857b3b65add893d192a55ca84f84f270cf10331ca23e5cb2377574bf65",
+        "live_predictions.csv": "61465ec6b185b67bc89af66c1cdd4942646f1eda2db6bf45642c2270af92cae5"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000015",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000015_M-magnetic__T-original__1b7bb870_z_path",
+      "mode": "z_path",
+      "group": "R385_OLD_SKILL_Z",
+      "speed_mm_s": 0.7,
+      "repeats": 2,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "c354c2abd351d4fae3ac322594092b2faed0b37ace84b51339d8e67791be1a41",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "c250ae7b3bfec5b64004c95dd75f7ca64a711481a870e112b4780ba73e111cf1",
+        "magnetic_raw.csv": "29c603c552bc5228c4808527df3d0f9c7b5aff6f07df47f54251836edc9c26f5",
+        "stage_commands.csv": "7ea15da58b917c285d55e1899f13e87e5c22ee92f1bae58fdde824acdd80d0a3",
+        "events.csv": "549c1bb505929c48f39b583388c0e58867b0326dfa36aeebaf1e6d8b00a7200d",
+        "live_predictions.csv": "465e0076e1356cee5a3a9b7a78cdd6523bfa30814730ed5a663e20196868b795"
+      }
+    },
+    {
+      "id": "SOURCE_REPEAT_000016",
+      "device": "SOURCE_REPEAT",
+      "path": "data/S20261003_A/Plan_20261003_000334_R391_EXEC_cedd52183703_1b7bb8701c02_fdadea2__mag_5x5-had-239/Trial_000016_M-magnetic__T-original__1b7bb870_none",
+      "mode": "none",
+      "group": "R385_UNLOADED_AFTER",
+      "speed_mm_s": 0.7,
+      "repeats": 1,
+      "journal": "G:\\大学科技竞赛项目\\0ROS-ROBOT\\柔性传感\\MagTouch_Hardware_Experiment_V0_1_COMPLETE\\data\\inference_runs_r390\\Run_20261003_000300_39e612be\\native_stream.jsonl",
+      "raw_hashes": {
+        "meta.json": "79a2fc9bf3a7098ef0e04f20617521915c84235e64a638cc2be6978e634f5be1",
+        "identity.json": "3334eb48857ad2e2dbabc6668f684d507ec3b8705076b8fefa294b189dea49d9",
+        "batch_plan_item.json": "526040dc06b27bb9816ca46a798f688e3d4eed063db283cc3f4b537804c20e59",
+        "magnetic_raw.csv": "3c8c3547fa6098089c871bdc3896b2278eeba628946c2b1dee1bc59c422be0a5",
+        "stage_commands.csv": "a40ab88079d810f0cb139b49b4b93c686b2ce29e5967ab0e4bcd1414b313d108",
+        "events.csv": "92567cbcdf03e3ca0bbd81a2dfb6b1aabe4de6073533b309b9317b69b8b7af38",
+        "live_predictions.csv": "3091f190bf3bd4afa59a670f8ead7fb136013128db1e2b2e1044b38914a2be8b"
+      }
+    }
+  ],
+  "same_condition_records": [
+    {
+      "uid": "7eb057ad0df9202ec9ffd063",
+      "trial": "000030",
+      "relative_path": "data/S20261003_A/Plan_20261003_020101_R391_EXEC_cedd52183703_1b7bb8701c02_f4e5a19__mag_5x5-had-239/Trial_000030_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "speed_mm_s": 0.7
+    },
+    {
+      "uid": "4e9497199ad035f59cfdc787",
+      "trial": "000031",
+      "relative_path": "data/S20261003_A/Plan_20261003_020101_R391_EXEC_cedd52183703_1b7bb8701c02_f4e5a19__mag_5x5-had-239/Trial_000031_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "speed_mm_s": 1.3
+    },
+    {
+      "uid": "b67d59045c71852400c34706",
+      "trial": "000032",
+      "relative_path": "data/S20261003_A/Plan_20261003_020101_R391_EXEC_cedd52183703_1b7bb8701c02_f4e5a19__mag_5x5-had-239/Trial_000032_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "speed_mm_s": 0.7
+    },
+    {
+      "uid": "8181a1f09221ca52b692dcc1",
+      "trial": "000033",
+      "relative_path": "data/S20261003_A/Plan_20261003_020101_R391_EXEC_cedd52183703_1b7bb8701c02_f4e5a19__mag_5x5-had-239/Trial_000033_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "speed_mm_s": 1.3
+    },
+    {
+      "uid": "d1509870615a8e7d09778d72",
+      "trial": "000034",
+      "relative_path": "data/S20261003_A/Plan_20261003_020101_R391_EXEC_cedd52183703_1b7bb8701c02_f4e5a19__mag_5x5-had-239/Trial_000034_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "speed_mm_s": 0.7
+    },
+    {
+      "uid": "fc155ae40f66ceb692e9524a",
+      "trial": "000035",
+      "relative_path": "data/S20261003_A/Plan_20261003_020101_R391_EXEC_cedd52183703_1b7bb8701c02_f4e5a19__mag_5x5-had-239/Trial_000035_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "speed_mm_s": 1.3
+    },
+    {
+      "uid": "12560414ebdef6b3cbd56283",
+      "trial": "000036",
+      "relative_path": "data/S20261003_A/Plan_20261003_020101_R391_EXEC_cedd52183703_1b7bb8701c02_f4e5a19__mag_5x5-had-239/Trial_000036_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "speed_mm_s": 0.7
+    },
+    {
+      "uid": "9ffef3804e25142f45a5636b",
+      "trial": "000037",
+      "relative_path": "data/S20261003_A/Plan_20261003_020101_R391_EXEC_cedd52183703_1b7bb8701c02_f4e5a19__mag_5x5-had-239/Trial_000037_M-magnetic__T-original__1b7bb870_waypoint_xyz",
+      "speed_mm_s": 1.3
+    }
+  ],
+  "source_GRU_training_protocol_sha256": "216bf79b8948eb4ac0b47204a92522734230673e784183bff26a10789d9f5976",
+  "source_GRU_evaluation_protocol_sha256": "fd7e7b05e9df3d9e3134888d78ca9ea9cc75cc74815d8c44664bdd14f45c6bef",
+  "source_same_condition_protocol_sha256": "327cf3883c7764606c41228af07fd754a50d13e61c7c7b94e33a69b2d514d96d",
+  "baseline_comparability": {
+    "rule": "Record rawXY <= original24 source H0 record-error95th percentile and primary coverage>=95%. This is an explicit H0-conditioned subgroup, not an independent data-quality verdict.",
+    "raw_XY_upper_mm": 0.5301053910924818,
+    "minimum_coverage": 0.95,
+    "reference_original_records": 24,
+    "reference_record_errors_mm": [
+      0.236152917769203,
+      0.392162967582628,
+      0.5294836939329435,
+      0.5328720252592253,
+      0.4007787439840437,
+      0.42024058341643317,
+      0.520785531919263,
+      0.504897407273949,
+      0.44448030820676065,
+      0.45909875117285304,
+      0.37894703374817307,
+      0.4138419217284164,
+      0.33279336585201147,
+      0.40941280372736366,
+      0.503644169856541,
+      0.5302151023559297,
+      0.40558194217066285,
+      0.4433716970287713,
+      0.47046147722860215,
+      0.49006511350707527,
+      0.4701075226172356,
+      0.5167494132843724,
+      0.4066716988974732,
+      0.4481082553902006
+    ],
+    "reference_report_sha256": "d457e98141c6cd2d836fea1e2293f37908129607c91c831a82f7a67bab79d804"
+  },
+  "all8_candidates_retained": true,
+  "all8_original_online_parity_passed": true,
+  "GRU_three_common_initialization_order_seeds": [
+    7,
+    17,
+    27
+  ],
+  "GRU_selected_epochs": {
+    "7": 5,
+    "17": 0,
+    "27": 1
+  },
+  "scope": "Original formal native evaluation, separated into source/source-repeat/target domains, plus an eight-sequence same-condition frozen comparison. Command references, retrospective design exposure and common initialization remain explicit. The additional eight were not used for GRU training or selection and have not been evaluated with GRU."
+}

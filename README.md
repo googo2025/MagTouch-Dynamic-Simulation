@@ -1,42 +1,24 @@
 # MagTouch simulation-assisted magnetic tactile reconstruction
 
-This repository provides an interactive empirical magnetic-response simulator and a privacy-screened research snapshot. The [live simulator](https://googo2025.github.io/MagTouch-Dynamic-Simulation/) runs in the browser and does not control hardware.
+An interactive empirical magnetic-response simulator and the current research materials are provided here. The [live simulator](https://googo2025.github.io/MagTouch-Dynamic-Simulation/) runs in the browser.
 
-## Current revised manuscript and supplement
+## Current manuscript and formal supplement
 
-**Raw inputs, split assignments and principal-table code are now available in the [versioned reproduction release](https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-reproducibility).** The public copy passed a fresh-environment numerical check.
+Use the **[formal revision v2](supplements/micromachines_revision_20261024_formal_v2/README.md)** and its **[versioned data/model/code release](https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-formal-v2)**.
 
-The **24 October 2026 revision** is the current manuscript. It retains the submitted study and adds matched continued-training controls and a fixed-protocol archived extension:
+- [English manuscript](supplements/micromachines_revision_20261024_formal_v2/paper/Manuscript_Revised_EN.md) · [完整中文修订稿](supplements/micromachines_revision_20261024_formal_v2/paper/Manuscript_Revised_ZH.md)
+- [Formal GRU results](supplements/micromachines_revision_20261024_formal_v2/results/GRU_table.md) · [Eight-sequence validation](supplements/micromachines_revision_20261024_formal_v2/results/Same_condition_Table9.md)
+- [Reproduction instructions](supplements/micromachines_revision_20261024_formal_v2/README.md#download-and-reproduce) · [Data availability](DATA_AVAILABILITY.md)
 
-- [Complete revised English manuscript](supplements/micromachines_revision_20261024/paper/Manuscript_Revised_EN.md) · [完整中文修订稿](supplements/micromachines_revision_20261024/paper/Manuscript_Revised_ZH.md)
-- [Revision supplement and reproduction scope](supplements/micromachines_revision_20261024/README.md)
-- [Full-precision summaries](supplements/micromachines_revision_20261024/results/summary_tables.csv), [paired comparisons](supplements/micromachines_revision_20261024/results/paired_comparisons.csv), [archived per-sequence results](supplements/micromachines_revision_20261024/results/archived_per_record.csv)
-- [Selected matched models](supplements/micromachines_revision_20261024/models/model_manifest.json), [training traces](supplements/micromachines_revision_20261024/results/matched_training_traces.csv), and [numerical verification](supplements/micromachines_revision_20261024/verification/saved_output_verification.json)
+An empirical dynamic surrogate and virtual exploration informed a multiscale causal-history design. The final model was refined on real source data. In the two original source sessions, command-referenced planar error fell from 0.436 to 0.408 mm and 0.452 to 0.424 mm, with about 45% lower residual-step RMS. Matched continued H0 training and a representative residual GRU did not reproduce the large multiscale stability gain. Eight further same-condition frozen comparisons retained all eight candidates and reduced raw XY from 0.456 to 0.431 mm, step RMS from 0.181 to 0.097 mm and jump fraction from 25.76% to 3.38%.
 
-The earlier files under `paper/` and the browser's saved paper/result pages are retained as historical material. Their results and PDFs predate the added controls; use the revision linked above for the current scientific interpretation. New Markdown manuscripts include their figure assets. No revised PDF is implied.
-
-## Main finding and limits
-
-An empirical dynamic surrogate, controlled virtual exploration and earlier real-record checks motivated a multiscale causal-history expansion of an existing history-aware reconstruction chain. The final refinements were trained on real source measurements; simulation supplied design guidance rather than the final virtual supervision or pretrained weights.
-
-In the original two source sessions, the frozen joint model reduced mean **command-referenced** planar error from 0.436 to 0.408 mm and from 0.452 to 0.424 mm, with approximately 45% lower residual-step RMS. Eighteen added matched runs show that the large stability benefit was not reproduced merely by adding the same dwell data and continuing baseline optimization. Three training-order seeds share one initialization; they are not independent random initializations.
-
-In nine archived acquisitions, stability improved but **raw XY error increased**: the original frozen joint model changed 1.255 to 1.293 mm while residual-step RMS decreased 0.223 to 0.176 mm. The revision retains this regression. Joint error and stability gains are supported in the original source conditions; stability is the more consistent benefit across the tested extensions.
-
-References are reconstructed from stage commands and estimated timing, not independent physical contact-position metrology. The original evaluation is retrospective. The archived extension was fixed before its new scoring and excluded from this study's fitting and checkpoint selection, but it is not certified blind and lacks the old native inference-operation journal. Per-sequence translation removal is a reference-fitted diagnostic, not deployed calibration. No new hardware experiment, independent positioning/synchronization test, dedicated directional-hold or physical-latency experiment, or matched recurrent-network baseline is claimed.
+These are bounded command-referenced results. Original retrospective design exposure, common initialization of training-order repetitions, separate assemblies and unmeasured physical metrology remain explicit. No arbitrary-contact generalization or physical-delay claim is made.
 
 ## Contents and use
 
-- `supplements/micromachines_revision_20261024/`: current revision, figures, public results, models, protocols, and saved-output verification record.
-- `web/magnetic-forward-r361/`: existing bilingual static simulator for GitHub Pages. The legacy Chinese entry remains available.
-- `paper/`: historical manuscripts, PDFs, figures and provenance, with a link to the current revision.
-- `code/`, `training/`, `tools/`, `config/`, and historical `analysis/` snapshots: inherited research implementation and evidence.
-- [Data availability](DATA_AVAILABILITY.md): exact public/private boundary and verification scope.
+- `supplements/micromachines_revision_20261024_formal_v2/`: current bilingual manuscripts, figures, formal outputs, model metadata, protocols and portable code.
+- The [v2 release](https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-formal-v2): the self-contained new saved-output reproduction capsule; the [earlier raw-data release](https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-reproducibility) retains original formal raw streams and prior table code.
+- `web/magnetic-forward-r361/`: existing bilingual browser simulator.
+- `paper/`, `supplements/micromachines_revision_20261024/` and inherited research snapshots: historical versions. Their table numbers and interpretations belong to those versions; use v2 above for the current manuscript.
 
-```bash
-python -m http.server 8767 --directory web/magnetic-forward-r361
-```
-
-Open <http://127.0.0.1:8767/>. Browser simulation and saved examples require no Python backend. Training, original-stream replay and FEM are separate offline workflows. The large raw-input capsule is distributed through the versioned GitHub release rather than the Git checkout. It contains the inputs and saved outputs for the verified principal trajectory tables; fresh execution of every historical training stage remains a distinct scope.
-
-Software is MIT-licensed. Manuscripts and figures are CC BY 4.0; see [LICENSE-CONTENT.md](LICENSE-CONTENT.md). No raw-data license is newly granted. Physical-platform photographs remain in the [related hardware repository](https://github.com/googo2025/MagTouch-RA-3d-trajectory-recon/tree/main/media).
+The statistical entry points execute offline. GitHub Pages does not acquire data, train models or control hardware. Existing licenses remain applicable.

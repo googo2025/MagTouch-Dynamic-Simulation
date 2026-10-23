@@ -1,0 +1,16 @@
+{
+  "tag": "micromachines-revision-20261024-formal-v2",
+  "release_url": "https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-formal-v2",
+  "archive": "MagTouch_Formal_Validation_Addendum_v2_20261024.zip",
+  "bytes": 176979746,
+  "sha256": "c18273bf30851bdbb6bcb6a2f7b42ecb01fcd37bd31e81756f5f7b8844afc58d",
+  "members": 820,
+  "download_url": "https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/download/micromachines-revision-20261024-formal-v2/MagTouch_Formal_Validation_Addendum_v2_20261024.zip",
+  "formal_unique_sequences": 48,
+  "formal_GRU_model_sequence_replays": 144,
+  "same_condition_sequences": 8,
+  "same_condition_model_sequence_replays": 16,
+  "public_copy_statistical_tolerance": 1e-12,
+  "reproduction_entry": "tools/reproduce_followup_tables.py",
+  "scope": "Saved-output formal GRU and eight-sequence statistics; original formal raw streams and preceding principal-table route remain in the earlier versioned release."
+}

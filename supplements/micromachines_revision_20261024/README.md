@@ -1,3 +1,5 @@
+> **Historical revision.** The [current formal v2 supplement](../micromachines_revision_20261024_formal_v2/README.md) contains the current manuscripts and interpretation. This directory and its numerical records are retained as the earlier published version.
+
 # Micromachines revision supplement — 24 October 2026
 
 The full revised manuscript and the versioned raw-data/code release are linked here. Historical simulator files and evidence are retained.

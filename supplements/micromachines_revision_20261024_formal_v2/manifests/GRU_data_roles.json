@@ -1,0 +1,58 @@
+{
+  "status": "GRU_INHERITED_TRAIN_DEV_ROLES_AND_FROZEN_EVALUATION_VERIFIED",
+  "beijing_time": "2026-10-24 06:19:49",
+  "training_role_records": {
+    "train": 32,
+    "validation": 3
+  },
+  "supervised_samples": {
+    "total": 11415,
+    "dynamic": 7217,
+    "qualified_dwell": 3633,
+    "static_anchors": 565
+  },
+  "original_features_and_targets_unchanged": true,
+  "native_prefix_context_before_row_selection": true,
+  "new_evaluation_data_read_during_preparation_or_training": 0,
+  "role_exclusions": {
+    "same_condition8": {
+      "records": 8,
+      "training_or_development_identity_matches": []
+    }
+  },
+  "paper_evaluation_domains": {
+    "Yellow": 16,
+    "SOURCE": 16,
+    "SOURCE_REPEAT": 16
+  },
+  "formal_native_records_per_model": 48,
+  "formal_complex_trajectories_per_model": 36,
+  "formal_control_records_per_model": 12,
+  "nominal_source_speeds_mm_s": [
+    0.7,
+    1.3
+  ],
+  "new_same_condition8_GRU_not_yet_evaluated": true,
+  "no_test_based_model_or_order_selection": true,
+  "training_order_repetitions": [
+    {
+      "seed": 7,
+      "epochs": 951,
+      "updates": 42795,
+      "best_epoch": 5
+    },
+    {
+      "seed": 17,
+      "epochs": 760,
+      "updates": 34200,
+      "best_epoch": 0
+    },
+    {
+      "seed": 27,
+      "epochs": 670,
+      "updates": 30150,
+      "best_epoch": 1
+    }
+  ],
+  "limitation": "Appropriate for a reviewer-requested representative temporal-model comparison under the inherited data and selection rules. It is not a fresh blind test or three independent initializations. Target-assembly results must remain separate from source-session results; source+target must not be pooled as one same-condition score."
+}

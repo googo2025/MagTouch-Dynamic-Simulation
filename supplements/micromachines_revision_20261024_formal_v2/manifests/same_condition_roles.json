@@ -1,0 +1,74 @@
+{
+  "status": "ALL8_DISJOINT_FROM_ORIGINAL_FITTING_REFINEMENT_DEV_AND_MAIN_EVALUATION_MANIFESTS",
+  "candidate_records": 8,
+  "raw_hashes_checked": 8,
+  "checks": [
+    {
+      "manifest": "analysis/r372_direct_source_plateau_20261001/data_manifest.json",
+      "sha256": "6604b9ef0ee2391477543f8faa1484b2cb0dcab36e2626eb957e3f75e5326b37",
+      "candidate_raw_hash_matches": [],
+      "candidate_uid_matches": [],
+      "candidate_trial_path_matches": [],
+      "top_keys": [
+        "schema",
+        "xy",
+        "z",
+        "depth_policy",
+        "historical_training_reproduction_performed",
+        "target_measurements_included",
+        "test_measurements_included"
+      ]
+    },
+    {
+      "manifest": "analysis/r460_source_real_history_refinement_20261004/data_manifest.json",
+      "sha256": "cfd9995196a4f09d57c38f9b6b29ed5e1b508d35e4e31eb1335e631cfd0e03b5",
+      "candidate_raw_hash_matches": [],
+      "candidate_uid_matches": [],
+      "candidate_trial_path_matches": [],
+      "top_keys": [
+        "schema",
+        "protocol_sha256",
+        "baseline_xy_sha256",
+        "baseline_z_sha256",
+        "train",
+        "validation",
+        "records",
+        "raw_inputs",
+        "original_xy_7782_rows_reconstructed",
+        "original_input_parity_max",
+        "normalization",
+        "runtime_initialization_parity_max",
+        "held_out_or_Yellow_read_for_preparation",
+        "domain"
+      ]
+    },
+    {
+      "manifest": "analysis/micromachines_revision_validation_20261023/native_matched_v1/frozen_real_replay_spec.json",
+      "sha256": "f6564649dfad2adb9a2566ceff7f76345b2c720f8249769190194cf1fba70d30",
+      "candidate_raw_hash_matches": [],
+      "candidate_uid_matches": [],
+      "candidate_trial_path_matches": [],
+      "top_keys": [
+        "schema",
+        "entries",
+        "journal_prefixes",
+        "baseline_xy_sha256",
+        "train_arms",
+        "source_train_paths_disjoint",
+        "raw_inputs_all_checked_on_laptop",
+        "not_transferred",
+        "retained_primary",
+        "same_actual_B0_dt_complete_prefix",
+        "baseline",
+        "new_arms_freeze_before_server_test_read",
+        "real_train_or_selection",
+        "previously_viewed_recordings",
+        "prospective_blind_test",
+        "shared_metric_source_sha256",
+        "models",
+        "scope"
+      ]
+    }
+  ],
+  "scope": "These frozen manifest matches establish exclusion from the documented fitting/refinement/development and original main evaluation roles. They do not certify absence of all prior researcher exposure or provide prospective blind-test independence."
+}
