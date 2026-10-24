@@ -1,0 +1,25 @@
+{
+  "status": "BILINGUAL_AUTHOR_V6_NUMERICAL_AND_ORIGINAL_REVIEW_RECONCILIATION_PASS",
+  "manuscripts": [
+    {
+      "path": "supplements/micromachines_revision_20261024_postfreeze_v3/paper/Manuscript_Revised_EN.md",
+      "sha256": "e59b0b870e1a072a60fc1dc11b5361b4958fa36d73fd96209b18550bc27413ae",
+      "bytes": 169299
+    },
+    {
+      "path": "supplements/micromachines_revision_20261024_postfreeze_v3/paper/Manuscript_Revised_ZH.md",
+      "sha256": "5379217522de2e1668f3022ba07a657a63c90a4c94fd5f697054325b44ee7b47",
+      "bytes": 107488
+    }
+  ],
+  "figures_each": 18,
+  "tables_each": 21,
+  "display_equations_each": 19,
+  "references_each": 50,
+  "old17_tables_and19_equations_retained": true,
+  "bilingual_numeric_tables_equal": true,
+  "postfreeze_science_commit": "ff1b8f7e7bf2331a793cdbf709f14d30dedb392c",
+  "science_changed_by_this_text_commit": false,
+  "manual_pixel_or_Word_PDF_review_claimed": false,
+  "private_correspondence_published": false
+}

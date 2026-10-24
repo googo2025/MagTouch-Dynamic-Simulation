@@ -1,3 +1,5 @@
+> Historical formal-v2 text. The [current English and Chinese manuscripts](https://github.com/googo2025/MagTouch-Dynamic-Simulation/tree/main/supplements/micromachines_revision_20261024_postfreeze_v3/paper) also include post-freeze targeted validation. This version and its release archive remain preserved.
+
 # Formal Micromachines revision v2 — 24 October 2026
 
 This is the current manuscript and formal supplement. An empirical simulator informed a causal-history design that was refined using real data and evaluated against command-referenced trajectories. Source-condition joint error and stability gains are supported by matched continued-training controls, one representative GRU control and eight additional same-condition frozen comparisons.

@@ -1,3 +1,5 @@
+> Current complete manuscripts: [English](https://github.com/googo2025/MagTouch-Dynamic-Simulation/blob/main/supplements/micromachines_revision_20261024_postfreeze_v3/paper/Manuscript_Revised_EN.md) · [中文](https://github.com/googo2025/MagTouch-Dynamic-Simulation/blob/main/supplements/micromachines_revision_20261024_postfreeze_v3/paper/Manuscript_Revised_ZH.md). Includes post-freeze Tables S5–S8; [data and reproduction release](https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-postfreeze-v3).
+
 # MagTouch simulation-assisted magnetic tactile reconstruction
 
 ## Post-freeze validation supplement — current addition

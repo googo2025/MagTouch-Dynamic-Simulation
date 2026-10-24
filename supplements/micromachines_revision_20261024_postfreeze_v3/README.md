@@ -1,3 +1,5 @@
+> Current complete manuscripts: [English](https://github.com/googo2025/MagTouch-Dynamic-Simulation/blob/main/supplements/micromachines_revision_20261024_postfreeze_v3/paper/Manuscript_Revised_EN.md) · [中文](https://github.com/googo2025/MagTouch-Dynamic-Simulation/blob/main/supplements/micromachines_revision_20261024_postfreeze_v3/paper/Manuscript_Revised_ZH.md). Includes post-freeze Tables S5–S8; [data and reproduction release](https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-postfreeze-v3).
+
 # Post-freeze acquisition and directional/response validation — v3
 
 This is the supplementary dataset and executable saved-output route for measurements acquired on 5 October 2026, after the original final H2 model was fixed on 4 October. The source magnetic specimen is paired with one documented hemispherical indenter; this is separately reported, without indenter identity input or retraining.
