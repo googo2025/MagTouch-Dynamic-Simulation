@@ -1,5 +1,11 @@
 # MagTouch simulation-assisted magnetic tactile reconstruction
 
+## Post-freeze validation supplement — current addition
+
+[Post-freeze data and Tables S5–S8](https://github.com/googo2025/MagTouch-Dynamic-Simulation/tree/main/supplements/micromachines_revision_20261024_postfreeze_v3) · [versioned release](https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-postfreeze-v3) · [raw/model/output ZIP](https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/download/micromachines-revision-20261024-postfreeze-v3/MagTouch_PostFreeze_Validation_Addendum_v3_20261024.zip)
+
+Measurements acquired after the original model freeze: all 12 H0 candidates retained, six conditional H2 comparisons, eight-direction holds and command-reference reversals. Mean trajectory discrepancy and stability improve within this documented supplementary indenter condition; directional mean bias is not universally removed. This addition preserves the original and formal-v2 releases.
+
 An interactive empirical magnetic-response simulator and the current research materials are provided here. The [live simulator](https://googo2025.github.io/MagTouch-Dynamic-Simulation/) runs in the browser.
 
 ## Current manuscript and formal supplement

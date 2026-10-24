@@ -1,0 +1,56 @@
+[
+  {
+    "source": "training/build_trajectory_dataset_v1.py",
+    "source_sha256": "7df070a72c983a2982ad75b17db967756b0ce61fe6ddad5d7e9bd798b0c2e944",
+    "function": "read_rows",
+    "exact_original_function_sha256": "c27dd45575172e3a91364e9be32e782a7ca7ba53eb99a6475cff66e215eb80fd"
+  },
+  {
+    "source": "training/build_trajectory_dataset_v1.py",
+    "source_sha256": "7df070a72c983a2982ad75b17db967756b0ce61fe6ddad5d7e9bd798b0c2e944",
+    "function": "number",
+    "exact_original_function_sha256": "10c32b0edb50eba9dc51b3eda6c4defbe2d579e61475dbc525f3d611cd02a9a5"
+  },
+  {
+    "source": "training/build_trajectory_dataset_v1.py",
+    "source_sha256": "7df070a72c983a2982ad75b17db967756b0ce61fe6ddad5d7e9bd798b0c2e944",
+    "function": "reference_origin",
+    "exact_original_function_sha256": "880bbd51cee5e595d4a0cf75def03c5e1ebf24e8ae7eca9b58129907556f1910"
+  },
+  {
+    "source": "training/build_trajectory_dataset_v1.py",
+    "source_sha256": "7df070a72c983a2982ad75b17db967756b0ce61fe6ddad5d7e9bd798b0c2e944",
+    "function": "command_segments",
+    "exact_original_function_sha256": "aa34574266bde30ef683e69f161b5fb5d9080a8fac8a79f2f098c7e786560efc"
+  },
+  {
+    "source": "training/build_trajectory_dataset_v1.py",
+    "source_sha256": "7df070a72c983a2982ad75b17db967756b0ce61fe6ddad5d7e9bd798b0c2e944",
+    "function": "command_reference",
+    "exact_original_function_sha256": "04b7ad3c9605467a3d68bf908d6d9fbdc1240a4e488c5d80026fd758587a932c"
+  },
+  {
+    "source": "training/analyze_r354_final_online.py",
+    "source_sha256": "cc69c3f82653b16e6c9e78864f6cac5ac52a94a4842badc14e8d9280a99b9637",
+    "function": "mask_for",
+    "exact_original_function_sha256": "08f706c94c037adbe0d1bc097052a6f09a3f3dd58044aa3e2b93e01c7568d574"
+  },
+  {
+    "source": "training/real_jump_audit_r402.py",
+    "source_sha256": "8adae30cef81745d7770d25f7cf703c38b3e9d69d388f18f9fb92b7495308d2c",
+    "function": "score",
+    "exact_original_function_sha256": "f7e58de02e5e46528f836e08f8bf5077f22d83824fe88767e9106018a036cfa9"
+  },
+  {
+    "source": "training/real_jump_audit_r402.py",
+    "source_sha256": "8adae30cef81745d7770d25f7cf703c38b3e9d69d388f18f9fb92b7495308d2c",
+    "function": "dwell_score",
+    "exact_original_function_sha256": "3265784b6c2d5ecc56cb5c26609fb0ecbb336fabaab3d58ce7f2cb7b96175e2c"
+  },
+  {
+    "source": "mm_postfreeze_middepth12_worker_v22_20261024.py",
+    "source_sha256": "9ff4b089f2a2e2397b9f5e9c24e79428197544752c9da0563bc3427bf7fcd69a",
+    "function": "compatible_mask",
+    "portable_change": "Dependency-free fallback to the exact legacy mask; same sweep mask and numeric rules."
+  }
+]

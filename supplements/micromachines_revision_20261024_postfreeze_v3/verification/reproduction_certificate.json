@@ -1,0 +1,29 @@
+{
+  "status": "ALL12_H0_6H2_AND_DIRECTION_RESPONSE_SAVED_STATISTICS_PASS",
+  "H0_records": 12,
+  "H2_records": 6,
+  "hold_arrivals": 76,
+  "joint_responses": 75,
+  "checked_files": 135,
+  "maximum_absolute_numeric_tolerance": 1e-12,
+  "raw_command_references_reconstructed": true,
+  "new_inference": 0,
+  "new_training": 0,
+  "scope": "Actual saved-output reproduction in a fresh public copy using the existing isolated Python/NumPy reader environment. No model fitting, model inference, hardware or private source directories.",
+  "python_version": "3.11.7",
+  "numpy_version": "2.4.6",
+  "fresh_extracted_copy": true,
+  "isolated_python_numpy_environment": true,
+  "fresh_environment_created": false,
+  "optional_native_stack_not_available": {
+    "torch": true,
+    "scipy": true,
+    "pandas": true
+  },
+  "tables": [
+    "S5",
+    "S6",
+    "S7",
+    "S8"
+  ]
+}

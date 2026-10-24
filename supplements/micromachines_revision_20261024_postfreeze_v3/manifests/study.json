@@ -1,0 +1,327 @@
+{
+  "schema": "MagTouch-postfreeze-supplement-v3",
+  "original_final_model_fixed_BJT": "2026-10-04",
+  "acquisition_date_BJT": "2026-10-05",
+  "records": [
+    {
+      "uid": "1264c30ca7cf4dbaaf722d86",
+      "trial": "000165",
+      "created_local": "2026-10-05T19:29:22",
+      "mode": "x_sweep",
+      "speed_mm_s": 1.0,
+      "nominal_depth_mm": 0.8,
+      "magnet_specimen_id": "magnetic_layer_v1_5*5-had-239",
+      "indenter_specimen_id": "Hemisphere_D5",
+      "CAD_sha256": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "operator_confirmed_setup": true,
+      "role": "POST_ORIGINAL_MODEL_FREEZE_CANDIDATE",
+      "entered_H2_comparison": false,
+      "entered_original_H0_H2_fit_or_selection": false
+    },
+    {
+      "uid": "182ee685266bb23ea91c30df",
+      "trial": "000180",
+      "created_local": "2026-10-05T19:58:32",
+      "mode": "y_sweep",
+      "speed_mm_s": 1.0,
+      "nominal_depth_mm": 1.2,
+      "magnet_specimen_id": "magnetic_layer_v1_5*5-had-239",
+      "indenter_specimen_id": "Hemisphere_D5",
+      "CAD_sha256": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "operator_confirmed_setup": true,
+      "role": "POST_ORIGINAL_MODEL_FREEZE_CANDIDATE",
+      "entered_H2_comparison": true,
+      "entered_original_H0_H2_fit_or_selection": false
+    },
+    {
+      "uid": "23b7582c225f264ebddc5359",
+      "trial": "000167",
+      "created_local": "2026-10-05T19:34:38",
+      "mode": "angle_scan",
+      "speed_mm_s": 1.0,
+      "nominal_depth_mm": 0.8,
+      "magnet_specimen_id": "magnetic_layer_v1_5*5-had-239",
+      "indenter_specimen_id": "Hemisphere_D5",
+      "CAD_sha256": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "operator_confirmed_setup": true,
+      "role": "POST_ORIGINAL_MODEL_FREEZE_CANDIDATE",
+      "entered_H2_comparison": true,
+      "entered_original_H0_H2_fit_or_selection": false
+    },
+    {
+      "uid": "2a3d51a4568c5b5d95adb07e",
+      "trial": "000187",
+      "created_local": "2026-10-05T20:13:49",
+      "mode": "y_sweep",
+      "speed_mm_s": 2.0,
+      "nominal_depth_mm": 1.2,
+      "magnet_specimen_id": "magnetic_layer_v1_5*5-had-239",
+      "indenter_specimen_id": "Hemisphere_D5",
+      "CAD_sha256": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "operator_confirmed_setup": true,
+      "role": "POST_ORIGINAL_MODEL_FREEZE_CANDIDATE",
+      "entered_H2_comparison": false,
+      "entered_original_H0_H2_fit_or_selection": false
+    },
+    {
+      "uid": "480f9f32fedd78601950a7a3",
+      "trial": "000188",
+      "created_local": "2026-10-05T20:15:27",
+      "mode": "angle_scan",
+      "speed_mm_s": 2.0,
+      "nominal_depth_mm": 1.2,
+      "magnet_specimen_id": "magnetic_layer_v1_5*5-had-239",
+      "indenter_specimen_id": "Hemisphere_D5",
+      "CAD_sha256": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "operator_confirmed_setup": true,
+      "role": "POST_ORIGINAL_MODEL_FREEZE_CANDIDATE",
+      "entered_H2_comparison": true,
+      "entered_original_H0_H2_fit_or_selection": false
+    },
+    {
+      "uid": "7e8060c4c9cdbc32c1c63833",
+      "trial": "000186",
+      "created_local": "2026-10-05T20:12:12",
+      "mode": "x_sweep",
+      "speed_mm_s": 2.0,
+      "nominal_depth_mm": 1.2,
+      "magnet_specimen_id": "magnetic_layer_v1_5*5-had-239",
+      "indenter_specimen_id": "Hemisphere_D5",
+      "CAD_sha256": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "operator_confirmed_setup": true,
+      "role": "POST_ORIGINAL_MODEL_FREEZE_CANDIDATE",
+      "entered_H2_comparison": false,
+      "entered_original_H0_H2_fit_or_selection": false
+    },
+    {
+      "uid": "8748c02b310838d703a93e45",
+      "trial": "000181",
+      "created_local": "2026-10-05T20:01:12",
+      "mode": "angle_scan",
+      "speed_mm_s": 1.0,
+      "nominal_depth_mm": 1.2,
+      "magnet_specimen_id": "magnetic_layer_v1_5*5-had-239",
+      "indenter_specimen_id": "Hemisphere_D5",
+      "CAD_sha256": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "operator_confirmed_setup": true,
+      "role": "POST_ORIGINAL_MODEL_FREEZE_CANDIDATE",
+      "entered_H2_comparison": true,
+      "entered_original_H0_H2_fit_or_selection": false
+    },
+    {
+      "uid": "cdd55981860a119a2a5d0b6a",
+      "trial": "000172",
+      "created_local": "2026-10-05T19:45:29",
+      "mode": "x_sweep",
+      "speed_mm_s": 2.0,
+      "nominal_depth_mm": 0.8,
+      "magnet_specimen_id": "magnetic_layer_v1_5*5-had-239",
+      "indenter_specimen_id": "Hemisphere_D5",
+      "CAD_sha256": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "operator_confirmed_setup": true,
+      "role": "POST_ORIGINAL_MODEL_FREEZE_CANDIDATE",
+      "entered_H2_comparison": false,
+      "entered_original_H0_H2_fit_or_selection": false
+    },
+    {
+      "uid": "d6d168577207b80d9784afb1",
+      "trial": "000174",
+      "created_local": "2026-10-05T19:48:43",
+      "mode": "angle_scan",
+      "speed_mm_s": 2.0,
+      "nominal_depth_mm": 0.8,
+      "magnet_specimen_id": "magnetic_layer_v1_5*5-had-239",
+      "indenter_specimen_id": "Hemisphere_D5",
+      "CAD_sha256": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "operator_confirmed_setup": true,
+      "role": "POST_ORIGINAL_MODEL_FREEZE_CANDIDATE",
+      "entered_H2_comparison": true,
+      "entered_original_H0_H2_fit_or_selection": false
+    },
+    {
+      "uid": "e8bb48ce240853e7144410b6",
+      "trial": "000173",
+      "created_local": "2026-10-05T19:47:06",
+      "mode": "y_sweep",
+      "speed_mm_s": 2.0,
+      "nominal_depth_mm": 0.8,
+      "magnet_specimen_id": "magnetic_layer_v1_5*5-had-239",
+      "indenter_specimen_id": "Hemisphere_D5",
+      "CAD_sha256": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "operator_confirmed_setup": true,
+      "role": "POST_ORIGINAL_MODEL_FREEZE_CANDIDATE",
+      "entered_H2_comparison": false,
+      "entered_original_H0_H2_fit_or_selection": false
+    },
+    {
+      "uid": "ed11ac5c0da09a6313c5a263",
+      "trial": "000179",
+      "created_local": "2026-10-05T19:55:53",
+      "mode": "x_sweep",
+      "speed_mm_s": 1.0,
+      "nominal_depth_mm": 1.2,
+      "magnet_specimen_id": "magnetic_layer_v1_5*5-had-239",
+      "indenter_specimen_id": "Hemisphere_D5",
+      "CAD_sha256": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "operator_confirmed_setup": true,
+      "role": "POST_ORIGINAL_MODEL_FREEZE_CANDIDATE",
+      "entered_H2_comparison": false,
+      "entered_original_H0_H2_fit_or_selection": false
+    },
+    {
+      "uid": "eeb8dc7819c0f24385fea3d0",
+      "trial": "000166",
+      "created_local": "2026-10-05T19:32:00",
+      "mode": "y_sweep",
+      "speed_mm_s": 1.0,
+      "nominal_depth_mm": 0.8,
+      "magnet_specimen_id": "magnetic_layer_v1_5*5-had-239",
+      "indenter_specimen_id": "Hemisphere_D5",
+      "CAD_sha256": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "operator_confirmed_setup": true,
+      "role": "POST_ORIGINAL_MODEL_FREEZE_CANDIDATE",
+      "entered_H2_comparison": true,
+      "entered_original_H0_H2_fit_or_selection": false
+    }
+  ],
+  "H0_comparable_uids": [
+    "182ee685266bb23ea91c30df",
+    "23b7582c225f264ebddc5359",
+    "480f9f32fedd78601950a7a3",
+    "8748c02b310838d703a93e45",
+    "d6d168577207b80d9784afb1",
+    "eeb8dc7819c0f24385fea3d0"
+  ],
+  "H0_condition": {
+    "raw_XY_upper_mm": 0.5301053910924818,
+    "minimum_coverage": 0.95,
+    "fixed_reference": "Same paper-H095th-percentile comparison rule as prior8; not a faulty-data criterion or H2-dependent selection."
+  },
+  "groups": [
+    {
+      "tip": "Hemisphere_D5",
+      "CAD": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "magnet": "magnetic_layer_v1_5*5-had-239",
+      "nominal_speed_mm_s": 1.0,
+      "target_printer_xyz_mm": [
+        149.0,
+        147.0,
+        22.560001
+      ],
+      "depth_mm": 0.8,
+      "incoming_projected_bearings_deg": [
+        -135.0,
+        -90.0,
+        -45.0,
+        0.0,
+        45.0,
+        90.0,
+        135.0,
+        180.0
+      ],
+      "arrivals": 28,
+      "record_uids": [
+        "1264c30ca7cf4dbaaf722d86",
+        "23b7582c225f264ebddc5359",
+        "eeb8dc7819c0f24385fea3d0"
+      ],
+      "hold_reference_s_min": 1.1007255,
+      "hold_reference_s_max": 1.7099218
+    },
+    {
+      "tip": "Hemisphere_D5",
+      "CAD": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "magnet": "magnetic_layer_v1_5*5-had-239",
+      "nominal_speed_mm_s": 2.0,
+      "target_printer_xyz_mm": [
+        149.0,
+        147.0,
+        22.560001
+      ],
+      "depth_mm": 0.8,
+      "incoming_projected_bearings_deg": [
+        -135.0,
+        -90.0,
+        -45.0,
+        0.0,
+        45.0,
+        90.0,
+        135.0,
+        180.0
+      ],
+      "arrivals": 28,
+      "record_uids": [
+        "cdd55981860a119a2a5d0b6a",
+        "d6d168577207b80d9784afb1",
+        "e8bb48ce240853e7144410b6"
+      ],
+      "hold_reference_s_min": 0.6572792,
+      "hold_reference_s_max": 1.2843758
+    },
+    {
+      "tip": "Hemisphere_D5",
+      "CAD": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "magnet": "magnetic_layer_v1_5*5-had-239",
+      "nominal_speed_mm_s": 1.0,
+      "target_printer_xyz_mm": [
+        149.0,
+        147.0,
+        22.160001
+      ],
+      "depth_mm": 1.2,
+      "incoming_projected_bearings_deg": [
+        -135.0,
+        -90.0,
+        -45.0,
+        0.0,
+        45.0,
+        90.0,
+        135.0,
+        180.0
+      ],
+      "arrivals": 28,
+      "record_uids": [
+        "182ee685266bb23ea91c30df",
+        "8748c02b310838d703a93e45",
+        "ed11ac5c0da09a6313c5a263"
+      ],
+      "hold_reference_s_min": 1.0975176,
+      "hold_reference_s_max": 1.6985119
+    },
+    {
+      "tip": "Hemisphere_D5",
+      "CAD": "6b54181995f3a99022813d367f6937fee8ebe68863a1e82161f52957c808f2c6",
+      "magnet": "magnetic_layer_v1_5*5-had-239",
+      "nominal_speed_mm_s": 2.0,
+      "target_printer_xyz_mm": [
+        149.0,
+        147.0,
+        22.160001
+      ],
+      "depth_mm": 1.2,
+      "incoming_projected_bearings_deg": [
+        -135.0,
+        -90.0,
+        -45.0,
+        0.0,
+        45.0,
+        90.0,
+        135.0,
+        180.0
+      ],
+      "arrivals": 28,
+      "record_uids": [
+        "2a3d51a4568c5b5d95adb07e",
+        "480f9f32fedd78601950a7a3",
+        "7e8060c4c9cdbc32c1c63833"
+      ],
+      "hold_reference_s_min": 0.6441829,
+      "hold_reference_s_max": 1.23465
+    }
+  ],
+  "analysis_timing": "Supplementary evaluation definitions fixed during revision before targeted scoring; not a study-wide preregistered blind protocol.",
+  "reference": "Logged commands and EST timing, not independent physical position or synchronization truth.",
+  "new_training": 0,
+  "new_tip_identity_input": false,
+  "scope": "All12 H0 candidates retained; paired H2 under the stated H0 operating-condition rule. One source magnet and one separately documented hemispherical indenter. Not unconditional arbitrary-indenter generalization."
+}

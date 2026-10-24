@@ -1,0 +1,14 @@
+{
+  "tag": "micromachines-revision-20261024-postfreeze-v3",
+  "release_url": "https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/tag/micromachines-revision-20261024-postfreeze-v3",
+  "download_url": "https://github.com/googo2025/MagTouch-Dynamic-Simulation/releases/download/micromachines-revision-20261024-postfreeze-v3/MagTouch_PostFreeze_Validation_Addendum_v3_20261024.zip",
+  "name": "MagTouch_PostFreeze_Validation_Addendum_v3_20261024.zip",
+  "bytes": 30537084,
+  "sha256": "655111e492269f399e25c5640935a22433c85e6807d5bc118a77cf9e86a6be8f",
+  "members": 138,
+  "portable_reproduction": "README_REPRODUCTION.md",
+  "verified_numeric_tolerance": 1e-12,
+  "training_calls": 0,
+  "inference_calls_in_saved_output_reproduction": 0,
+  "old_releases_retained": true
+}
